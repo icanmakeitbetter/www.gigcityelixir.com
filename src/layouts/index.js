@@ -7,10 +7,10 @@ import Header from '../components/Header'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Gig City Elixir"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: "One of 2018's premiere functional programming conferences" },
+        { name: 'keywords', content: 'Elixir, Functional Programming, Functional Programming Conference' },
       ]}
     />
     <Header />
