@@ -80,11 +80,6 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className={bioStyles}>
-              <img src={annaPic} alt="picture of anna neyzberg"/>
-              <p>Anna Neyzberg</p>
-            </div>
-
-            <div className={bioStyles}>
               <img src={jamesPic} alt="picture of james edward gray"/>
               <p>James Edward Gray II</p>
             </div>
