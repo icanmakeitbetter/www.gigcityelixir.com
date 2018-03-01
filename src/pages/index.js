@@ -110,7 +110,7 @@ class BlogIndex extends React.Component {
           <p>
             We will make Gig City Elixir a diverse experience. We will have scholarships available to those under-represented in our programming community including women and minorities. We will do the mentoring it takes before the conference to make sure programmers can take full advantage. If you or someone you know might benefit and can't afford their own ticket, let us know.
           </p>
-          <button>Learn More</button>
+          <button>More Info Soon</button>
         </section>
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
