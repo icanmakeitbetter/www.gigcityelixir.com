@@ -6,6 +6,7 @@ import brucePic from './../images/bruce-tate.jpg'
 import davePic from './../images/dave-thomas.jpg'
 import johnPic from './../images/john-hughes.jpg'
 import annaPic from './../images/anna-neyzberg.jpg'
+import chrisPic from './../images/chris-mccord.jpg'
 import jamesPic from './../images/james-gray.jpg'
 
 import Bio from '../components/Bio'
@@ -50,16 +51,6 @@ class BlogIndex extends React.Component {
           <p>More to be announced.</p>
           <div css={` display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 30px;`}>
             <div className={bioStyles}>
-              <img src={brucePic} alt="picture of bruce tate kayaking"/>
-              <p>Bruce Tate</p>
-            </div>
-
-            <div className={bioStyles}>
-              <img src={annaPic} alt="picture of anna neyzberg"/>
-              <p>Anna Neyzberg</p>
-            </div>
-
-            <div className={bioStyles}>
               <img src={davePic} alt="picture of dave thomas"/>
               <p>Dave Thomas</p>
             </div>
@@ -67,6 +58,21 @@ class BlogIndex extends React.Component {
             <div className={bioStyles}>
               <img src={johnPic} alt="picture of john hughes"/>
               <p>John Hughes</p>
+            </div>
+
+            <div className={bioStyles}>
+              <img src={chrisPic} alt="picture of chris mccord"/>
+              <p>Chris McCord</p>
+            </div>
+
+            <div className={bioStyles}>
+              <img src={brucePic} alt="picture of bruce tate kayaking"/>
+              <p>Bruce Tate</p>
+            </div>
+
+            <div className={bioStyles}>
+              <img src={annaPic} alt="picture of anna neyzberg"/>
+              <p>Anna Neyzberg</p>
             </div>
 
             <div className={bioStyles}>
