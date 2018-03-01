@@ -55,6 +55,11 @@ injectGlobal`
     height: 78px;
     width: 100%;
   }
+
+  .limit-width {
+    max-width: 625px;
+    padding: 0 20px;
+  }
 `
 
   // TODO move above inputs and place them in their own file

@@ -14,10 +14,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div
+    <div className="limit-width"
       css={`
-        margin: 0px 45% 0px auto;
-        max-width: 625px;
+        margin: 0px auto;
       `}
     >
       {children()}

@@ -19,14 +19,16 @@ const Header = () => (
       // background-size: contain;
     `}
   >
-    <div
+    <div className="limit-width"
       css={`
-        margin: 0px 45% 0px auto;
-        max-width: 625px;
+        margin: 0px auto;
       `}
     >
       <div
         css={`
+          @media (max-width: 540px) {
+            padding-right: 14px;
+          }
           display: inline-block;
           margin: 1.45rem 1.0875rem 1.45rem 0;
           border-right-width: 3px;
@@ -36,6 +38,9 @@ const Header = () => (
         `}
       >
         <h1 css={`
+          @media (max-width: 540px) {
+            font-size: 20px;
+          }
           display: inline;
           margin: 0px;
           `}>
@@ -57,6 +62,12 @@ const Header = () => (
         </h1>
       </div>
       <div css={`
+        @media (max-width: 540px) {
+          font-size: 10px;
+          bottom: 17px;
+          margin-left: 0;
+          letter-spacing: 2px;
+        }
         color: white;
         display: inline-block;
         font-family: "OdudoMono-Light", sans-serif;
