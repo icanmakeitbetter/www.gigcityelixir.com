@@ -1,5 +1,13 @@
 import Typography from 'typography'
 import { injectGlobal } from 'emotion'
+
+import oml from '../fonts/odudo-mono-light.woff'
+import oml2 from '../fonts/odudo-mono-light.woff2'
+import omr from '../fonts/odudo-mono-regular.woff'
+import omr2 from '../fonts/odudo-mono-regular.woff2'
+import omsb from '../fonts/odudo-mono-semi-bold.woff'
+import omsb2 from '../fonts/odudo-mono-semi-bold.woff2'
+
 require("typeface-roboto")
 
 const purple = "#772858"
@@ -7,24 +15,24 @@ const purple = "#772858"
 injectGlobal`
   @font-face {
     font-family: "OdudoMono-Light";
-    src: url('.src/fonts/odudo-mono-light.woff2') format('woff2'),
-         url('.src/fonts/odudo-mono-light.woff') format('woff');
+    src: url(${oml}) format('woff'),
+         url(${oml2}) format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: "OdudoMono-Regular";
-    src: url('.src/fonts/odudo-mono-regular.woff2') format('woff2'),
-         url('.src/fonts/odudo-mono-regular.woff') format('woff');
+    src: url(${omr}) format('woff'),
+         url(${omr2}) format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: "OdudoMono-SemiBold";
-    src: url('.src/fonts/odudo-mono-semi-bold.woff2') format('woff2'),
-         url('.src/fonts/odudo-mono-semi-bold.woff') format('woff');
+    src: url(${omsb}) format('woff'),
+         url(${omsb2}) format('woff2');
     font-weight: normal;
     font-style: normal;
   }
