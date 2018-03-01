@@ -50,6 +50,7 @@ injectGlobal`
     background-color: ${purple};
     border-radius: 3px;
     color: white;
+    cursor: pointer;
     font-family: "OdudoMono-Regular", sans-serif;
     font-size: 32px;
     height: 78px;

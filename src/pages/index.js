@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
       <div>
         <section css={` margin-bottom: ${rhythm(2)}; `}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>From José Valim</h1>
-          <p>A word from Elixir's Creator</p>
+          <p css={` font-weight: 700; `}>A word from Elixir's Creator</p>
           <p css={` color: ${orange}; font-family: "OdudoMono-Regular", sans-serif; line-height: 37px; letter-spacing: 0.3px;`}>
             “Gig City Elixir’s speaker line-up is strong. They’re bringing in the programmers that shaped Elixir before Elixir was even born as well as the developers that are evolving the language and community every day.”
           </p>
@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>About Us</h1>
-          <p>A message from conference organizer Bruce Tate.</p>
+          <p css={` font-weight: 700; `}>A message from conference organizer Bruce Tate.</p>
           <p>
             Gig City Elixir is a different kind of programming conference in beautiful Chattanooga, Tennessee. We will focus on sessions that are different from what you're used to seeing, with a variety of talk lengths and formats that will open more learning channels than ever before.
           </p>
@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Our Speakers</h1>
-          <p>More to be announced.</p>
+          <p css={` font-weight: 700; `}>More to be announced.</p>
           <div css={`
               display: grid;
               grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -93,7 +93,7 @@ class BlogIndex extends React.Component {
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Get Notified When Tickets Go Live</h1>
-          <p>As well as infrequent announcements and info.</p>
+          <p css={` font-weight: 700; `}>As well as infrequent announcements and info.</p>
           <span css={` font-family: "OdudoMono-Regular", sans-serif; color: ${orange}; font-size: 20px; `}>
             Be the first to know when tickets go live!
           </span>
@@ -106,7 +106,7 @@ class BlogIndex extends React.Component {
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Scholarships</h1>
-          <p>Because we're stronger together.</p>
+          <p css={` font-weight: 700; `}>Because we're stronger together.</p>
           <p>
             We will make Gig City Elixir a diverse experience. We will have scholarships available to those under-represented in our programming community including women and minorities. We will do the mentoring it takes before the conference to make sure programmers can take full advantage. If you or someone you know might benefit and can't afford their own ticket, let us know.
           </p>
@@ -115,7 +115,7 @@ class BlogIndex extends React.Component {
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Registration</h1>
-          <p>Join us at Gig City Elixir 2018!</p>
+          <p css={` font-weight: 700; `}>Join us at Gig City Elixir 2018!</p>
           <p css={` font-family: "OdudoMono-Regular", sans-serif; color: ${purple}; font-size: 30px; `}>
             $350 Individual // $450 Corporate
           </p>
