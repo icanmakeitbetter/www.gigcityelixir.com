@@ -6,8 +6,8 @@ const purple = "#772858"
 const orange = "#F67465"
 
 const moveLeft = css`
-   position: relative; 
-   left: 24px; 
+   position: relative;
+   left: 24px;
 `
 
 const Header = () => (
@@ -15,6 +15,8 @@ const Header = () => (
     css={`
       margin-bottom: 3.45rem;
       background-color: ${purple};
+      // background: url(./mask-plus-bg.svg) no-repeat top left;
+      // background-size: contain;
     `}
   >
     <div
@@ -33,9 +35,9 @@ const Header = () => (
           padding-right: 8px;
         `}
       >
-        <h1 css={` 
+        <h1 css={`
           display: inline;
-          margin: 0px; 
+          margin: 0px;
           `}>
           <Link
             to="/"
@@ -54,15 +56,15 @@ const Header = () => (
           </Link>
         </h1>
       </div>
-      <div css={` 
+      <div css={`
         color: white;
-        display: inline-block; 
+        display: inline-block;
         font-family: "OdudoMono-Light", sans-serif;
-        letter-spacing: 3px; 
+        letter-spacing: 3px;
         margin-left: 15px;
-        position: relative; 
+        position: relative;
         bottom: 38px;
-        text-transform: uppercase; 
+        text-transform: uppercase;
       `}>
         <span css={` color: ${orange} `}>October</span> 26-27, 2018 <br />
         Aquarium Conference Center <br />

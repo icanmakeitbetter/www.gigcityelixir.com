@@ -2,15 +2,9 @@ import Typography from 'typography'
 import { injectGlobal } from 'emotion'
 require("typeface-roboto")
 
+const purple = "#772858"
+
 injectGlobal`
-  @font-face {
-    font-family: "OdudoMono-SemiBold";
-    src: url('.src/fonts/odudo-mono-semi-bold.woff2') format('woff2'),
-         url('.src/fonts/odudo-mono-semi-bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
   @font-face {
     font-family: "OdudoMono-Light";
     src: url('.src/fonts/odudo-mono-light.woff2') format('woff2'),
@@ -18,7 +12,45 @@ injectGlobal`
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "OdudoMono-Regular";
+    src: url('.src/fonts/odudo-mono-regular.woff2') format('woff2'),
+         url('.src/fonts/odudo-mono-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "OdudoMono-SemiBold";
+    src: url('.src/fonts/odudo-mono-semi-bold.woff2') format('woff2'),
+         url('.src/fonts/odudo-mono-semi-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1 { color: ${purple}; }
+  input {
+    border-color: ${purple};
+    border-radius: 3px;
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  button,
+  .button {
+    background-color: ${purple};
+    border-radius: 3px;
+    color: white;
+    font-family: "OdudoMono-Regular", sans-serif;
+    font-size: 32px;
+    height: 78px;
+    width: 100%;
+  }
 `
+
+  // TODO move above inputs and place them in their own file
+
 
 const typography = new Typography({
   baseFontSize: "18px",

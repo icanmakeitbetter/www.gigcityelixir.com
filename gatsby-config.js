@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "Brett's Musings",
-    author: "Brett Wise",
-    siteUrl: `https://www.brettwise.com`
+    title: "Gig City Elixir 2018",
+    author: "Gig City Elixir Organizers",
+    siteUrl: `https://www.gigcityelixir.com`
   },
   plugins: [
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.brettwise.com`
+        siteUrl: `https://www.gigcityelixir.com`
       }
     },
     // You can have multiple instances of this plugin
@@ -68,7 +68,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // trackingId: ``
+        trackingId: `UA-114965648-1`
       }
     },
     `gatsby-transformer-yaml`,
@@ -81,8 +81,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Brett's Musings",
-        short_name: "Brett's Musings",
+        name: "Gig City Elixir 2018",
+        short_name: "GCE 2018",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",
