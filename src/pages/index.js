@@ -52,31 +52,26 @@ class BlogIndex extends React.Component {
             <div className={bioStyles}>
               <img src={brucePic} alt="picture of bruce tate kayaking"/>
               <p>Bruce Tate</p>
-              <p>Notables: Author of 7 Languages 7 Weeks, Adopting Elixir.</p>
             </div>
 
             <div className={bioStyles}>
               <img src={annaPic} alt="picture of anna neyzberg"/>
               <p>Anna Neyzberg</p>
-              <p>Notables: Co-founder of Elixir Bridge</p>
             </div>
 
             <div className={bioStyles}>
               <img src={davePic} alt="picture of dave thomas"/>
               <p>Dave Thomas</p>
-              <p>Notables: Wrote the Pragmatic Programmer, Pragmatic Press founder.</p>
             </div>
 
             <div className={bioStyles}>
               <img src={johnPic} alt="picture of john hughes"/>
               <p>John Hughes</p>
-              <p>Notables: Haskell Designer</p>
             </div>
 
             <div className={bioStyles}>
               <img src={jamesPic} alt="picture of james edward gray"/>
               <p>James Edward Gray II</p>
-              <p>Notables: Ruby Superstar</p>
             </div>
           </div>
         </section>
