@@ -49,7 +49,16 @@ class BlogIndex extends React.Component {
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
           <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Our Speakers</h1>
           <p>More to be announced.</p>
-          <div css={` display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 30px;`}>
+          <div css={`
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              grid-column-gap: 30px;
+
+              img {
+                border-radius: 3px;
+                margin-bottom: 0;
+              }
+            `}>
             <div className={bioStyles}>
               <img src={davePic} alt="picture of dave thomas"/>
               <p>Dave Thomas</p>

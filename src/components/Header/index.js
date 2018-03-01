@@ -15,15 +15,9 @@ const Header = () => (
     css={`
       margin-bottom: 3.45rem;
       background-color: ${purple};
-      // background: url(./mask-plus-bg.svg) no-repeat top left;
-      // background-size: contain;
     `}
   >
-    <div className="limit-width"
-      css={`
-        margin: 0px auto;
-      `}
-    >
+    <div className="limit-width">
       <div
         css={`
           @media (max-width: 540px) {
@@ -63,10 +57,11 @@ const Header = () => (
       </div>
       <div css={`
         @media (max-width: 540px) {
+          bottom: 20px;
           font-size: 10px;
-          bottom: 17px;
-          margin-left: 0;
           letter-spacing: 2px;
+          line-height: 20px;
+          margin-left: 0;
         }
         color: white;
         display: inline-block;

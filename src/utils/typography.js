@@ -58,6 +58,7 @@ injectGlobal`
 
   .limit-width {
     max-width: 625px;
+    margin: 0px auto;
     padding: 0 20px;
   }
 `
