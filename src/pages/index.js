@@ -92,8 +92,8 @@ class BlogIndex extends React.Component {
         </section>
 
         <section css={` margin-bottom: ${rhythm(2)}; padding-top: ${rhythm(1)}; border-top: ${purple} solid 3px;`}>
-          <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Get our Email Announcements</h1>
-          <p>Infrequent info and announcements.</p>
+          <h1 css={` margin-bottom: ${rhythm(1 / 3)}; `}>Get Notified When Tickets Go Live</h1>
+          <p>As well as infrequent announcements and info.</p>
           <span css={` font-family: "OdudoMono-Regular", sans-serif; color: ${orange}; font-size: 20px; `}>
             Be the first to know when tickets go live!
           </span>
