@@ -8,7 +8,7 @@ import Bio from "../Bio";
 import brucePic from "./../../images/bruce-tate.jpg";
 import davePic from "./../../images/dave-thomas.jpg";
 import johnPic from "./../../images/john-hughes.jpg";
-import annaPic from "./../../images/anna-neyzberg.jpg";
+import mikiPic from "./../../images/miki.jpg";
 import chrisPic from "./../../images/chris-mccord.jpg";
 import jamesPic from "./../../images/james-gray.jpg";
 
@@ -27,6 +27,7 @@ const SpeakerSection = () => (
       `}>
       <Bio name="Dave Thomas" pic={davePic} alt="picture of dave thomas" />
       <Bio name="John Hughes" pic={johnPic} alt="picture of john hughes" />
+      <Bio name="Miki Rezentes" pic={mikiPic} alt="picture of Miki Rezentes" />
       <Bio name="Chris McCord" pic={chrisPic} alt="picture of chris mccord" />
       <Bio name="Bruce Tate" pic={brucePic} alt="picture of bruce tate" />
       <Bio
