@@ -10,17 +10,12 @@ import annaPic from "./../images/anna-neyzberg.jpg";
 import chrisPic from "./../images/chris-mccord.jpg";
 import jamesPic from "./../images/james-gray.jpg";
 
-import Bio from "../components/Bio";
 import SectionWrapper from "../components/SectionWrapper";
+import Bio from "../components/Bio";
 
 import { rhythm } from "../utils/typography";
 import { css } from "emotion";
 import * as consts from "../styles/variables";
-
-const bioStyles = css`
-  display: inline-block;
-  text-align: center;
-`;
 
 class BlogIndex extends React.Component {
   render() {
@@ -89,30 +84,27 @@ class BlogIndex extends React.Component {
                 margin-bottom: 0;
               }
             `}>
-            <div className={bioStyles}>
-              <img src={davePic} alt="picture of dave thomas" />
-              <p>Dave Thomas</p>
-            </div>
-
-            <div className={bioStyles}>
-              <img src={johnPic} alt="picture of john hughes" />
-              <p>John Hughes</p>
-            </div>
-
-            <div className={bioStyles}>
-              <img src={chrisPic} alt="picture of chris mccord" />
-              <p>Chris McCord</p>
-            </div>
-
-            <div className={bioStyles}>
-              <img src={brucePic} alt="picture of bruce tate kayaking" />
-              <p>Bruce Tate</p>
-            </div>
-
-            <div className={bioStyles}>
-              <img src={jamesPic} alt="picture of james edward gray" />
-              <p>James Edward Gray II</p>
-            </div>
+            <Bio
+              name="Dave Thomas"
+              pic={davePic}
+              alt="picture of dave thomas"
+            />
+            <Bio
+              name="John Hughes"
+              pic={johnPic}
+              alt="picture of john hughes"
+            />
+            <Bio
+              name="Chris McCord"
+              pic={chrisPic}
+              alt="picture of chris mccord"
+            />
+            <Bio name="Bruce Tate" pic={brucePic} alt="picture of bruce tate" />
+            <Bio
+              name="James Edward Gray"
+              pic={jamesPic}
+              alt="picture of james edward gray with brow furrowed"
+            />
           </div>
         </SectionWrapper>
 
