@@ -9,10 +9,6 @@ import SubscriptionSection from "../components/sections/SubscriptionSection";
 import ScholarshipSection from "../components/sections/ScholarshipSection";
 import TicketSection from "../components/sections/TicketSection";
 
-import { rhythm } from "../utils/typography";
-import { css } from "emotion";
-import * as consts from "../styles/variables";
-
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
