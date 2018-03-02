@@ -15,12 +15,9 @@ const SectionWrapper = ({ children, header, subhead, suppressLine }) => (
       `}>
       {header}
     </h1>
-    <p
-      css={`
-        font-weight: 700;
-      `}>
+    <h5 css={`letter-spacing: 1px;`}>
       {subhead}
-    </p>
+    </h5>
     {children}
   </section>
 );
