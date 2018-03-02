@@ -1,5 +1,4 @@
 import React from "react";
-import { rhythm } from "../utils/typography";
 import { purple, orange } from "../styles/variables";
 
 const Button = ({ text, alert }) => (
