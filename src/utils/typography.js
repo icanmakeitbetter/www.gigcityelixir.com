@@ -7,10 +7,9 @@ import omr from '../fonts/odudo-mono-regular.woff'
 import omr2 from '../fonts/odudo-mono-regular.woff2'
 import omsb from '../fonts/odudo-mono-semi-bold.woff'
 import omsb2 from '../fonts/odudo-mono-semi-bold.woff2'
+import { purple } from "../styles/variables";
 
 require("typeface-roboto")
-
-const purple = "#772858"
 
 injectGlobal`
   @font-face {

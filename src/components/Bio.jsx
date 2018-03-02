@@ -7,7 +7,7 @@ const Bio = ({ name, pic, alt }) => (
       display: inline-block;
       text-align: center;
     `}>
-    <img src={davePic} alt={alt} />
+    <img src={pic} alt={alt} />
     <p>{name}</p>
   </div>
 );
