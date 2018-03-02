@@ -1,10 +1,11 @@
 import React from "react";
 import { rhythm } from "../utils/typography";
+import { purple, orange } from "../styles/variables";
 
-const Button = ({ text }) => (
+const Button = ({ text, alert }) => (
   <button
     css={`
-      background-color: ${purple};
+      background-color: ${alert ? orange : purple};
       border-radius: 3px;
       color: white;
       cursor: pointer;

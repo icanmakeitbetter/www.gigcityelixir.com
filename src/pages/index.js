@@ -12,6 +12,7 @@ import jamesPic from "./../images/james-gray.jpg";
 
 import SectionWrapper from "../components/SectionWrapper";
 import Bio from "../components/Bio";
+import Button from "../components/Button";
 
 import { rhythm } from "../utils/typography";
 import { css } from "emotion";
@@ -23,22 +24,10 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <section
-          css={`
-            margin-bottom: ${rhythm(2)};
-          `}>
-          <h1
-            css={`
-              margin-bottom: ${rhythm(1 / 3)};
-            `}>
-            From José Valim
-          </h1>
-          <p
-            css={`
-              font-weight: 700;
-            `}>
-            A word from Elixir's Creator
-          </p>
+        <SectionWrapper
+          header="From José Valim"
+          subhead="A word from Elixir's Creator"
+          suppressLine={true}>
           <p
             css={`
               color: ${consts.orange};
@@ -51,7 +40,7 @@ class BlogIndex extends React.Component {
             well as the developers that are evolving the language and community
             every day.”
           </p>
-        </section>
+        </SectionWrapper>
 
         <SectionWrapper
           header="About Us"
@@ -146,7 +135,7 @@ class BlogIndex extends React.Component {
             full advantage. If you or someone you know might benefit and can't
             afford their own ticket, let us know.
           </p>
-          <button>More Info Soon</button>
+          <Button text="More Info Soon" />
         </SectionWrapper>
 
         <SectionWrapper
@@ -160,12 +149,7 @@ class BlogIndex extends React.Component {
             `}>
             $350 Individual // $450 Corporate
           </p>
-          <button
-            css={`
-              background-color: ${consts.orange};
-            `}>
-            Registration Coming Soon
-          </button>
+          <Button text="Registration Coming Soon" alert={true} />
         </SectionWrapper>
       </div>
     );

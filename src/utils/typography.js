@@ -44,7 +44,6 @@ injectGlobal`
     width: 100%;
   }
 
-  button,
   .button {
     background-color: ${purple};
     border-radius: 3px;

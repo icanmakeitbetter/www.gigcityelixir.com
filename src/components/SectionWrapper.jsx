@@ -2,12 +2,12 @@ import React from "react";
 import { rhythm } from "../utils/typography";
 import * as consts from "../styles/variables";
 
-const SectionWrapper = ({ children, header, subhead }) => (
+const SectionWrapper = ({ children, header, subhead, suppressLine }) => (
   <section
     css={`
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
-      border-top: ${consts.purple} solid 3px;
+      border-top: ${consts.purple} solid ${suppressLine ? "0" : "3"}px;
     `}>
     <h1
       css={`
