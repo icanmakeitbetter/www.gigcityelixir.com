@@ -37,7 +37,7 @@ injectGlobal`
   }
 
   h1 { color: ${purple}; }
-  input {
+  input, input, textarea {
     border-color: ${purple};
     border-radius: 3px;
     margin-bottom: 14px;

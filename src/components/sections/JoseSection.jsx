@@ -1,6 +1,5 @@
 import React from "react";
 import SectionWrapper from "../SectionWrapper";
-import { css } from "emotion";
 import { orange } from "../../styles/variables";
 
 const JoseSection = () => (

@@ -11,6 +11,7 @@ import johnPic from "./../../images/john-hughes.jpg";
 import mikiPic from "./../../images/miki.jpg";
 import chrisPic from "./../../images/chris-mccord.jpg";
 import jamesPic from "./../../images/james-gray.jpg";
+import stuPic from "./../../images/stu.jpg";
 
 const SpeakerSection = () => (
   <SectionWrapper header="Our Speakers" subhead="More to be announced.">
@@ -29,6 +30,7 @@ const SpeakerSection = () => (
       <Bio name="John Hughes" pic={johnPic} alt="picture of john hughes" />
       <Bio name="Miki Rezentes" pic={mikiPic} alt="picture of Miki Rezentes" />
       <Bio name="Chris McCord" pic={chrisPic} alt="picture of chris mccord" />
+      <Bio name="Stuart Halloway" pic={stuPic} alt="picture of Stuart Halloway" />
       <Bio name="Bruce Tate" pic={brucePic} alt="picture of bruce tate" />
       <Bio
         name="James Edward Gray"

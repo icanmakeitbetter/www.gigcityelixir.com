@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Menu from '../components/Menu'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -16,6 +17,7 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div className="limit-width">
       {children()}
+      <Menu/>  
     </div>
   </div>
 )
