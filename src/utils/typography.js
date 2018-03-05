@@ -59,6 +59,12 @@ injectGlobal`
     max-width: 625px;
     margin: 0px auto;
     padding: 0 20px;
+
+    @supports (display: grid) {
+      @media (min-width: 1230px) {
+        max-width: 1230px;
+      }
+    }
   }
 `
 
