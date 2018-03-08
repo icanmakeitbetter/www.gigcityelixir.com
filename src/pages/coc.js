@@ -102,16 +102,12 @@ const Coc = () => (
       <dd>
         You can make an anonymous report here that DOES NOT require an email
         address to submit.
-        <form css={` margin-top: 2rem; `} name="contact" method="POST" netlify>
-          <p>
-            <label css={` font-family: "OdudoMono-SemiBold", "Helvetica Neue", "Sans-Serif"`}>
-              Message: <textarea css={`border-width: 2px;`} name="message" rows="6" required />
-            </label>
-          </p>
+        <form name="contact" css={` margin-top: 2rem; `} action="thank-you" method="POST" netlify>
+          <label css={` font-family: "OdudoMono-SemiBold", "Helvetica Neue", "Sans-Serif"`}>
+            Message: <textarea css={`border-width: 2px;`} name="message" rows="6" required></textarea>
+          </label>
           <div netlify-recaptcha />
-          <p>
-            <button class="button" type="submit">Send</button>
-          </p>
+          <button class="button" type="submit">Send</button>
         </form>
       </dd>
     </dl>
