@@ -5,7 +5,9 @@ const Button = ({ text, alert }) => (
   <button
     css={`
       background-color: ${alert ? orange : purple};
+      border-color: ${alert ? orange : purple};
       border-radius: 3px;
+      border-style: solid;
       color: white;
       cursor: pointer;
       font-family: "OdudoMono-Regular", sans-serif;

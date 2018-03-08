@@ -47,6 +47,8 @@ injectGlobal`
   .button {
     background-color: ${purple};
     border-radius: 3px;
+    border-style: solid;
+    border-color: ${purple}
     color: white;
     cursor: pointer;
     font-family: "OdudoMono-Regular", sans-serif;
