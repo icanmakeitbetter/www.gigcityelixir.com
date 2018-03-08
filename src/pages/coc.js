@@ -105,7 +105,7 @@ const Coc = () => (
         address to submit.
         <form
           name="coc-page"
-          action="thank-you"
+          action="/thank-you"
           method="POST"
           css={`
             margin-top: 2rem;
