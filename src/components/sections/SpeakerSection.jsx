@@ -5,12 +5,13 @@ import { orange } from "../../styles/variables";
 
 import Bio from "../Bio";
 
-import brucePic from "./../../images/bruce-tate.jpg";
-import davePic from "./../../images/dave-thomas.jpg";
-import johnPic from "./../../images/john-hughes.jpg";
+import brucePic from "./../../images/bruce.jpg";
+import davePic from "./../../images/dave.jpg";
+import johnPic from "./../../images/john.jpg";
 import mikiPic from "./../../images/miki.jpg";
-import chrisPic from "./../../images/chris-mccord.jpg";
-import jamesPic from "./../../images/james-gray.jpg";
+import hannahPic from "./../../images/hannah.jpg";
+import chrisPic from "./../../images/chris.jpg";
+import jamesPic from "./../../images/james.jpg";
 import stuPic from "./../../images/stu.jpg";
 
 const SpeakerSection = () => (
@@ -29,6 +30,7 @@ const SpeakerSection = () => (
       <Bio name="Dave Thomas" pic={davePic} alt="picture of dave thomas" />
       <Bio name="John Hughes" pic={johnPic} alt="picture of john hughes" />
       <Bio name="Miki Rezentes" pic={mikiPic} alt="picture of Miki Rezentes" />
+      <Bio name="Hannah Howard" pic={hannahPic} alt="picture of Hannah Howard" />
       <Bio name="Chris McCord" pic={chrisPic} alt="picture of chris mccord" />
       <Bio name="Stuart Halloway" pic={stuPic} alt="picture of Stuart Halloway" />
       <Bio name="Bruce Tate" pic={brucePic} alt="picture of bruce tate" />
