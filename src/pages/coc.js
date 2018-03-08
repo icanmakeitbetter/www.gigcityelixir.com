@@ -110,9 +110,9 @@ const Coc = () => (
           css={`
             margin-top: 2rem;
           `}
-          data-netlify-honeypot="bot-field"
           data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="coc-page" />
           <label
             css={`
               font-family: "OdudoMono-SemiBold", "Helvetica Neue", "Sans-Serif";
