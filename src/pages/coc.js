@@ -9,6 +9,7 @@ const Coc = () => (
     subhead="Guidelines to follow."
     suppressLine={true}>
     <dl>
+      <h2>Summary</h2>
       <dd>
         Gig City Elixir is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and
@@ -43,7 +44,7 @@ const Coc = () => (
         </ul>
       </dd>
     </dl>
-    <h3>Enforcement</h3>
+    <h2>Enforcement</h2>
     <dl>
       <dd>
         Participants asked to stop any harassing behavior are expected to comply
@@ -83,7 +84,7 @@ const Coc = () => (
       </dd>
       <dd />
     </dl>
-    <h3>Reporting</h3>
+    <h2>Reporting</h2>
     <dl>
       <dd>
         If someone makes you or anyone else feel unsafe or unwelcome, please
