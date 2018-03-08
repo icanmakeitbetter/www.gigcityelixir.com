@@ -6,8 +6,10 @@ const SectionWrapper = ({ children, header, subhead, suppressLine }) => (
   <section
     css={`
       @supports (display: grid) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @media (min-width: 1230px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
