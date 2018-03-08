@@ -7,7 +7,8 @@ const Coc = () => (
   <SectionWrapper
     header="Gig City Elixir Code of Conduct"
     subhead="Guidelines to follow."
-    suppressLine={true}>
+    suppressLine={true}
+  >
     <dl>
       <h2>Summary</h2>
       <dd>
@@ -102,13 +103,35 @@ const Coc = () => (
       <dd>
         You can make an anonymous report here that DOES NOT require an email
         address to submit.
-        <form name="coc-page" action="thank-you" method="POST" css={` margin-top: 2rem; `} netlify>
-          <label css={` font-family: "OdudoMono-SemiBold", "Helvetica Neue", "Sans-Serif"`}>
-            Message: 
-            <textarea css={`border-width: 2px;`} name="message" rows="6" required></textarea>
+        <form
+          name="coc-page"
+          action="thank-you"
+          method="POST"
+          css={`
+            margin-top: 2rem;
+          `}
+          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <label
+            css={`
+              font-family: "OdudoMono-SemiBold", "Helvetica Neue", "Sans-Serif";
+            `}
+          >
+            Message:
+            <textarea
+              css={`
+                border-width: 2px;
+              `}
+              name="message"
+              rows="6"
+              required
+            />
           </label>
-          <div netlify-recaptcha></div>
-          <button class="button" type="submit">Send</button>
+          <div data-netlify-recaptcha="true" />
+          <button class="button" type="submit">
+            Send
+          </button>
         </form>
       </dd>
     </dl>
@@ -127,8 +150,9 @@ const Coc = () => (
       <dd>
         <ul>
           <li>
-            Calling or texting this phone number: <a href='tel:423-406-4088'>423-406-4088</a>. This phone
-            number will be continuously monitored for the duration of the event.
+            Calling or texting this phone number:{" "}
+            <a href="tel:423-406-4088">423-406-4088</a>. This phone number will
+            be continuously monitored for the duration of the event.
           </li>
           <li>
             Contacting a staff member, identified by STAFF badges, buttons, or
@@ -154,16 +178,28 @@ const Coc = () => (
       </dd>
     </dl>
     <dl>
-      <dd>Organizers' email: <a href="mailto:organizers@gigcityelixir.com">organizers@gigcityelixir.com</a></dd>
       <dd>
-        Organizers' phone: <a href='tel:423-406-4088'>423-406-4088</a>
+        Organizers' email:{" "}
+        <a href="mailto:organizers@gigcityelixir.com">
+          organizers@gigcityelixir.com
+        </a>
       </dd>
-      <dd>Police Dept: <a href="tel:423-698-2525">423-698-2525</a></dd>
-      <dd>Partnership Rape Crisis Center: <a href="tel:423-755-2700">423-755-2700</a></dd>
+      <dd>
+        Organizers' phone: <a href="tel:423-406-4088">423-406-4088</a>
+      </dd>
+      <dd>
+        Police Dept: <a href="tel:423-698-2525">423-698-2525</a>
+      </dd>
+      <dd>
+        Partnership Rape Crisis Center:{" "}
+        <a href="tel:423-755-2700">423-755-2700</a>
+      </dd>
       <dd>
         Emergencies: <a href="tel:911">911</a>
       </dd>
-      <dd>Nooga Taxi: <a href='tel:423-458-2701'>423-458-2701</a></dd>
+      <dd>
+        Nooga Taxi: <a href="tel:423-458-2701">423-458-2701</a>
+      </dd>
     </dl>{" "}
   </SectionWrapper>
 );
