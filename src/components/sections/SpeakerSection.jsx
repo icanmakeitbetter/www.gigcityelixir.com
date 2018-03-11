@@ -35,9 +35,9 @@ const SpeakerSection = () => (
       <Bio name="Stuart Halloway" pic={stuPic} alt="picture of Stuart Halloway" />
       <Bio name="Bruce Tate" pic={brucePic} alt="picture of bruce tate" />
       <Bio
-        name="James Edward Gray"
+        name="James Edward Gray II"
         pic={jamesPic}
-        alt="picture of james edward gray with brow furrowed"
+        alt="picture of james edward gray ii with brow furrowed"
       />
     </div>
   </SectionWrapper>
