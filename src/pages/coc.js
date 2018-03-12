@@ -129,7 +129,7 @@ const Coc = () => (
             />
           </label>
           <div data-netlify-recaptcha="true" />
-          <button class="button" type="submit">
+          <button className="button" type="submit">
             Send
           </button>
         </form>
