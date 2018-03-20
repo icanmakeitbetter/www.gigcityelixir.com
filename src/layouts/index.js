@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div className="limit-width">
       {children()}
-      <Menu/>  
+      <Menu/>
     </div>
   </div>
 )

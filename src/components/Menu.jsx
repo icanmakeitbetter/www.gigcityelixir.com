@@ -34,6 +34,7 @@ const Menu = () => (
     <ListLink to="/">Home</ListLink>
     <ListLink to="/contact/">Contact</ListLink>
     <ListLink to="/coc/">CoC</ListLink>
+    <ListLink to="/tickets/">Tickets</ListLink>
   </ul>
 );
 
