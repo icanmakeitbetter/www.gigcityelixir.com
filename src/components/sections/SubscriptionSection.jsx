@@ -18,7 +18,14 @@ const SubscriptionSection = () => (
       action="https://tinyletter.com/gigcityelixir"
       method="post"
       target="popupwindow"
-      onSubmit="window.open('https://tinyletter.com/gigcityelixir', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      onSubmit={() => {
+        window.open(
+          "https://tinyletter.com/gigcityelixir",
+          "popupwindow",
+          "scrollbars=yes,width=800,height=600"
+        );
+        return true;
+      }}>
       <input
         type="email"
         name="email"
