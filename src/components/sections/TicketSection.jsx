@@ -18,7 +18,7 @@ const TicketSection = () => (
       $350 for the Early Bird
     </p>
     <Link to="/tickets/">
-      <Button className="button" text="Click to Registrer" alert={true} />
+      <Button className="button" text="Click to Register" alert={true} />
     </Link>
   </SectionWrapper>
 );
