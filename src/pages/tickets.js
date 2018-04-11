@@ -33,7 +33,7 @@ export default class Tickets extends React.Component {
               color: #333;
               margin: 20px auto;
               max-width: 900px;
-              min-height: 335px;
+              min-height: 225px;
               padding: 10px 0 0 0;
               width: 100%;
             }

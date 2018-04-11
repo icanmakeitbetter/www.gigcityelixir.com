@@ -12,7 +12,7 @@ const SubscriptionSection = () => (
         color: ${orange};
         font-size: 20px;
       `}>
-      Be the first to know when tickets go live!
+      Sign up for our infrequent announcements and messages related to the conference!
     </span>
     <form
       action="https://tinyletter.com/gigcityelixir"
