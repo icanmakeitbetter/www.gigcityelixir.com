@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import { css } from "emotion";
 import { purple, orange } from "../../styles/variables";
+import bg from "./../../images/bg.svg";
 
 const moveLeft = css`
   position: relative;
@@ -9,10 +10,12 @@ const moveLeft = css`
 `;
 
 const Header = () => (
+  <div css={`background-color: ${purple};`}>
   <div
     css={`
       margin-bottom: 3.45rem;
-      background-color: ${purple};
+      background: url(${bg}) no-repeat;
+      background-position-x: 484px; 
     `}>
     <div className="limit-width">
       <div
@@ -82,6 +85,7 @@ const Header = () => (
         Chattanooga, TN
       </div>
     </div>
+  </div>
   </div>
 );
 
