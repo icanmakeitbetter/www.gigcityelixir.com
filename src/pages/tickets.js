@@ -17,7 +17,7 @@ export default class Tickets extends React.Component {
     return (
       <SectionWrapper
         header="Tickets"
-        subhead="Secure your's today."
+        subhead="Secure yours today."
         suppressLine={true}>
         <Script
           url="https://js.tito.io/v1"
