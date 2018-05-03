@@ -8,6 +8,7 @@ import SpeakerSection from "../components/sections/SpeakerSection";
 import SubscriptionSection from "../components/sections/SubscriptionSection";
 import ScholarshipSection from "../components/sections/ScholarshipSection";
 import TicketSection from "../components/sections/TicketSection";
+import SponsorSection from "../components/sections/SponsorSection";
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class BlogIndex extends React.Component {
         <JoseSection />
         <AboutUsSection />
         <SpeakerSection />
+        <SponsorSection />
         <SubscriptionSection />
         <ScholarshipSection />
         <TicketSection />
