@@ -28,6 +28,7 @@ const Picture = ({
           margin-left: 2rem;
           margin-top: 5px;
           font-style: italic;
+          font-size: 16px;
           font-weight: 500;
         `}>
         Photo by{" "}
