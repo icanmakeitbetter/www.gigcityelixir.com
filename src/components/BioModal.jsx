@@ -67,6 +67,7 @@ class BioModal extends React.Component {
           Open Bio
         </button>
         <Modal
+          closeTimeoutMS={150}
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
