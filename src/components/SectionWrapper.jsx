@@ -2,13 +2,13 @@ import React from "react";
 import { rhythm } from "../utils/typography";
 import * as consts from "../styles/variables";
 
-const SectionWrapper = ({ children, header, subhead, suppressLine }) => (
+const SectionWrapper = ({ children, header, subhead, suppressLine, singleColumn }) => (
   <section
     css={`
       @supports (display: grid) {
         @media (min-width: 1230px) {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: ${singleColumn ? "unset" : "repeat(2, 1fr)"};
         }
       }
       margin-bottom: ${rhythm(2)};
