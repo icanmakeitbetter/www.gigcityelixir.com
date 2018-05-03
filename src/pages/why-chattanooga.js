@@ -19,7 +19,7 @@ const WhyChattanooga = () => (
     <Picture
       imgSrc={downtown}
       altText="Photograph of 1100 block of downtown chattanooga"
-      caption="This is downtown Chattanooga. Notice thke blue squares in the
+      caption="This is downtown Chattanooga. Notice the blue squares in the
       intersection. This is the heart of Chattanooga's Innovation District.
       The conference venue is a few short short blocks from here towards the river."
       photographer="Andrew Rodgers"
