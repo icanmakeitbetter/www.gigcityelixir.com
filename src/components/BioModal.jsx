@@ -18,7 +18,10 @@ const customStyles = {
 };
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement("#___gatsby");
+
+if (typeof window !== `undefined`) {
+  Modal.setAppElement("#___gatsby");
+}
 
 class BioModal extends React.Component {
   constructor() {
