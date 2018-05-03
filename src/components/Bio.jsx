@@ -28,12 +28,14 @@ const Bio = ({
       alt={alt}
     />
     <p css={`
+      background-color: #772858;
       border-top: 2px #772858 solid;
       border-right: 2px #772858 solid;
       border-left: 2px #772858 solid;
-      color: #772858;
+      color: white;
       font-family: "OdudoMono-Regular", sans-serif;
       font-size: 15px;
+      letter-spacing: 1px;
       margin-top: -9px;
       margin-bottom: -2px;
       padding-top: 3px;
