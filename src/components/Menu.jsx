@@ -35,6 +35,7 @@ const Menu = () => (
     <ListLink to="/contact/">Contact</ListLink>
     <ListLink to="/coc/">CoC</ListLink>
     <ListLink to="/tickets/">Tickets</ListLink>
+    <ListLink to="/why-chattanooga/">Why Chattanooga?</ListLink>
   </ul>
 );
 
