@@ -36,6 +36,19 @@ injectGlobal`
     font-style: normal;
   }
 
+  .ReactModal__Content {
+    opacity: 0;
+  }
+
+  .ReactModal__Content--after-open {
+    opacity: 1;
+    transition: opacity 150ms;
+  }
+
+  .ReactModal__Content--before-close {
+    opacity: 0;
+  }
+
   h1 { color: ${purple}; }
   input, input, textarea {
     border-color: ${purple};

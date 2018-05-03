@@ -1,14 +1,55 @@
 import React from "react";
+import BioModal from "./BioModal";
 import { rhythm } from "../utils/typography";
 
-const Bio = ({ name, pic, alt }) => (
+const Bio = ({
+  name,
+  pic,
+  alt,
+  bio,
+  bioName,
+  twitterLink,
+  twitterHandle,
+  siteLink,
+  siteTitle
+}) => (
   <div
     css={`
       display: inline-block;
       text-align: center;
-    `}>
-    <img src={pic} alt={alt} />
-    <p>{name}</p>
+    `}
+  >
+    <img
+      css={`
+        border-radius: 3px 3px 0 0;
+        margin-bottom: 0;
+      `}
+      src={pic}
+      alt={alt}
+    />
+    <p css={`
+      background-color: #772858;
+      border-top: 2px #772858 solid;
+      border-right: 2px #772858 solid;
+      border-left: 2px #772858 solid;
+      color: white;
+      font-family: "OdudoMono-Regular", sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: -9px;
+      margin-bottom: -2px;
+      padding-top: 3px;
+      padding-bottom: 5px;
+    `}>{name}</p>
+    <BioModal
+      bio={bio}
+      pic={pic}
+      bioName={bioName}
+      twitterLink={twitterLink}
+      twitterHandle={twitterHandle}
+      siteLink={siteLink}
+      siteTitle={siteTitle}
+    />
   </div>
 );
 

@@ -6,14 +6,14 @@ const SubscriptionSection = () => (
   <SectionWrapper
     header="Get Notified When Tickets Go Live"
     subhead="As well as infrequent announcements and info.">
-    <span
+    <p
       css={`
         font-family: "OdudoMono-Regular", sans-serif;
         color: ${orange};
         font-size: 20px;
       `}>
       Sign up for our infrequent announcements and messages related to the conference!
-    </span>
+    </p>
     <form
       action="https://tinyletter.com/gigcityelixir"
       method="post"
