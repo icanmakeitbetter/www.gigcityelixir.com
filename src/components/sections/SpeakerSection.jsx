@@ -67,11 +67,15 @@ const BrucesBio = (
 
 const MikiBio = (
   <p>
-    Miki Rezentes transitioned to software engineering after many years of
-    teaching. Previously a javascripter, Miki became a Rubyist when she joined
-    her current team at Spreedly. The mother of five enjoys learning, teaching,
-    solving problems, eating, skating, volleyball and pranks. Miki holds two
-    hackathon titles from Rally Software.
+    Miki Rezentes works as a software engineer/team lead for Tanium. Her years
+    as a software engineer were preceded by many years of teaching upper level
+    math. In addition to teaching, she has coached multiple competitive sports
+    teams, clinching two state titles in girl's high school volleyball. Bringing
+    the experience of years of coaching and teaching to the software industry
+    gives a unique perspective on some of the core challenges faced by all
+    teams. The mother of five enjoys learning, teaching, solving problems,
+    eating, skating, volleyball and pranks. One coworker lovingly describes her
+    as, “supreme product expert and resident smartass.”
   </p>
 );
 
