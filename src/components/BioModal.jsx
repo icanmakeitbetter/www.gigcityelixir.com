@@ -67,7 +67,7 @@ class BioModal extends React.Component {
               background: #772858;
             }
           `}>
-          Open Bio
+          Bio
         </button>
         <Modal
           closeTimeoutMS={150}
