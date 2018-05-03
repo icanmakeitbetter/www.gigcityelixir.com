@@ -272,17 +272,6 @@ const SpeakerSection = () => (
         alt="picture of Anna"
       />
       <Bio
-        name="James Edward Gray II"
-        bioName="James'"
-        bio={JamesBio}
-        twitterLink="https://twitter.com/JEG2"
-        twitterHandle="@JEG2"
-        siteLink="http://graysoftinc.com/"
-        siteTitle="http://graysoftinc.com/"
-        pic={jamesPic}
-        alt="picture of james edward gray ii with brow furrowed"
-      />
-      <Bio
         name="Chris Keathley"
         bioName="Chris'"
         twitterLink="https://twitter.com/ChrisKeathley"
@@ -296,6 +285,17 @@ const SpeakerSection = () => (
         bio={JeffMBio}
         pic={JeffMPic}
         alt="picture of Jeff McGhee"
+      />
+      <Bio
+        name="James Edward Gray II"
+        bioName="James'"
+        bio={JamesBio}
+        twitterLink="https://twitter.com/JEG2"
+        twitterHandle="@JEG2"
+        siteLink="http://graysoftinc.com/"
+        siteTitle="http://graysoftinc.com/"
+        pic={jamesPic}
+        alt="picture of james edward gray ii with brow furrowed"
       />
     </div>
   </SectionWrapper>
