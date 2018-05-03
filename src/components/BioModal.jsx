@@ -70,7 +70,7 @@ class BioModal extends React.Component {
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal">
+          contentLabel={this.props.bioName + " bio"}>
           <div
             css={`
               max-height: 90vh;
