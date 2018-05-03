@@ -65,6 +65,16 @@ const BrucesBio = (
   </p>
 );
 
+const MikiBio = (
+  <p>
+    Miki Rezentes transitioned to software engineering after many years of
+    teaching. Previously a javascripter, Miki became a Rubyist when she joined
+    her current team at Spreedly. The mother of five enjoys learning, teaching,
+    solving problems, eating, skating, volleyball and pranks. Miki holds two
+    hackathon titles from Rally Software.
+  </p>
+);
+
 const HannahsBio = (
   <div>
     <p>
@@ -206,6 +216,7 @@ const SpeakerSection = () => (
       <Bio
         name="Miki Rezentes"
         bioName="Miki's"
+        bio={MikiBio}
         twitterLink="https://twitter.com/mikirez"
         twitterHandle="@mikirez"
         pic={mikiPic}
