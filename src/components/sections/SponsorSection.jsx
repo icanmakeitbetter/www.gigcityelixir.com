@@ -4,6 +4,7 @@ import { purple } from "../../styles/variables";
 import { css } from "emotion";
 import c5 from "./sponsor-logos/c5.png";
 import icmib from "./sponsor-logos/icmib.png";
+import prag from "./sponsor-logos/prag.png";
 import Button from "../Button";
 import Link from "gatsby-link";
 
@@ -37,7 +38,7 @@ const SubscriptionSection = () => (
     header="Our Sponsors"
     subhead="This conference brought to you in part by these fine folks.">
     <div className={platinumSponsors}>
-      <h2>Platinum Level</h2>
+      <h2>Platinum</h2>
       <img src={c5} />
       <img
         src={icmib}
@@ -46,10 +47,10 @@ const SubscriptionSection = () => (
           margin-left: 50px;
         `}
       />
-      <h2>Lanyard Level</h2>
-      <h3 css={``}>TBA</h3>
-      <h2>Gold Level</h2>
-      <h3 css={`margin-bottom: 2rem !important;`}>TBA</h3>
+      <h2>Lanyard</h2>
+      <h3>TBA</h3>
+      <h2>Elixir Champion</h2>
+      <img src={prag} />
       <h4>Still a few slots available at this level.</h4>
       <Link to="/contact/">
         <Button className="button" text="Contact Us About Sponsoring" />
