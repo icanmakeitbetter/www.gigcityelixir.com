@@ -16,6 +16,7 @@ import stuPic from "./../../images/stu.jpg";
 import chriskPic from "./../../images/chrisk.jpg";
 import annanPic from "./../../images/annan.jpg";
 import JeffMPic from "./../../images/jeffm.jpg";
+import benMPic from "./../../images/benm.jpg";
 
 const DavesBio = (
   <div>
@@ -198,6 +199,15 @@ const JeffMBio = (
   </div>
 );
 
+const BenMBio = (
+  <p>
+    Ben is the software architect at Bleacher Report, co-author of Adopting
+    Elixir and co-organizer of the Erlang Elixir meet up in San Francisco. In
+    his free time, he's also programming in Rust, playing guitar, and building
+    guitar pedals and modular synths.
+  </p>
+);
+
 const SpeakerSection = () => (
   <SectionWrapper header="Our Speakers" subhead="More to be announced.">
     <div
@@ -205,7 +215,8 @@ const SpeakerSection = () => (
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         grid-column-gap: 30px;
-      `}>
+      `}
+    >
       <Bio
         name="Dave Thomas"
         bioName="Dave's"
@@ -312,6 +323,15 @@ const SpeakerSection = () => (
         siteTitle="http://graysoftinc.com/"
         pic={jamesPic}
         alt="picture of james edward gray ii with brow furrowed"
+      />
+      <Bio
+        name="Ben Marx"
+        bioName="Ben's"
+        bio={BenMBio}
+        twitterLink="https://twitter.com/bgmarx"
+        twitterHandle="@bgmarx"
+        pic={benMPic}
+        atl="picture of ben marx"
       />
     </div>
   </SectionWrapper>
