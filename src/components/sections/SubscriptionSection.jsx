@@ -4,15 +4,16 @@ import { orange } from "../../styles/variables";
 
 const SubscriptionSection = () => (
   <SectionWrapper
-    header="Get Notified When Tickets Go Live"
-    subhead="As well as infrequent announcements and info.">
+    header="Get the Gig City Elixir Newsletter"
+    subhead="It features our infrequent announcements and info.">
     <p
       css={`
         font-family: "OdudoMono-Regular", sans-serif;
         color: ${orange};
         font-size: 20px;
       `}>
-      Sign up for our infrequent announcements and messages related to the conference!
+      Directly from the minds of the Gig City Elixir conference organizers to
+      you.
     </p>
     <form
       action="https://tinyletter.com/gigcityelixir"
