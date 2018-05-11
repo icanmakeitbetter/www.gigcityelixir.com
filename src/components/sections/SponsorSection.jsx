@@ -5,6 +5,7 @@ import { css } from "emotion";
 import c5 from "./sponsor-logos/c5.png";
 import icmib from "./sponsor-logos/icmib.png";
 import prag from "./sponsor-logos/prag.png";
+import tito from "./sponsor-logos/tito.svg";
 import Button from "../Button";
 import Link from "gatsby-link";
 
@@ -41,6 +42,7 @@ const SubscriptionSection = () => (
         css={`
           margin-bottom: 0;
           max-width: 400px;
+          width: 100%;
         `}
       />
       <div
@@ -85,6 +87,16 @@ const SubscriptionSection = () => (
         `}>
         <h2>Elixir Champion</h2>
         <img src={prag} />
+        <img
+          src={tito}
+          css={`
+            position: relative;
+            bottom: 34px;
+            @media (min-width: 500px) {
+              margin-right: 50px;
+            }
+          `}
+        />
         <h4>Still a few slots available at this level.</h4>
       </div>
       <Link to="/contact/">
