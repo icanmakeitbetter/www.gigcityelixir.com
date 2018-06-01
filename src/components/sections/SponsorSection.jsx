@@ -3,8 +3,10 @@ import SectionWrapper from "../SectionWrapper";
 import { purple } from "../../styles/variables";
 import { css } from "emotion";
 import c5 from "./sponsor-logos/c5.png";
+import epb from "./sponsor-logos/epb.png";
 import icmib from "./sponsor-logos/icmib.png";
 import prag from "./sponsor-logos/prag.png";
+import ambition from "./sponsor-logos/ambition.png";
 import tito from "./sponsor-logos/tito.svg";
 import Button from "../Button";
 import Link from "gatsby-link";
@@ -13,16 +15,11 @@ const platinumSponsors = css`
   text-align: center;
 
   h2 {
-    border-top: 3px solid ${purple};
     color: ${purple};
+    border-top: 3px solid ${purple};
     border-bottom: 3px solid ${purple};
     padding-top: 26px;
     padding-bottom: 26px;
-
-    &:first-child {
-      padding-top: 0;
-      border-top: 0;
-    }
   }
 
   h3 {
@@ -36,7 +33,13 @@ const SubscriptionSection = () => (
     header="Our Sponsors"
     subhead="This conference brought to you in part by these fine folks.">
     <div className={platinumSponsors}>
-      <h2>Platinum</h2>
+      <h2
+        css={`
+          padding-top: 0 !important;
+          border-top: 0 !important;
+        `}>
+        Platinum
+      </h2>
       <img
         src={c5}
         css={`
@@ -77,16 +80,36 @@ const SubscriptionSection = () => (
           max-width: 195px;
         `}
       />
-      <h2>Lanyard</h2>
-      <h3>TBA</h3>
+      <div
+        css={`
+          margin-bottom: 4rem;
+        `}>
+        <h2>Lanyard</h2>
+        <img
+          src={epb}
+          css={`
+            margin-bottom: 0;
+            max-width: 300px;
+            width: 100%;
+          `}
+        />
+      </div>
       <div
         css={`
           img {
             max-width: 190px;
+            display: block;
+            margin: 0 auto;
           }
         `}>
         <h2>Elixir Champion</h2>
         <img src={prag} />
+        <img
+          src={ambition}
+          css={`
+            margin-bottom: 5rem !important;
+          `}
+        />
         <img
           src={tito}
           css={`
