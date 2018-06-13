@@ -84,6 +84,13 @@ const SubscriptionSection = () => (
         css={`
           margin-bottom: 4rem;
         `}>
+        <h2>Community</h2>
+        <h3>TBA</h3>
+      </div>
+      <div
+        css={`
+          margin-bottom: 4rem;
+        `}>
         <h2>Lanyard</h2>
         <img
           src={epb}
