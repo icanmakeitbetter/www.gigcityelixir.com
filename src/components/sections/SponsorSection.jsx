@@ -31,13 +31,15 @@ const platinumSponsors = css`
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Our Sponsors"
-    subhead="This conference brought to you in part by these fine folks.">
+    subhead="This conference brought to you in part by these fine folks."
+  >
     <div className={platinumSponsors}>
       <h2
         css={`
           padding-top: 0 !important;
           border-top: 0 !important;
-        `}>
+        `}
+      >
         Platinum
       </h2>
       <img
@@ -51,7 +53,8 @@ const SubscriptionSection = () => (
       <div
         css={`
           margin-bottom: 4rem;
-        `}>
+        `}
+      >
         <p>
           Carbon Five is a strategic digital product development firm. We
           partner with clients to create exceptional products and grow effective
@@ -83,14 +86,16 @@ const SubscriptionSection = () => (
       <div
         css={`
           margin-bottom: 4rem;
-        `}>
+        `}
+      >
         <h2>Community</h2>
         <h3>TBA</h3>
       </div>
       <div
         css={`
           margin-bottom: 4rem;
-        `}>
+        `}
+      >
         <h2>Lanyard</h2>
         <img
           src={epb}
@@ -100,6 +105,12 @@ const SubscriptionSection = () => (
             width: 100%;
           `}
         />
+        <p>
+          In 2010, EPB became the first provider in the US to deliver 1 Gig
+          internet utilizing a community-wide fiber optic network. In 2015, EPB
+          became the first, and to date, only American ISP to make a 10 Gig
+          (10,000 Mbps) internet package accessible to all of its customers.
+        </p>
       </div>
       <div
         css={`
@@ -108,7 +119,8 @@ const SubscriptionSection = () => (
             display: block;
             margin: 0 auto;
           }
-        `}>
+        `}
+      >
         <h2>Elixir Champion</h2>
         <img src={prag} />
         <img
