@@ -7,6 +7,7 @@ import epb from "./sponsor-logos/epb.png";
 import outlaws from "./sponsor-logos/elixir-outlaws.png";
 import codescience from "./sponsor-logos/codescience.jpg";
 import bleacher from "./sponsor-logos/bleacher.svg";
+import very from "./sponsor-logos/very.svg";
 import icmib from "./sponsor-logos/icmib.png";
 import prag from "./sponsor-logos/prag.png";
 import ambition from "./sponsor-logos/ambition.png";
@@ -92,7 +93,12 @@ const SubscriptionSection = () => (
         `}
       >
         <h2>Community</h2>
-        <h3>TBA</h3>
+        <img
+          src={bleacher}
+          css={`
+            max-width: 365px;
+          `}
+        />
       </div>
       <div
         css={`
@@ -140,12 +146,6 @@ const SubscriptionSection = () => (
             @media (min-width: 500px) {
               margin-right: 50px;
             }
-          `}
-        />
-        <img
-          src={bleacher}
-          css={`
-            max-width: 230px;
           `}
         />
         <img
