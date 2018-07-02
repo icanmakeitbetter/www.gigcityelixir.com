@@ -78,6 +78,7 @@ const SubscriptionSection = () => (
             https://www.carbonfive.com/
           </a>
         </p>
+        <img src={very} css={`max-width: 400px;`} />
       </div>
       <img
         src={icmib}
