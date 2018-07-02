@@ -4,6 +4,9 @@ import { purple } from "../../styles/variables";
 import { css } from "emotion";
 import c5 from "./sponsor-logos/c5.png";
 import epb from "./sponsor-logos/epb.png";
+import outlaws from "./sponsor-logos/elixir-outlaws.png";
+import codescience from "./sponsor-logos/codescience.jpg";
+import bleacher from "./sponsor-logos/bleacher.svg";
 import icmib from "./sponsor-logos/icmib.png";
 import prag from "./sponsor-logos/prag.png";
 import ambition from "./sponsor-logos/ambition.png";
@@ -122,7 +125,7 @@ const SubscriptionSection = () => (
         `}
       >
         <h2>Elixir Champion</h2>
-        <img src={prag} />
+        <img src={prag} css={"max-width: 200px;"} />
         <img
           src={ambition}
           css={`
@@ -139,7 +142,26 @@ const SubscriptionSection = () => (
             }
           `}
         />
-        <h4>Still a few slots available at this level.</h4>
+        <img
+          src={bleacher}
+          css={`
+            max-width: 230px;
+          `}
+        />
+        <img
+          src={codescience}
+          css={`
+            max-width: 215px;
+          `}
+        />
+        <img src={outlaws} />
+        <h4
+          css={`
+            margin-top: 3rem;
+          `}
+        >
+          Still a few slots available at this level.
+        </h4>
       </div>
       <Link to="/contact/">
         <Button className="button" text="Contact Us About Sponsoring" />
