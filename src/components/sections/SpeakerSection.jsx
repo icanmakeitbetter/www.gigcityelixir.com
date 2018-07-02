@@ -17,6 +17,7 @@ import chriskPic from "./../../images/chrisk.jpg";
 import annanPic from "./../../images/annan.jpg";
 import JeffMPic from "./../../images/jeffm.jpg";
 import benMPic from "./../../images/benm.jpg";
+import paulDPic from "./../../images/pauld.jpg";
 
 const DavesBio = (
   <div>
@@ -208,6 +209,15 @@ const BenMBio = (
   </p>
 );
 
+const PaulDBio = (
+  <p>
+    Paul is an insatiably curious Elixir and Ruby developer currently nurturing
+    a love of functional programming. When he's not losing arguments with
+    computers he can be found exploring Oklahoma on his bicycle while drinking
+    copious amounts of coffee.
+  </p>
+);
+
 const SpeakerSection = () => (
   <SectionWrapper header="Our Speakers" subhead="More to be announced.">
     <div
@@ -314,6 +324,24 @@ const SpeakerSection = () => (
         alt="picture of Jeff McGhee"
       />
       <Bio
+        name="Ben Marx"
+        bioName="Ben's"
+        bio={BenMBio}
+        twitterLink="https://twitter.com/bgmarx"
+        twitterHandle="@bgmarx"
+        pic={benMPic}
+        atl="picture of ben marx"
+      />
+      <Bio
+        name="Paul Dawson"
+        bioName="Paul's"
+        bio={PaulDBio}
+        twitterLink="https://twitter.com/bgmarx"
+        twitterHandle="@piisalie"
+        pic={paulDPic}
+        atl="picture of Paul Dawson"
+      />
+      <Bio
         name="James Edward Gray II"
         bioName="James'"
         bio={JamesBio}
@@ -323,15 +351,6 @@ const SpeakerSection = () => (
         siteTitle="http://graysoftinc.com/"
         pic={jamesPic}
         alt="picture of james edward gray ii with brow furrowed"
-      />
-      <Bio
-        name="Ben Marx"
-        bioName="Ben's"
-        bio={BenMBio}
-        twitterLink="https://twitter.com/bgmarx"
-        twitterHandle="@bgmarx"
-        pic={benMPic}
-        atl="picture of ben marx"
       />
     </div>
   </SectionWrapper>
