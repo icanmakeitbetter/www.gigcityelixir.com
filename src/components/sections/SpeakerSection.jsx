@@ -317,11 +317,11 @@ const SpeakerSection = () => (
         alt="picture of Chris Keathley"
       />
       <Bio
-        name="Jeff McGhee"
+        name="Jeff McGehee"
         bioName="Jeff's"
         bio={JeffMBio}
         pic={JeffMPic}
-        alt="picture of Jeff McGhee"
+        alt="picture of Jeff McGehee"
       />
       <Bio
         name="Ben Marx"
