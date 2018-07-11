@@ -11,6 +11,7 @@ import very from "./sponsor-logos/very.svg";
 import icmib from "./sponsor-logos/icmib.png";
 import prag from "./sponsor-logos/prag.png";
 import ambition from "./sponsor-logos/ambition.png";
+import elixirCards from "./sponsor-logos/elixir-cards.png";
 import tito from "./sponsor-logos/tito.svg";
 import Button from "../Button";
 import Link from "gatsby-link";
@@ -35,15 +36,13 @@ const platinumSponsors = css`
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Our Sponsors"
-    subhead="This conference brought to you in part by these fine folks."
-  >
+    subhead="This conference brought to you in part by these fine folks.">
     <div className={platinumSponsors}>
       <h2
         css={`
           padding-top: 0 !important;
           border-top: 0 !important;
-        `}
-      >
+        `}>
         Platinum
       </h2>
       <img
@@ -57,8 +56,7 @@ const SubscriptionSection = () => (
       <div
         css={`
           margin-bottom: 4rem;
-        `}
-      >
+        `}>
         <p>
           Carbon Five is a strategic digital product development firm. We
           partner with clients to create exceptional products and grow effective
@@ -78,7 +76,12 @@ const SubscriptionSection = () => (
             https://www.carbonfive.com/
           </a>
         </p>
-        <img src={very} css={`max-width: 400px;`} />
+        <img
+          src={very}
+          css={`
+            max-width: 400px;
+          `}
+        />
       </div>
       <img
         src={icmib}
@@ -91,8 +94,7 @@ const SubscriptionSection = () => (
       <div
         css={`
           margin-bottom: 4rem;
-        `}
-      >
+        `}>
         <h2>Community</h2>
         <img
           src={bleacher}
@@ -104,8 +106,7 @@ const SubscriptionSection = () => (
       <div
         css={`
           margin-bottom: 4rem;
-        `}
-      >
+        `}>
         <h2>Lanyard</h2>
         <img
           src={epb}
@@ -129,8 +130,7 @@ const SubscriptionSection = () => (
             display: block;
             margin: 0 auto;
           }
-        `}
-      >
+        `}>
         <h2>Elixir Champion</h2>
         <img src={prag} css={"max-width: 200px;"} />
         <img
@@ -156,11 +156,16 @@ const SubscriptionSection = () => (
           `}
         />
         <img src={outlaws} />
+        <img
+          css={`
+            padding-top: 2rem;
+          `}
+          src={elixirCards}
+        />
         <h4
           css={`
             margin-top: 3rem;
-          `}
-        >
+          `}>
           Still a few slots available at this level.
         </h4>
       </div>
