@@ -4,7 +4,8 @@ import SectionWrapper from "../SectionWrapper";
 const AboutUsSection = () => (
   <SectionWrapper
     header="About Us"
-    subhead="A message from conference organizer Bruce Tate.">
+    subhead="A message from conference organizer Bruce Tate."
+  >
     <p>
       Gig City Elixir is a different kind of programming conference in beautiful
       Chattanooga, Tennessee. We will focus on sessions that are different from

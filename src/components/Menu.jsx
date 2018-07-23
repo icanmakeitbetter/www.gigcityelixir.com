@@ -32,6 +32,7 @@ const Menu = () => (
       text-align: center;
     `}>
     <ListLink to="/">Home</ListLink>
+    <ListLink to="/program/">Program</ListLink>
     <ListLink to="/contact/">Contact</ListLink>
     <ListLink to="/coc/">CoC</ListLink>
     <ListLink to="/tickets/">Tickets</ListLink>

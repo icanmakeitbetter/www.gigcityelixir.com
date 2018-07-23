@@ -4,6 +4,7 @@ import get from "lodash/get";
 import SectionWrapper from "../components/SectionWrapper";
 import JoseSection from "../components/sections/JoseSection";
 import AboutUsSection from "../components/sections/AboutUsSection";
+import ProgramSection from "../components/sections/ProgramSection";
 import SpeakerSection from "../components/sections/SpeakerSection";
 import SubscriptionSection from "../components/sections/SubscriptionSection";
 import ScholarshipSection from "../components/sections/ScholarshipSection";
@@ -18,6 +19,7 @@ class BlogIndex extends React.Component {
       <div>
         <JoseSection />
         <AboutUsSection />
+        <ProgramSection />
         <SpeakerSection />
         <SponsorSection />
         <SubscriptionSection />
