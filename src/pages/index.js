@@ -19,8 +19,8 @@ class BlogIndex extends React.Component {
       <div>
         <JoseSection />
         <AboutUsSection />
-        <ProgramSection />
         <SpeakerSection />
+        <ProgramSection />
         <SponsorSection />
         <SubscriptionSection />
         <ScholarshipSection />
