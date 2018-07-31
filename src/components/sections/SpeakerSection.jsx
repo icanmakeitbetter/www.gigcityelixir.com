@@ -219,14 +219,13 @@ const PaulDBio = (
 );
 
 const SpeakerSection = () => (
-  <SectionWrapper header="Our Speakers" subhead="More to be announced.">
+  <SectionWrapper header="Our Speakers">
     <div
       css={`
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         grid-column-gap: 30px;
-      `}
-    >
+      `}>
       <Bio
         name="Dave Thomas"
         bioName="Dave's"
