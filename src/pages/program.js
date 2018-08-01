@@ -13,9 +13,10 @@ const Program = () => (
     </p>
     <p>
       James E Gray II and Dave Thomas both had key roles in the discovery and
-      evolution of the Ruby language. John Hughes… Stuart Halloway and myself
-      both wrote award winning books in the Java space so we know object
-      oriented programming.
+      evolution of the Ruby language. John Hughes was on the committee that
+      created Haskell and has worked to enhance the language since then. Stuart
+      Halloway and myself both wrote award winning books in the Java space so we
+      know object oriented programming.
     </p>
     <p>
       As a conference, GigCityElixir has one overarching strength, our speakers.
