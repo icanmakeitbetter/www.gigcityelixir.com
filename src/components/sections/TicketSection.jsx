@@ -7,15 +7,17 @@ import { purple } from "../../styles/variables";
 const TicketSection = () => (
   <SectionWrapper
     header="Registration"
-    subhead="Join us at Gig City Elixir 2018!">
+    subhead="Join us at Gig City Elixir 2018!"
+  >
     <p
       css={`
         font-family: "OdudoMono-Regular", sans-serif;
         color: ${purple};
         font-size: 30px;
         text-align: center;
-      `}>
-      $399.99 for the Early Bird
+      `}
+    >
+      $399.99
     </p>
     <Link to="/tickets/">
       <Button className="button" text="Click to Register" alert={true} />
