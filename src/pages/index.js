@@ -9,6 +9,8 @@ import SpeakerSection from "../components/sections/SpeakerSection";
 import SubscriptionSection from "../components/sections/SubscriptionSection";
 import ScholarshipSection from "../components/sections/ScholarshipSection";
 import TicketSection from "../components/sections/TicketSection";
+import ScheduleSection from "../components/sections/ScheduleSection";
+import HotelSection from "../components/sections/HotelSection";
 import SponsorSection from "../components/sections/SponsorSection";
 
 class BlogIndex extends React.Component {
@@ -24,7 +26,9 @@ class BlogIndex extends React.Component {
         <SponsorSection />
         <SubscriptionSection />
         <ScholarshipSection />
+        <ScheduleSection />
         <TicketSection />
+        <HotelSection />
       </div>
     );
   }

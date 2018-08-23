@@ -15,7 +15,7 @@ const TicketSection = () => (
         font-size: 30px;
         text-align: center;
       `}>
-      $350 for the Early Bird
+      $399.99 for the Early Bird
     </p>
     <Link to="/tickets/">
       <Button className="button" text="Click to Register" alert={true} />
