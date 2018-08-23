@@ -17,7 +17,7 @@ const TicketSection = () => (
         text-align: center;
       `}
     >
-      $399.99
+      Tickets now: $399.99
     </p>
     <Link to="/tickets/">
       <Button className="button" text="Click to Register" alert={true} />
