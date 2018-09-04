@@ -104,7 +104,9 @@ const SubscriptionSection = () => (
         css={`
           padding-bottom: 33px;
           margin-left: 50px;
-          max-width: 195px;
+          @media (min-width: 500px) {
+            max-width: 400px;
+          }
         `}
       />
       <div
