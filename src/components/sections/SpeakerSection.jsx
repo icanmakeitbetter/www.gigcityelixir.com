@@ -18,6 +18,7 @@ import annanPic from "./../../images/annan.jpg";
 import JeffMPic from "./../../images/jeffm.jpg";
 import benMPic from "./../../images/benm.jpg";
 import paulDPic from "./../../images/pauld.jpg";
+import osaPic from "./../../images/osa.jpg";
 
 const DavesBio = (
   <div>
@@ -97,6 +98,15 @@ const HannahsBio = (
   </div>
 );
 
+const OsaBio = (
+  <p>
+    Osa Gaius is an engineer at Mailchimp. Previously, he was an engineer at
+    Luma, where he worked on realtime web apps and IoT devices in Elixir. He
+    co-organizes the Elixir Meetup in Atlanta. In his free time, Osa crafts hip
+    hop instrumentals and dances Tango.
+  </p>
+);
+
 const ChrisBio = (
   <p>
     I’m the author of{" "}
@@ -108,8 +118,9 @@ const ChrisBio = (
     find me traveling the world to speak about Elixir, working with DockYard on{" "}
     <a href="https://dockyard.com/phoenix-consulting">
       Ember and Phoenix Consulting
-    </a>, and teaching others the tools of the trade. I love spreading my joy
-    for Elixir and helping others tackle interesting problems.
+    </a>
+    , and teaching others the tools of the trade. I love spreading my joy for
+    Elixir and helping others tackle interesting problems.
   </p>
 );
 
@@ -127,9 +138,9 @@ const ChrisKBio = (
 const StuBio = (
   <div>
     <p>
-      Stuart Halloway is a founder and President of Cognitect, Inc. (<a href="http://cognitect.com">
-        www.cognitect.com
-      </a>). He is a <a href="http://clojure.org/">Clojure committer</a>, and a
+      Stuart Halloway is a founder and President of Cognitect, Inc. (
+      <a href="http://cognitect.com">www.cognitect.com</a>
+      ). He is a <a href="http://clojure.org/">Clojure committer</a>, and a
       developer of the <a href="http://datomic.com/">Datomic</a> database.
     </p>
     <p>
@@ -142,7 +153,8 @@ const StuBio = (
       is most proud of{" "}
       <a href="http://pragprog.com/book/shcloj2/programming-clojure">
         Programming Clojure
-      </a>.
+      </a>
+      .
     </p>
     <p>
       Learn more about Stu's presentations on his{" "}
@@ -225,7 +237,8 @@ const SpeakerSection = () => (
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         grid-column-gap: 30px;
-      `}>
+      `}
+    >
       <Bio
         name="Dave Thomas"
         bioName="Dave's"
@@ -264,6 +277,15 @@ const SpeakerSection = () => (
         twitterHandle="@techgirlwonder"
         bio={HannahsBio}
         pic={hannahPic}
+        alt="picture of Hannah Howard"
+      />
+      <Bio
+        name="Osa Gaius-Obaseki"
+        bioName="Osa's"
+        twitterLink="https://twitter.com/osagaius"
+        twitterHandle="@osagaius"
+        bio={OsaBio}
+        pic={osaPic}
         alt="picture of Hannah Howard"
       />
       <Bio
