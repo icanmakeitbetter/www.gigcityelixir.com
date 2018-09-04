@@ -280,15 +280,6 @@ const SpeakerSection = () => (
         alt="picture of Hannah Howard"
       />
       <Bio
-        name="Osa Gaius-Obaseki"
-        bioName="Osa's"
-        twitterLink="https://twitter.com/osagaius"
-        twitterHandle="@osagaius"
-        bio={OsaBio}
-        pic={osaPic}
-        alt="picture of Hannah Howard"
-      />
-      <Bio
         name="Chris McCord"
         bioName="Chris'"
         twitterLink="https://twitter.com/chris_mccord"
@@ -363,6 +354,23 @@ const SpeakerSection = () => (
         atl="picture of Paul Dawson"
       />
       <Bio
+        css={`
+          padding-left: 10px;
+          padding-right: 10px;
+        `}
+        name="Osa Gaius-Obaseki"
+        bioName="Osa's"
+        twitterLink="https://twitter.com/osagaius"
+        twitterHandle="@osagaius"
+        bio={OsaBio}
+        pic={osaPic}
+        alt="picture of Hannah Howard"
+      />
+      <Bio
+        css={`
+          padding-left: 10px;
+          padding-right: 10px;
+        `}
         name="James Edward Gray II"
         bioName="James'"
         bio={JamesBio}
