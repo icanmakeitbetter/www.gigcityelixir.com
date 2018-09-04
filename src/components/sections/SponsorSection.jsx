@@ -95,7 +95,8 @@ const SubscriptionSection = () => (
           approaches to challenging problems and build scalable,
           production-ready solutions. By focusing on one project at a time, our
           developers, designers, and product managers help you reach your
-          product goals quickly and predictably. Learn more at verypossible.com.
+          product goals quickly and predictably. Learn more at{" "}
+          <a href="https://www.verypossible.com">verypossible.com</a>.
         </p>
       </div>
       <img

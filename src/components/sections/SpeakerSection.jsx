@@ -354,10 +354,6 @@ const SpeakerSection = () => (
         atl="picture of Paul Dawson"
       />
       <Bio
-        css={`
-          padding-left: 10px;
-          padding-right: 10px;
-        `}
         name="Osa Gaius-Obaseki"
         bioName="Osa's"
         twitterLink="https://twitter.com/osagaius"
@@ -367,10 +363,6 @@ const SpeakerSection = () => (
         alt="picture of Hannah Howard"
       />
       <Bio
-        css={`
-          padding-left: 10px;
-          padding-right: 10px;
-        `}
         name="James Edward Gray II"
         bioName="James'"
         bio={JamesBio}
