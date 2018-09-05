@@ -80,7 +80,11 @@ const SubscriptionSection = () => (
           </a>
         </p>
       </div>
-      <div>
+      <div
+        css={`
+          margin-bottom: 5rem;
+        `}
+      >
         <img
           src={very}
           css={`
@@ -99,16 +103,27 @@ const SubscriptionSection = () => (
           <a href="https://www.verypossible.com">verypossible.com</a>.
         </p>
       </div>
-      <img
-        src={icmib}
+      <div
         css={`
-          padding-bottom: 33px;
-          margin-left: 50px;
-          @media (min-width: 500px) {
-            max-width: 400px;
-          }
+          margin-bottom: 5rem;
         `}
-      />
+      >
+        <img
+          src={icmib}
+          css={`
+            padding-bottom: 33px;
+            margin-left: 50px;
+            @media (min-width: 500px) {
+              max-width: 400px;
+            }
+          `}
+        />
+        <p>
+          icanmakeitbetter provides online customer insight communities. Our
+          platform makes it easy to research, innovate and get feedback -
+          anytime, anywhere, from anyone.
+        </p>
+      </div>
       <div
         css={`
           margin-bottom: 4rem;
