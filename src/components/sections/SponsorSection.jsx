@@ -100,7 +100,10 @@ const SubscriptionSection = () => (
           production-ready solutions. By focusing on one project at a time, our
           developers, designers, and product managers help you reach your
           product goals quickly and predictably. Learn more at{" "}
-          <a href="https://www.verypossible.com">verypossible.com</a>.
+          <a target="_blank" href="https://www.verypossible.com">
+            verypossible.com
+          </a>
+          .
         </p>
       </div>
       <div
@@ -119,9 +122,12 @@ const SubscriptionSection = () => (
           `}
         />
         <p>
-          <a href="http://icanmakeitbetter.com">icanmakeitbetter</a> provides
-          online customer insight communities. Our platform makes it easy to
-          research, innovate and get feedback - anytime, anywhere, from anyone.
+          <a target="_blank" href="http://icanmakeitbetter.com">
+            icanmakeitbetter
+          </a>{" "}
+          provides online customer insight communities. Our platform makes it
+          easy to research, innovate and get feedback - anytime, anywhere, from
+          anyone.
         </p>
       </div>
       <div
