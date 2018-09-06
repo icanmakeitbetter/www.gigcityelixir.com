@@ -119,9 +119,9 @@ const SubscriptionSection = () => (
           `}
         />
         <p>
-          icanmakeitbetter provides online customer insight communities. Our
-          platform makes it easy to research, innovate and get feedback -
-          anytime, anywhere, from anyone.
+          <a href="http://icanmakeitbetter.com">icanmakeitbetter</a> provides
+          online customer insight communities. Our platform makes it easy to
+          research, innovate and get feedback - anytime, anywhere, from anyone.
         </p>
       </div>
       <div
