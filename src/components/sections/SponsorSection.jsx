@@ -13,6 +13,8 @@ import prag from "./sponsor-logos/prag.png";
 import ambition from "./sponsor-logos/ambition.png";
 import elixirCards from "./sponsor-logos/elixir-cards.png";
 import tito from "./sponsor-logos/tito.svg";
+import tractManager from "./sponsor-logos/tract-manager.png";
+import chatWhiskey from "./sponsor-logos/chat-whiskey.png";
 import Button from "../Button";
 import Link from "gatsby-link";
 
@@ -169,49 +171,40 @@ const SubscriptionSection = () => (
           img {
             max-width: 190px;
             display: block;
-            margin: 0 auto;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 2rem;
           }
         `}
       >
         <h2>Elixir Champion</h2>
-        <img src={prag} css={"max-width: 200px;"} />
+        <img src={tractManager} />
+        <img src={tito} />
+        <img src={outlaws} />
+        <img src={chatWhiskey} />
+        <img src={elixirCards} />
         <img
           src={ambition}
           css={`
-            margin-bottom: 5rem !important;
+            margin-bottom: 0 !important;
           `}
         />
         <img
-          src={tito}
+          src={prag}
           css={`
-            position: relative;
-            bottom: 34px;
-            @media (min-width: 500px) {
-              margin-right: 50px;
-            }
+            margin-bottom: 0 !important;
           `}
         />
         <img
           src={codescience}
           css={`
-            max-width: 215px;
+            margin-bottom: 0 !important;
+            position: relative;
+            bottom: 47px;
           `}
         />
-        <img src={outlaws} />
-        <img
-          css={`
-            padding-top: 2rem;
-          `}
-          src={elixirCards}
-        />
-        <h4
-          css={`
-            margin-top: 3rem;
-          `}
-        >
-          Still a few slots available at this level.
-        </h4>
       </div>
+      <h4>Still a few slots available at this level.</h4>
       <Link to="/contact/">
         <Button className="button" text="Contact Us About Sponsoring" />
       </Link>
