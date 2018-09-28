@@ -13,6 +13,7 @@ import prag from "./sponsor-logos/prag.png";
 import ambition from "./sponsor-logos/ambition.png";
 import elixirCards from "./sponsor-logos/elixir-cards.png";
 import tito from "./sponsor-logos/tito.svg";
+import jointley from "./sponsor-logos/jointley.svg";
 import tractManager from "./sponsor-logos/tract-manager.png";
 import chatWhiskey from "./sponsor-logos/chat-whiskey.png";
 import Button from "../Button";
@@ -178,6 +179,7 @@ const SubscriptionSection = () => (
         `}
       >
         <h2>Elixir Champion</h2>
+        <img src={jointley} />
         <img src={tractManager} />
         <img src={tito} />
         <img src={outlaws} />
