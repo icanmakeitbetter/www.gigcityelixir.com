@@ -117,8 +117,8 @@ const SubscriptionSection = () => (
           src={icmib}
           css={`
             padding-bottom: 33px;
-            margin-left: 50px;
             @media (min-width: 500px) {
+              margin-left: 50px;
               max-width: 400px;
             }
           `}
