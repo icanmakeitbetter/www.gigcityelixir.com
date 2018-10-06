@@ -15,9 +15,7 @@ const WhyChattanooga = () => (
     header="Why Chattanooga?"
     subhead="Let us count the ways."
     suppressLine={true}
-    singleColumn={true}
-  >
-    <p style={{ color: "#fff", position: "absolute", left: "-99em" }}>Test</p>
+    singleColumn={true}>
     <Picture
       imgSrc={downtown}
       altText="Photograph of 1100 block of downtown chattanooga"
