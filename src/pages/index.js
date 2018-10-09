@@ -22,11 +22,11 @@ class BlogIndex extends React.Component {
         <JoseSection />
         <AboutUsSection />
         <SpeakerSection />
+        <ScheduleSection />
         <ProgramSection />
         <SponsorSection />
         <SubscriptionSection />
         <ScholarshipSection />
-        <ScheduleSection />
         <TicketSection />
         <HotelSection />
       </div>
