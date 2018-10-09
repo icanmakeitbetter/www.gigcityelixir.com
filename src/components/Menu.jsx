@@ -9,14 +9,16 @@ const ListLink = props => (
       margin: 0 1.5rem;
       margin-bottom: 0;
       padding: 12px 0;
-    `}>
+    `}
+  >
     <Link
       css={`
         color: ${consts.purple};
         font-family: "OdudoMono-Regular", sans-serif;
         text-decoration: none;
       `}
-      to={props.to}>
+      to={props.to}
+    >
       {props.children}
     </Link>
   </li>
@@ -30,9 +32,11 @@ const Menu = () => (
       list-style: none;
       margin: 3rem 0 10rem;
       text-align: center;
-    `}>
+    `}
+  >
     <ListLink to="/">Home</ListLink>
     <ListLink to="/program/">Program</ListLink>
+    <ListLink to="/schedule/">Schedule</ListLink>
     <ListLink to="/contact/">Contact</ListLink>
     <ListLink to="/coc/">CoC</ListLink>
     <ListLink to="/tickets/">Tickets</ListLink>
