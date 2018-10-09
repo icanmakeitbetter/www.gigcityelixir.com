@@ -16,6 +16,7 @@ import tito from "./sponsor-logos/tito.svg";
 import jointley from "./sponsor-logos/jointley.svg";
 import tractManager from "./sponsor-logos/tract-manager.png";
 import chatWhiskey from "./sponsor-logos/chat-whiskey.png";
+import scout from "./sponsor-logos/scout.jpg";
 import Button from "../Button";
 import Link from "gatsby-link";
 
@@ -169,6 +170,7 @@ const SubscriptionSection = () => (
       </div>
       <div
         css={`
+          padding-bottom: 2rem;
           img {
             max-width: 190px;
             display: block;
@@ -200,11 +202,11 @@ const SubscriptionSection = () => (
         <img
           src={codescience}
           css={`
-            margin-bottom: 0 !important;
-            position: relative;
-            bottom: 47px;
+            margin-bottom: -7px !important;
+            margin-top: -40px;
           `}
         />
+        <img src={scout} />
       </div>
       <h4>Still a few slots available at this level.</h4>
       <Link to="/contact/">

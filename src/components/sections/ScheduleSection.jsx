@@ -2,7 +2,7 @@ import React from "react";
 import SectionWrapper from "../SectionWrapper";
 
 const ScheduleSection = () => (
-  <SectionWrapper header="Schedule Outline" subhead="The schedule in brief.">
+  <SectionWrapper header="Schedule">
     <table
       css={`
         th,
