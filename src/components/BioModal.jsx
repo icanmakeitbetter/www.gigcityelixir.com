@@ -1,16 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
-import { css } from "emotion";
+import { css, injectGlobal } from "emotion";
 import Button from "./Button";
 import { purple } from "../styles/variables";
+
+injectGlobal`
+  .ReactModal__Overlay--after-open {
+    overflow-y: scroll !important;
+  }
+
+  .ReactModal__Content {
+    bottom: auto !important;
+  }
+`;
 
 const customStyles = {
   content: {
     top: "50%",
     left: "50%",
     right: "auto",
-    bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     maxWidth: "560px"
@@ -66,7 +75,8 @@ class BioModal extends React.Component {
               color: white;
               background: #772858;
             }
-          `}>
+          `}
+        >
           Bio
         </button>
         <Modal
@@ -74,15 +84,14 @@ class BioModal extends React.Component {
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel={this.props.bioName + " bio"}>
-          <div
-            css={`
-              max-height: 90vh;
-            `}>
+          contentLabel={this.props.bioName + " bio"}
+        >
+          <div>
             <div
               css={`
                 display: inline-block;
-              `}>
+              `}
+            >
               <img
                 css={`
                   width: 100px;
@@ -95,7 +104,8 @@ class BioModal extends React.Component {
               <div
                 css={`
                   float: left;
-                `}>
+                `}
+              >
                 <h2 ref={subtitle => (this.subtitle = subtitle)}>
                   {this.props.bioName} Contact & Bio
                 </h2>
@@ -119,7 +129,8 @@ class BioModal extends React.Component {
                 font-size: 24px;
                 height: 40px;
                 width: 100%;
-              `}>
+              `}
+            >
               close
             </button>
           </div>
