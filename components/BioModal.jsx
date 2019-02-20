@@ -1,17 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
-import { css, injectGlobal } from "emotion";
-import Button from "./Button";
+import { css } from "linaria";
 import { purple } from "../styles/variables";
 
-injectGlobal`
-  .ReactModal__Overlay--after-open {
-    overflow-y: scroll !important;
-  }
+const globals = css`
+  :global() {
+    .ReactModal__Overlay--after-open {
+      overflow-y: scroll !important;
+    }
 
-  .ReactModal__Content {
-    bottom: auto !important;
+    .ReactModal__Content {
+      bottom: auto !important;
+    }
   }
 `;
 

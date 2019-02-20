@@ -2,7 +2,13 @@ import React from "react";
 import { rhythm } from "../utils/typography";
 import * as consts from "../styles/variables";
 
-const SectionWrapper = ({ children, header, subhead, suppressLine, singleColumn }) => (
+const SectionWrapper = ({
+  children,
+  header,
+  subhead,
+  suppressLine,
+  singleColumn
+}) => (
   <section
     css={`
       @supports (display: grid) {
@@ -14,18 +20,25 @@ const SectionWrapper = ({ children, header, subhead, suppressLine, singleColumn 
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
       border-top: ${consts.purple} solid ${suppressLine ? "0" : "3"}px;
-    `}>
-    <div css={` max-width: 450px;`}>
+    `}
+  >
+    <div
+      css={`
+        max-width: 450px;
+      `}
+    >
       <h1
         css={`
           margin-bottom: ${rhythm(1 / 3)};
-        `}>
+        `}
+      >
         {header}
       </h1>
       <h5
         css={`
           letter-spacing: 1px;
-        `}>
+        `}
+      >
         {subhead}
       </h5>
     </div>

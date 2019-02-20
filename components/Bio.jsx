@@ -1,6 +1,5 @@
 import React from "react";
 import BioModal from "./BioModal";
-import { rhythm } from "../utils/typography";
 
 const Bio = ({
   name,
@@ -27,20 +26,24 @@ const Bio = ({
       src={pic}
       alt={alt}
     />
-    <p css={`
-      background-color: #772858;
-      border-top: 2px #772858 solid;
-      border-right: 2px #772858 solid;
-      border-left: 2px #772858 solid;
-      color: white;
-      font-family: "OdudoMono-Regular", sans-serif;
-      font-size: 15px;
-      letter-spacing: 1px;
-      margin-top: -9px;
-      margin-bottom: -2px;
-      padding-top: 3px;
-      padding-bottom: 5px;
-    `}>{name}</p>
+    <p
+      css={`
+        background-color: #772858;
+        border-top: 2px #772858 solid;
+        border-right: 2px #772858 solid;
+        border-left: 2px #772858 solid;
+        color: white;
+        font-family: "OdudoMono-Regular", sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: -9px;
+        margin-bottom: -2px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+      `}
+    >
+      {name}
+    </p>
     <BioModal
       bio={bio}
       pic={pic}
