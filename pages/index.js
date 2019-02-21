@@ -121,6 +121,9 @@ function Footer() {
     <div
       css={css`
         justify-self: end;
+        text-align: center;
+        border-bottom: ${typography.rhythm(1 / 2)} solid ${colors.blush};
+        padding: ${typography.rhythm(1)};
       `}
     >
       Home 2018 Etc
