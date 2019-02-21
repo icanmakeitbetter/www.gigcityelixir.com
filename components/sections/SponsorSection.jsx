@@ -3,7 +3,7 @@ import SectionWrapper from "../SectionWrapper";
 import { colors } from "../../utils/constants";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import Button from "../Button";
+import { buttonCss } from "../Button";
 import { typography } from "../../utils/typography";
 
 const platinumSponsors = css`
@@ -52,8 +52,8 @@ const SubscriptionSection = () => (
         </p>
       </Platinum>
       <h4>Still a few slots available at this level.</h4>
-      <a to="/contact/">
-        <Button className="button" text="Contact Us About Sponsoring" />
+      <a to="/contact/" css={buttonCss}>
+        Contact Us About Sponsoring
       </a>
     </div>
   </SectionWrapper>
