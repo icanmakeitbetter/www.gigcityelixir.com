@@ -1,12 +1,11 @@
 import React from "react";
 import SectionWrapper from "../SectionWrapper";
-import Button from "../Button";
-import Link from "gatsby-link";
 
 const ProgramSection = () => (
   <SectionWrapper
     header="Program"
-    subhead="A little more on conference programming.">
+    subhead="A little more on conference programming."
+  >
     <p>
       The software industry has about as many libraries and projects to help you
       get things done as it does programmers. Lots of conferences focus on
@@ -30,9 +29,9 @@ const ProgramSection = () => (
       New ideas and new friends await. Look forward to seeing you all in
       October!
     </p>
-    <Link to="/program/">
+    {/* <Link to="/program/">
       <Button className="button" text="Program In Depth" />
-    </Link>
+    </Link> */}
   </SectionWrapper>
 );
 

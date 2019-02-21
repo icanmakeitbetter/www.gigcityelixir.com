@@ -1,11 +1,12 @@
 import React from "react";
-import { purple, orange } from "../styles/variables";
+import { colors } from "../utils/constants";
+import { css } from "@emotion/core";
 
 const Button = ({ text, alert }) => (
   <button
-    css={`
-      background-color: ${alert ? orange : purple};
-      border-color: ${alert ? orange : purple};
+    css={css`
+      background-color: ${alert ? colors.peach : colors.plum};
+      border-color: ${alert ? colors.peach : colors.plum};
       border-radius: 3px;
       border-style: solid;
       color: white;
@@ -14,7 +15,8 @@ const Button = ({ text, alert }) => (
       font-size: 32px;
       height: 78px;
       width: 100%;
-    `}>
+    `}
+  >
     {text}
   </button>
 );
