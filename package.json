@@ -3,12 +3,16 @@
   "description": "The web site for Gig City Elixir conference",
   "version": "2.0.0",
   "dependencies": {
-    "linaria": "^1.1.0",
+    "@emotion/babel-preset-css-prop": "^10.0.7",
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "next": "^8.0.1",
     "next-fonts": "^0.17.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-modal": "^3.8.1"
+    "react-modal": "^3.8.1",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18"
   },
   "scripts": {
     "dev": "next",
