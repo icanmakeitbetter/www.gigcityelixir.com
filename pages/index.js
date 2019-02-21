@@ -7,6 +7,7 @@ import Head from "next/head";
 import AboutUsSection from "../components/sections/AboutUsSection";
 import ProgramSection from "../components/sections/ProgramSection";
 import SponsorSection from "../components/sections/SponsorSection";
+import HotelSection from "../components/sections/HotelSection";
 
 export default function Index() {
   return (
@@ -34,7 +35,8 @@ export default function Index() {
           <NewsLetterSignup />
         </Hero>
         <ProgramSection />
-        <SponsorSection /> Accomodations
+        <SponsorSection />
+        <HotelSection />
       </div>
       <Footer />
     </div>
