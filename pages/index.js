@@ -16,6 +16,8 @@ export default function Index() {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        max-width: 42em;
+        margin: 0 auto;
       `}
     >
       <div
