@@ -26,7 +26,7 @@ const platinumSponsors = css`
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Our Sponsors"
-    subhead="This conference brought to you in part by these fine folks."
+    subhead="This conference brought to you in part by these fine folks"
   >
     <div className={platinumSponsors}>
       <Heading>Platinum</Heading>
@@ -70,14 +70,14 @@ function Platinum({ img, name, url, children }) {
       css={css`
         border: ${typography.rhythm(1 / 32)} solid ${colors.peachy_plum};
         margin-bottom: ${typography.rhythm(1)};
-        padding: ${typography.rhythm(1 / 2 - 1 / 32)};
+        padding: ${typography.rhythm(1 - 1 / 32)};
         display: block;
         text-decoration: none;
 
         &:focus,
         &:hover {
           border-width: ${typography.rhythm(1 / 8)};
-          padding: ${typography.rhythm(1 / 2 - 1 / 8)};
+          padding: ${typography.rhythm(1 - 1 / 8)};
           border-color: ${colors.plum};
         }
 

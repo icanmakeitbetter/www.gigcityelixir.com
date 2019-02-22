@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { colors } from "../utils/constants";
 import { GlobalStyles, typography } from "../utils/typography";
+import { breakpoint, points } from "../utils/breakpoints";
 import { TypographyStyle } from "react-typography";
 import Head from "next/head";
 import AboutUsSection from "../components/sections/AboutUsSection";
@@ -30,14 +31,62 @@ export default function Index() {
         </Head>
         <GlobalStyles />
         <Hero>
-          <Header>
-            <Logo /> <DateAndVenue />
-          </Header>
-          <AboutUsSection />
-          <NewsLetterSignup />
+          <div
+            className="limit-width"
+            css={css`
+              @supports (display: grid) {
+                ${breakpoint("medium")} {
+                  display: grid;
+                  /* 3 rows, 3 cols */
+                  grid-template-columns: 1fr 1fr 1fr;
+                  grid-template-rows: auto auto auto;
+                  grid-column-gap: ${typography.rhythm(3)};
+                  max-width: ${points.maxWidth};
+                  margin: 0px auto;
+                  grid-template-areas:
+                    "left top top"
+                    "left mid mid"
+                    "left bot bot";
+                }
+              }
+            `}
+          >
+            <div
+              css={css`
+                @supports (display: grid) {
+                  ${breakpoint("medium")} {
+                    margin: 0;
+                    grid-area: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                  }
+                }
+              `}
+            >
+              <Logo />
+            </div>
+            <DateAndVenue />
+            <div
+              css={css`
+                grid-area: mid;
+                background-color: ${colors.plum};
+                @supports (display: grid) {
+                  ${breakpoint("medium")} {
+                    box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+                  }
+                }
+              `}
+            >
+              <AboutUsSection />
+            </div>
+            <NewsLetterSignup />
+          </div>
         </Hero>
         <ProgramSection />
+        <Hr />
         <SponsorSection />
+        <Hr />
         <HotelSection />
       </div>
       <Footer />
@@ -51,25 +100,23 @@ function Hero({ children }) {
       css={css`
         background-color: ${colors.plum};
         margin-bottom: ${typography.rhythm(2)};
-        box-shadow: 0 0 0 0.5em ${colors.plum},
-          0 0.5em 0 0.5em ${colors.peachy_plum},
-          0 1em 0 0.5em ${colors.plummy_peach}, 0 1.5em 0 0.5em ${colors.peach};
+        box-shadow: 0 0 0 0.5em ${colors.peachy_plum},
+          0 0.5em 0 0.5em ${colors.plummy_peach}, 0 1em 0 0.5em ${colors.peach};
         color: ${colors.blush};
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            background-image: url("/static/topo.png");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
       `}
     >
       {children}
     </div>
   );
 }
-
-const Header = styled.header`
-  background-color: ${colors.plum};
-  color: white;
-  display: flex;
-  align-items: center;
-  margin-bottom: ${typography.rhythm(1)};
-  padding: ${typography.rhythm(1)};
-`;
 
 function Logo() {
   return (
@@ -84,13 +131,24 @@ function Logo() {
         margin: 0;
         padding: 0.5em 0.125em 0.5em 0;
         border-right: 0.1em solid ${colors.peach};
-        margin-right: 2rem;
         font-size: 1.75rem;
         span {
           padding-left: 1.5ch;
         }
         .l {
           padding-left: 0;
+        }
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            font-size: 3rem;
+            background: ${colors.plum};
+            padding-left: ${typography.rhythm(1 / 2)};
+            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+          }
+          ${breakpoint("large")} {
+            padding-left: ${typography.rhythm(1)};
+            font-size: 4rem;
+          }
         }
       `}
     >
@@ -108,9 +166,25 @@ function DateAndVenue() {
       css={css`
         text-transform: uppercase;
         letter-spacing: 0.3333ch;
+        margin: ${typography.rhythm(1)};
+        background-color: ${colors.plum};
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            margin: ${typography.rhythm(3)} 0 ${typography.rhythm(1)};
+            grid-area: top;
+            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+          }
+        }
       `}
     >
-      <span css={{ color: colors.peach }}>October</span> 31, 2019
+      <span
+        css={css`
+          color: ${colors.peach};
+        `}
+      >
+        October
+      </span>{" "}
+      31, 2019
       <br />
       The Edney Innovation Center
       <br />
@@ -121,16 +195,19 @@ function DateAndVenue() {
 
 function Footer() {
   return (
-    <div
-      css={css`
-        justify-self: end;
-        text-align: center;
-        border-bottom: ${typography.rhythm(1 / 2)} solid ${colors.blush};
-        padding: ${typography.rhythm(1)};
-      `}
-    >
-      Home 2018 Etc
-    </div>
+    <footer>
+      <Hr />
+      <div
+        css={css`
+          justify-self: end;
+          text-align: center;
+          border-bottom: ${typography.rhythm(1 / 2)} solid ${colors.blush};
+          padding: ${typography.rhythm(1)};
+        `}
+      >
+        Home 2018 Etc
+      </div>
+    </footer>
   );
 }
 
@@ -151,15 +228,25 @@ function NewsLetterSignup() {
       css={css`
         margin: 0;
         padding: ${typography.rhythm(1)};
+        background-color: ${colors.plum};
+
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            padding: 0;
+            grid-area: bot;
+            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+            margin-bottom: ${typography.rhythm(3)};
+          }
+        }
       `}
     >
       <label
-        for="tlemail"
+        htmlFor="tlemail"
         css={{ display: "block", fontWeight: "bold", color: "white" }}
       >
         Early bird tickets coming soon!
       </label>
-      <label for="tlemail">
+      <label htmlFor="tlemail">
         Sign up for our newsletter and be notified of ticketing information and
         more.
       </label>
@@ -199,3 +286,15 @@ function NewsLetterSignup() {
     </form>
   );
 }
+
+const Hr = styled.hr`
+  border: 0;
+  border-top: 2px solid ${colors.plum};
+  margin: ${typography.rhythm(1)} ${typography.rhythm(1)} 0;
+  @supports (display: grid) {
+    ${breakpoint("medium")} {
+      max-width: ${points.maxWidth};
+      margin: ${typography.rhythm(1)} auto 0;
+    }
+  }
+`;

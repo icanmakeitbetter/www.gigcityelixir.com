@@ -1,53 +1,84 @@
 import { colors } from "../utils/constants";
 import { css } from "@emotion/core";
 import { typography } from "../utils/typography";
+import { breakpoint, points } from "../utils/breakpoints";
 const { rhythm } = typography;
 
-const SectionWrapper = ({
-  children,
-  header,
-  subhead,
-  suppressLine,
-  singleColumn
-}) => (
+export const grid = css`
+  @supports (display: grid) {
+    ${breakpoint("medium")} {
+      display: grid;
+      grid: "title content content";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: ${rhythm(3)};
+      max-width: ${points.maxWidth};
+      margin: 0px auto;
+    }
+  }
+`;
+
+const SectionWrapper = ({ children, header, subhead }) => (
   <section
     css={css`
-      @supports (display: grid) {
-        @media (min-width: 1230px) {
-          display: grid;
-          grid-template-columns: ${singleColumn ? "unset" : "repeat(2, 1fr)"};
-        }
-      }
       margin-left: ${rhythm(1)};
       margin-right: ${rhythm(1)};
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
-      border-top: ${colors.plum} solid ${suppressLine ? "0" : "3"}px;
     `}
   >
-    <div>
-      <h2
+    <div css={grid}>
+      <div
         css={css`
-          text-transform: uppercase;
-          margin-bottom: ${typography.rhythm(1 / 4)};
-          letter-spacing: 0.25ch;
-          /* color: ${colors.plum}; */
+          @supports (display: grid) {
+            ${breakpoint("medium")} {
+              grid-area: title;
+              text-align: right;
+            }
+          }
         `}
       >
-        {header}
-      </h2>
-      <p
-        className="ff-odudomono-l"
+        <SectionHeader>{header}</SectionHeader>
+        <SectionSubHeader>{subhead}</SectionSubHeader>
+      </div>
+      <div
         css={css`
-          letter-spacing: 0.25ch;
-          /* color: ${colors.plum}; */
+          grid-area: content;
         `}
       >
-        {subhead}
-      </p>
+        {children}
+      </div>
     </div>
-    <div className="body-group">{children}</div>
   </section>
 );
 
 export default SectionWrapper;
+
+export function SectionHeader({ children }) {
+  return (
+    <h2
+      css={css`
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: 0.25ch;
+        line-height: 1.075;
+      `}
+    >
+      {children}
+    </h2>
+  );
+}
+
+export function SectionSubHeader({ children }) {
+  return (
+    <p
+      className="ff-odudomono-l"
+      css={css`
+        letter-spacing: 0.25ch;
+        opacity: 0.75;
+      `}
+    >
+      {children}
+    </p>
+  );
+}

@@ -5,13 +5,15 @@ import { orange } from "../../styles/variables";
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Get the Gig City Elixir Newsletter"
-    subhead="It features our infrequent announcements and info.">
+    subhead="It features our infrequent announcements and info"
+  >
     <p
       css={`
         font-family: "OdudoMono-Regular", sans-serif;
         color: ${orange};
         font-size: 20px;
-      `}>
+      `}
+    >
       Directly from the minds of the Gig City Elixir conference organizers to
       you.
     </p>
@@ -26,7 +28,8 @@ const SubscriptionSection = () => (
           "scrollbars=yes,width=800,height=600"
         );
         return true;
-      }}>
+      }}
+    >
       <input
         type="email"
         name="email"

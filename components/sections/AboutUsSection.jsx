@@ -1,11 +1,25 @@
 import React from "react";
-import SectionWrapper from "../SectionWrapper";
+import { SectionHeader, SectionSubHeader } from "../SectionWrapper";
+import { css } from "@emotion/core";
+import { typography } from "../../utils/typography";
+import { breakpoint } from "../../utils/breakpoints";
 
 const AboutUsSection = () => (
-  <SectionWrapper
-    header="About Us"
-    subhead="A message from conference organizer Bruce Tate."
+  <section
+    css={css`
+      padding: ${typography.rhythm(1)};
+      @supports (display: grid) {
+        ${breakpoint("medium")} {
+          margin: ${typography.rhythm(1)} 0 ${typography.rhythm(2)};
+          padding: 0;
+        }
+      }
+    `}
   >
+    <SectionHeader>About Us</SectionHeader>
+    <SectionSubHeader>
+      A message from conference organizer Bruce Tate
+    </SectionSubHeader>
     <p>
       Gig City Elixir is a different kind of programming conference in beautiful
       Chattanooga, Tennessee. We will focus on sessions that are different from
@@ -19,7 +33,7 @@ const AboutUsSection = () => (
       that will make you a better programmer, regardless of the languages and
       tools you use at work today.
     </p>
-  </SectionWrapper>
+  </section>
 );
 
 export default AboutUsSection;

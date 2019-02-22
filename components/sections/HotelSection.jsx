@@ -3,7 +3,7 @@ import SectionWrapper from "../SectionWrapper";
 import { buttonCss } from "../Button";
 
 const HotelSection = () => (
-  <SectionWrapper header="Hotel Discount" subhead="Discount hotel offer.">
+  <SectionWrapper header="Hotel Discount" subhead="Discount hotel offer">
     <p>
       Discounted rooms are offered by The Moxy for{" "}
       <strong>$159/$169 per night</strong>. The deadline for reservations is{" "}

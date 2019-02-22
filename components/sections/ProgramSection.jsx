@@ -3,8 +3,8 @@ import SectionWrapper from "../SectionWrapper";
 
 const ProgramSection = () => (
   <SectionWrapper
-    header="Program"
-    subhead="A little more on conference programming."
+    header="The Program"
+    subhead="A little more on conference programming"
   >
     <p>
       The software industry has about as many libraries and projects to help you

@@ -8,6 +8,7 @@ import omr2 from "../static/fonts/odudo-mono-regular.woff2";
 import omsb from "../static/fonts/odudo-mono-semi-bold.woff";
 import omsb2 from "../static/fonts/odudo-mono-semi-bold.woff2";
 import { colors } from "./constants";
+import { points } from "./breakpoints";
 
 export const GlobalStyles = () => (
   <Global
@@ -73,17 +74,10 @@ export const GlobalStyles = () => (
     width: 100%;
   } */
 
-  /* .limit-width {
-    max-width: 625px;
+  .limit-width {
+    max-width: ${points.maxWidth};
     margin: 0px auto;
-    padding: 0 20px;
-
-    @supports (display: grid) {
-      @media (min-width: 1230px) {
-        max-width: 1230px;
-      }
-    }
-  } */
+  }
 `}
   />
 );
