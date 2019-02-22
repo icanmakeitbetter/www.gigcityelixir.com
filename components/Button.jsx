@@ -11,7 +11,7 @@ export const buttonCss = css`
   cursor: pointer;
   font-family: "OdudoMono-Regular", sans-serif;
   font-size: ${typography.rhythm(1.25)};
-  padding: ${typography.rhythm(3 / 4)} 0;
+  padding: ${typography.rhythm(3 / 4)};
   width: 100%;
   display: block;
   text-align: center;

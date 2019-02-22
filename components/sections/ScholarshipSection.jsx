@@ -6,7 +6,7 @@ import Link from "gatsby-link";
 const ScholarshipSection = () => (
   <SectionWrapper
     header="Scholarships"
-    subhead="Because we're stronger together."
+    subhead="Because we're stronger together"
   >
     <p>
       We are making Gig City Elixir a diverse experience. We are doing this by

@@ -4,7 +4,7 @@ import Button from "../Button";
 import Link from "gatsby-link";
 
 const ScheduleSection = () => (
-  <SectionWrapper header="Schedule Outline" subhead="The schedule in brief.">
+  <SectionWrapper header="Schedule Outline" subhead="The schedule in brief">
     <table
       css={`
         th,

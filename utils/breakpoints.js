@@ -1,10 +1,9 @@
-const breakpoints = {
+export const points = {
   medium: "42rem",
+  maxWidth: "63rem",
   large: "84rem"
 };
 
-export function breakpoint(size, children) {
-  return `@media screen and (min-width: ${breakpoints[size]}) {
-    ${children};
-  }`;
+export function breakpoint(size) {
+  return `@media screen and (min-width: ${points[size]})`;
 }
