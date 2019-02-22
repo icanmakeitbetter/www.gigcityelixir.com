@@ -16,7 +16,6 @@ export default function Index() {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        max-width: 42em;
         margin: 0 auto;
       `}
     >
@@ -27,6 +26,7 @@ export default function Index() {
       >
         <Head>
           <TypographyStyle typography={typography} />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <GlobalStyles />
         <Hero>
@@ -82,9 +82,10 @@ function Logo() {
         letter-spacing: 0.5ch;
         line-height: 0.95;
         margin: 0;
-        padding: 0.25em 0.125em 0.25em 0;
+        padding: 0.5em 0.125em 0.5em 0;
         border-right: 0.1em solid ${colors.peach};
         margin-right: 2rem;
+        font-size: 1.75rem;
         span {
           padding-left: 1.5ch;
         }

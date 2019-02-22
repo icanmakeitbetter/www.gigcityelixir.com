@@ -88,10 +88,8 @@ export const GlobalStyles = () => (
   />
 );
 
-// TODO move above inputs and place them in their own file
-
 export const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   baseLineHeight: 1.45,
   scaleRatio: 1.5,
   headerFontFamily: ["OdudoMono-SemiBold", "Menlo", "Courier", "monospace"],
