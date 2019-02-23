@@ -1,10 +1,8 @@
 import React from "react";
-import Link from "gatsby-link";
-import SectionWrapper from "../components/SectionWrapper";
 import Script from "react-load-script";
+import Page from "../components/Page";
 
 export default class Tickets extends React.Component {
-
   handleScriptLoad() {
     TitoWidget.buildWidgets();
   }
@@ -15,10 +13,9 @@ export default class Tickets extends React.Component {
 
   render() {
     return (
-      <SectionWrapper
-        header="Tickets"
-        subhead="Secure yours today."
-        suppressLine={true}>
+      <Page>
+        <h1>Tickets</h1>
+        <h2>Secure yours today.</h2>
         <Script
           url="https://js.tito.io/v1"
           onLoad={this.handleScriptLoad.bind(this)}
@@ -342,15 +339,17 @@ export default class Tickets extends React.Component {
               text-align: center;
               width: 100%;
             }
-          `}>
+          `}
+        >
           <div
             css={`
               min-height: 335px;
-            `}>
+            `}
+          >
             <tito-widget event="gig-city-elixir/2018" />
           </div>
         </div>
-      </SectionWrapper>
+      </Page>
     );
   }
 }

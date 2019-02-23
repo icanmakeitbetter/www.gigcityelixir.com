@@ -6,10 +6,10 @@
     "@emotion/babel-preset-css-prop": "^10.0.7",
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "next": "^8.0.1",
+    "next": "^8.0.2",
     "next-fonts": "^0.17.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-modal": "^3.8.1",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18"
@@ -17,6 +17,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   }
 }

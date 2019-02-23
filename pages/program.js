@@ -1,12 +1,10 @@
 import React from "react";
-import Link from "gatsby-link";
-import SectionWrapper from "../components/SectionWrapper";
+import Page from "../components/Page";
 
 const Program = () => (
-  <SectionWrapper
-    header="Program"
-    subhead="A word from conference founder and head organizer Bruce Tate."
-    suppressLine={true}>
+  <Page>
+    <h1>Program</h1>
+    <h2>A word from conference founder and head organizer Bruce Tate.</h2>
     <p>
       Some of the best programmers in the world are coming to Chattanooga, and
       you’ll want to be there to hear them.
@@ -100,7 +98,7 @@ const Program = () => (
     <p>Can’t wait to see all of you there.</p>
 
     <p>~ Bruce Tate</p>
-  </SectionWrapper>
+  </Page>
 );
 
 export default Program;

@@ -1,14 +1,17 @@
-import styled from "@emotion/styled";
 import { css } from "@emotion/core";
-import { colors } from "../utils/constants";
-import { GlobalStyles, typography } from "../utils/typography";
-import { breakpoint, points } from "../utils/breakpoints";
-import { TypographyStyle } from "react-typography";
 import Head from "next/head";
+import { TypographyStyle } from "react-typography";
+import DateAndVenue from "../components/DateAndVenue";
+import Footer from "../components/Footer";
+import Logo from "../components/Logo";
+import Hr from "../components/Hr";
 import AboutUsSection from "../components/sections/AboutUsSection";
+import HotelSection from "../components/sections/HotelSection";
 import ProgramSection from "../components/sections/ProgramSection";
 import SponsorSection from "../components/sections/SponsorSection";
-import HotelSection from "../components/sections/HotelSection";
+import { breakpoint, points } from "../utils/breakpoints";
+import { colors } from "../utils/constants";
+import { GlobalStyles, typography } from "../utils/typography";
 
 export default function Index() {
   return (
@@ -118,99 +121,6 @@ function Hero({ children }) {
   );
 }
 
-function Logo() {
-  return (
-    <h1
-      className="ff-odudomono-r"
-      css={css`
-        display: flex;
-        flex-direction: column;
-        text-transform: uppercase;
-        letter-spacing: 0.5ch;
-        line-height: 0.95;
-        margin: 0;
-        padding: 0.5em 0.125em 0.5em 0;
-        border-right: 0.1em solid ${colors.peach};
-        font-size: 1.75rem;
-        span {
-          padding-left: 1.5ch;
-        }
-        .l {
-          padding-left: 0;
-        }
-        @supports (display: grid) {
-          ${breakpoint("medium")} {
-            font-size: 3rem;
-            background: ${colors.plum};
-            padding-left: ${typography.rhythm(1 / 2)};
-            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
-          }
-          ${breakpoint("large")} {
-            padding-left: ${typography.rhythm(1)};
-            font-size: 4rem;
-          }
-        }
-      `}
-    >
-      <span>Gig</span> <span className="l">City</span>{" "}
-      <span className="l">Eli</span>
-      <span>xir</span>
-    </h1>
-  );
-}
-
-function DateAndVenue() {
-  return (
-    <div
-      className="ff-odudomono-l"
-      css={css`
-        text-transform: uppercase;
-        letter-spacing: 0.3333ch;
-        margin: ${typography.rhythm(1)};
-        background-color: ${colors.plum};
-        @supports (display: grid) {
-          ${breakpoint("medium")} {
-            margin: ${typography.rhythm(3)} 0 ${typography.rhythm(1)};
-            grid-area: top;
-            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
-          }
-        }
-      `}
-    >
-      <span
-        css={css`
-          color: ${colors.peach};
-        `}
-      >
-        October
-      </span>{" "}
-      31, 2019
-      <br />
-      The Edney Innovation Center
-      <br />
-      Chattanooga, TN
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <Hr />
-      <div
-        css={css`
-          justify-self: end;
-          text-align: center;
-          border-bottom: ${typography.rhythm(1 / 2)} solid ${colors.blush};
-          padding: ${typography.rhythm(1)};
-        `}
-      >
-        Home 2018 Etc
-      </div>
-    </footer>
-  );
-}
-
 function NewsLetterSignup() {
   return (
     <form
@@ -286,15 +196,3 @@ function NewsLetterSignup() {
     </form>
   );
 }
-
-const Hr = styled.hr`
-  border: 0;
-  border-top: 2px solid ${colors.plum};
-  margin: ${typography.rhythm(1)} ${typography.rhythm(1)} 0;
-  @supports (display: grid) {
-    ${breakpoint("medium")} {
-      max-width: ${points.maxWidth};
-      margin: ${typography.rhythm(1)} auto 0;
-    }
-  }
-`;

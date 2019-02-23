@@ -1,21 +1,18 @@
 import React from "react";
-import Link from "gatsby-link";
-import SectionWrapper from "../components/SectionWrapper";
 import Picture from "../components/Picture";
-import downtown from "./why-chattanooga-images/downtown-scene-at-sunset.jpg";
-import venue from "./why-chattanooga-images/aquarium-river-venue.jpg";
-import hunter from "./why-chattanooga-images/hunter-art-river.jpg";
-import mhunter from "./why-chattanooga-images/maggie-hunter.jpg";
-import overlook from "./why-chattanooga-images/overlooking-downtown.jpg";
+import Page from "../components/Page";
 
+const downtown = "/static/why-chattanooga-images/downtown-scene-at-sunset.jpg";
+const venue = "/static/why-chattanooga-images/aquarium-river-venue.jpg";
+const hunter = "/static/why-chattanooga-images/hunter-art-river.jpg";
+const mhunter = "/static/why-chattanooga-images/maggie-hunter.jpg";
+const overlook = "/static/why-chattanooga-images/overlooking-downtown.jpg";
 const andrewsLink = "https://www.perfectedperspectives.com/";
 
 const WhyChattanooga = () => (
-  <SectionWrapper
-    header="Why Chattanooga?"
-    subhead="Let us count the ways."
-    suppressLine={true}
-    singleColumn={true}>
+  <Page>
+    <h1>Why Chattanooga?</h1>
+    <h2>Let us count the ways.</h2>
     <Picture
       imgSrc={downtown}
       altText="Photograph of 1100 block of downtown chattanooga"
@@ -55,7 +52,7 @@ const WhyChattanooga = () => (
       caption="Pulling back a bit you can get an overview of Downtown Chattanooga and see it is nestled up next to the river."
       photographer="Maggie Tate"
     />
-  </SectionWrapper>
+  </Page>
 );
 
 export default WhyChattanooga;
