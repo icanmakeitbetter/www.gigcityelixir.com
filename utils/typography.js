@@ -85,7 +85,7 @@ export const GlobalStyles = () => (
 export const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.45,
-  scaleRatio: 1.5,
+  scaleRatio: 3.3333,
   headerFontFamily: ["OdudoMono-SemiBold", "Menlo", "Courier", "monospace"],
   bodyFontFamily: [
     "-apple-system",
