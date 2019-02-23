@@ -12,7 +12,7 @@ const andrewsLink = "https://www.perfectedperspectives.com/";
 const WhyChattanooga = () => (
   <Page>
     <h1>Why Chattanooga?</h1>
-    <h2>Let us count the ways.</h2>
+    <p>Let us count the ways.</p>
     <Picture
       imgSrc={downtown}
       altText="Photograph of 1100 block of downtown chattanooga"
