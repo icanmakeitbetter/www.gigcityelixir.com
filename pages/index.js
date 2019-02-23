@@ -67,9 +67,34 @@ export default function Index() {
                 }
               `}
             >
-              <Logo />
+              <Logo
+                extraCss={css`
+                  @supports (display: grid) {
+                    ${breakpoint("medium")} {
+                      font-size: 3rem;
+                      background: ${colors.plum};
+                      padding-left: ${typography.rhythm(1 / 2)};
+                      box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+                    }
+                    ${breakpoint("large")} {
+                      padding-left: ${typography.rhythm(1)};
+                      font-size: 4rem;
+                    }
+                  }
+                `}
+              />
             </div>
-            <DateAndVenue />
+            <DateAndVenue
+              extraCss={css`
+                @supports (display: grid) {
+                  ${breakpoint("medium")} {
+                    margin: ${typography.rhythm(3)} 0 ${typography.rhythm(1)};
+                    grid-area: top;
+                    box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+                  }
+                }
+              `}
+            />
             <div
               css={css`
                 grid-area: mid;

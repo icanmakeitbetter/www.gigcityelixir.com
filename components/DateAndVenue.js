@@ -1,9 +1,8 @@
 import { css } from "@emotion/core";
-import { breakpoint } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { typography } from "../utils/typography";
 
-export default function DateAndVenue() {
+export default function DateAndVenue({ extraCss }) {
   return (
     <div
       className="ff-odudomono-l"
@@ -12,13 +11,7 @@ export default function DateAndVenue() {
         letter-spacing: 0.3333ch;
         margin: ${typography.rhythm(1)};
         background-color: ${colors.plum};
-        /* @supports (display: grid) {
-          ${breakpoint("medium")} {
-            margin: ${typography.rhythm(3)} 0 ${typography.rhythm(1)};
-            grid-area: top;
-            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
-          }
-        } */
+        ${extraCss}
       `}
     >
       <span

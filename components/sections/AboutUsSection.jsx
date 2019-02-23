@@ -16,8 +16,18 @@ const AboutUsSection = () => (
       }
     `}
   >
-    <SectionHeader>About Us</SectionHeader>
-    <SectionSubHeader>
+    <SectionHeader
+      extraCss={css`
+        color: white;
+      `}
+    >
+      About Us
+    </SectionHeader>
+    <SectionSubHeader
+      extraCss={css`
+        color: white;
+      `}
+    >
       A message from conference organizer Bruce Tate
     </SectionSubHeader>
     <p>

@@ -54,7 +54,7 @@ const SectionWrapper = ({ children, header, subhead }) => (
 
 export default SectionWrapper;
 
-export function SectionHeader({ children }) {
+export function SectionHeader({ children, extraCss }) {
   return (
     <h2
       css={css`
@@ -62,6 +62,9 @@ export function SectionHeader({ children }) {
         margin-bottom: 0;
         letter-spacing: 0.25ch;
         line-height: 1.075;
+        font-size: 1.25rem;
+        color: ${colors.plum};
+        ${extraCss}
       `}
     >
       {children}
@@ -69,13 +72,15 @@ export function SectionHeader({ children }) {
   );
 }
 
-export function SectionSubHeader({ children }) {
+export function SectionSubHeader({ children, extraCss }) {
   return (
     <p
       className="ff-odudomono-l"
       css={css`
         letter-spacing: 0.25ch;
         opacity: 0.75;
+        color: ${colors.ash};
+        ${extraCss}
       `}
     >
       {children}
