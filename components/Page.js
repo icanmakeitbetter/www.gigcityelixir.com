@@ -3,8 +3,7 @@ import Footer from "./Footer";
 import Head from "next/head";
 import { TypographyStyle } from "react-typography";
 import { css } from "@emotion/core";
-import { breakpoint, points } from "../utils/breakpoints";
-import { colors } from "../utils/constants";
+import { points } from "../utils/breakpoints";
 import { GlobalStyles, typography } from "../utils/typography";
 import Column from "./Column";
 
