@@ -14,14 +14,9 @@ export default function DateAndVenue({ extraCss }) {
         ${extraCss}
       `}
     >
-      <span
-        css={css`
-          color: ${colors.peach};
-        `}
-      >
-        October
-      </span>{" "}
-      31, 2019
+      <span className="c-peach">Training</span> Thursday 10/17
+      <br />
+      <span className="c-peach">Conference</span> Friday 10/18 - Saturday 10/19
       <br />
       The Edney Innovation Center
       <br />

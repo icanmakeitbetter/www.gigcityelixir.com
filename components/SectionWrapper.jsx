@@ -44,6 +44,11 @@ const SectionWrapper = ({ children, header, subhead }) => (
       <div
         css={css`
           grid-area: content;
+          @supports (display: grid) {
+            ${breakpoint("medium")} {
+              padding: 0 ${rhythm(2)};
+            }
+          }
         `}
       >
         {children}

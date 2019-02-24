@@ -46,6 +46,9 @@ export const GlobalStyles = () => (
   .ff-odudomono-sb {
     font-family: "OdudoMono-SemiBold";
   }
+
+  .c-peach { color: ${colors.peach}; }
+
   html,
   body {
     padding: 0;
