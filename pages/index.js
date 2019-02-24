@@ -88,9 +88,10 @@ export default function Index() {
               extraCss={css`
                 @supports (display: grid) {
                   ${breakpoint("medium")} {
-                    margin: ${typography.rhythm(3)} 0 ${typography.rhythm(1)};
+                    margin: ${typography.rhythm(3)} 0 0;
                     grid-area: top;
-                    box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+                    padding: ${typography.rhythm(2)};
+              }; */
                   }
                 }
               `}
@@ -99,11 +100,6 @@ export default function Index() {
               css={css`
                 grid-area: mid;
                 background-color: ${colors.plum};
-                @supports (display: grid) {
-                  ${breakpoint("medium")} {
-                    box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
-                  }
-                }
               `}
             >
               <AboutUsSection />
@@ -133,10 +129,13 @@ function Hero({ children }) {
         color: ${colors.blush};
         @supports (display: grid) {
           ${breakpoint("medium")} {
+            box-shadow: 0 1em 0 1em ${colors.peachy_plum},
+              0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
             background-image: url("/static/topo.png");
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: cover;
+            margin-bottom: ${typography.rhythm(5)};
           }
         }
       `}
@@ -169,8 +168,9 @@ function NewsLetterSignup() {
           ${breakpoint("medium")} {
             padding: 0;
             grid-area: bot;
-            box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+            /* box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum}; */
             margin-bottom: ${typography.rhythm(3)};
+            padding: 0 ${typography.rhythm(2)} ${typography.rhythm(2)};
           }
         }
       `}
@@ -214,6 +214,7 @@ function NewsLetterSignup() {
             color: white;
             background-color: transparent;
             padding: ${typography.rhythm(1 / 4)};
+            margin-bottom: 0;
           `}
         />
       </div>

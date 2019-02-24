@@ -11,7 +11,7 @@ const AboutUsSection = () => (
       @supports (display: grid) {
         ${breakpoint("medium")} {
           margin: ${typography.rhythm(1)} 0 ${typography.rhythm(2)};
-          padding: 0;
+          padding: 0 ${typography.rhythm(2)};
         }
       }
     `}

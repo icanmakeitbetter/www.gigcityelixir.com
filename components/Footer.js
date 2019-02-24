@@ -22,10 +22,18 @@ export default function Footer({ extraCss }) {
           }
         `}
       >
-        <Link href="/">Home</Link>
-        <Link href="/coc">CoC</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/why-chattanooga">Why Chattanooga?</Link>
+        <Link href="/" prefetch>
+          <a href="/">Home</a>
+        </Link>
+        <Link href="/coc" prefetch>
+          <a href="/coc">CoC</a>
+        </Link>
+        <Link href="/contact" prefetch>
+          <a href="/contact">Contact</a>
+        </Link>
+        <Link href="/why-chattanooga" prefetch>
+          <a href="/why-chattanooga">Why Chattanooga?</a>
+        </Link>
       </div>
     </footer>
   );
