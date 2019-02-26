@@ -18,13 +18,14 @@ export const grid = css`
   }
 `;
 
-const SectionWrapper = ({ children, header, subhead }) => (
+const SectionWrapper = ({ children, header, subhead, extraCss }) => (
   <section
     css={css`
       margin-left: ${rhythm(1)};
       margin-right: ${rhythm(1)};
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
+      ${extraCss}
     `}
   >
     <div css={grid}>

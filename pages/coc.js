@@ -4,7 +4,7 @@ import Page from "../components/Page";
 
 export default function Coc() {
   return (
-    <Page>
+    <Page title="Code of Conduct - Gig City Elixir">
       <h1>Code of Conduct</h1>
       <p>Guidelines to follow.</p>
       <dl>

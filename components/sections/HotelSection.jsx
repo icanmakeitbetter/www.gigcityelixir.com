@@ -3,17 +3,25 @@ import SectionWrapper from "../SectionWrapper";
 import { buttonCss } from "../Button";
 
 const HotelSection = () => (
-  <SectionWrapper header="Hotel Discount" subhead="Discount hotel offer">
+  <SectionWrapper
+    header="Accomodations"
+    subhead="Book a room at the Moxy at our conference rate"
+  >
     <p>
-      Discounted rooms are offered by The Moxy for{" "}
-      <strong>$159/$169 per night</strong>. The deadline for reservations is{" "}
-      <strong>September 26</strong>.
+      We're excited to announce the Moxy as the hotel partner for GigCityElixir.
+      This great new boutique hotel offers an unforgettable experience, from the
+      check in experience with a signature cocktail to one of the most unique
+      meeting areas in the city. In the midst of the exciting Southside, the
+      hotel is a few minutes walk from the conference venue (or a quick shuttle
+      ride), and also right on top of the landmark Chattanooga Choo Choo Hotel.
+      It also is a few minutes walk from the finest restaurants in the city,
+      live music, and more.
     </p>
     <a
-      href="https://www.marriott.com/hotels/travel/chaox-moxy-chattanooga-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"
+      href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1550506438607&key=GRP&app=resvlink"
       css={buttonCss}
     >
-      Discounted Hotel Rooms
+      Book a Room at the Moxy
     </a>
   </SectionWrapper>
 );

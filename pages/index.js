@@ -9,9 +9,13 @@ import AboutUsSection from "../components/sections/AboutUsSection";
 import HotelSection from "../components/sections/HotelSection";
 import ProgramSection from "../components/sections/ProgramSection";
 import SponsorSection from "../components/sections/SponsorSection";
+import SpeakerSection from "../components/sections/SpeakerSection";
+import VenueSection from "../components/sections/VenueSection";
+import StartupWeekSection from "../components/sections/StartupWeekSection";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { GlobalStyles, typography } from "../utils/typography";
+import { buttonCss, reverseButtonCss } from "../components/Button";
 
 export default function Index() {
   return (
@@ -31,6 +35,8 @@ export default function Index() {
         <Head>
           <TypographyStyle typography={typography} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Gig City Elixir</title>
+          <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
         </Head>
         <GlobalStyles />
         <Hero>
@@ -96,8 +102,8 @@ export default function Index() {
                   ${breakpoint("medium")} {
                     margin: ${typography.rhythm(3)} 0 0;
                     grid-area: top;
-                    padding: ${typography.rhythm(2)};
-              }; */
+                    padding: ${typography.rhythm(2)} ${typography.rhythm(2)}
+                      ${typography.rhythm(1)};
                   }
                 }
               `}
@@ -110,14 +116,32 @@ export default function Index() {
             >
               <AboutUsSection />
             </div>
-            <NewsLetterSignup />
+            <div
+              css={css`
+                @supports (display: grid) {
+                  ${breakpoint("medium")} {
+                    padding: 0;
+                    grid-area: bot;
+                  }
+                }
+              `}
+            >
+              <Registration />
+              <NewsLetterSignup />
+            </div>
           </div>
         </Hero>
         <ProgramSection />
         <Hr />
-        <SponsorSection />
+        <SpeakerSection />
         <Hr />
         <HotelSection />
+        <Hr />
+        <VenueSection />
+        <Hr />
+        <StartupWeekSection />
+        <Hr />
+        <SponsorSection />
       </div>
       <Footer />
     </div>
@@ -177,7 +201,6 @@ function NewsLetterSignup() {
         @supports (display: grid) {
           ${breakpoint("medium")} {
             padding: 0;
-            grid-area: bot;
             /* box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum}; */
             margin-bottom: ${typography.rhythm(3)};
             padding: 0 ${typography.rhythm(2)} ${typography.rhythm(2)};
@@ -185,12 +208,6 @@ function NewsLetterSignup() {
         }
       `}
     >
-      <label
-        htmlFor="tlemail"
-        css={{ display: "block", fontWeight: "bold", color: "white" }}
-      >
-        Early bird tickets coming soon!
-      </label>
       <label htmlFor="tlemail">
         Sign up for our newsletter and be notified of ticketing information and
         more.
@@ -230,5 +247,27 @@ function NewsLetterSignup() {
       </div>
       <input type="hidden" value="1" name="embed" />
     </form>
+  );
+}
+
+function Registration() {
+  return (
+    <div
+      css={css`
+        padding: ${typography.rhythm(0)} ${typography.rhythm(2)}
+          ${typography.rhythm(1)};
+        background-color: ${colors.plum};
+      `}
+    >
+      <a
+        css={css`
+          ${reverseButtonCss}
+          font-size: 1rem;
+        `}
+        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjof"
+      >
+        Early bird tickets available Mar 1!
+      </a>
+    </div>
   );
 }
