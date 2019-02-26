@@ -1,12 +1,12 @@
 import { css } from "@emotion/core";
 import { colors } from "../utils/constants";
+import { typography } from "../utils/typography";
 import Link from "next/link";
 
 export default function Logo({ extraCss }) {
   return (
     <Link href="/">
       <a
-        href="/"
         css={css`
           text-decoration: none;
           color: white;
@@ -22,9 +22,9 @@ export default function Logo({ extraCss }) {
             letter-spacing: 0.5ch;
             line-height: 0.95;
             margin: 0;
-            padding: 0.5em 0.125em 0.5em 0;
+            padding: 0.5em 0.125em 0.5em ${typography.rhythm(1)};
             border-right: 0.1em solid ${colors.peach};
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             span {
               padding-left: 1.5ch;
             }

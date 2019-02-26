@@ -37,6 +37,9 @@ export default function Index() {
           <div
             className="limit-width"
             css={css`
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
               @supports (display: grid) {
                 ${breakpoint("medium")} {
                   display: grid;
@@ -63,6 +66,7 @@ export default function Index() {
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
+                    max-height: 100vh;
                   }
                 }
               `}
@@ -73,8 +77,10 @@ export default function Index() {
                     ${breakpoint("medium")} {
                       font-size: 3rem;
                       background: ${colors.plum};
-                      padding-left: ${typography.rhythm(1 / 2)};
-                      box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum};
+                      padding: 0;
+                      box-shadow: 0 0 0 ${typography.rhythm(3 / 2)}
+                        ${colors.plum};
+                      border: 0;
                     }
                     ${breakpoint("large")} {
                       padding-left: ${typography.rhythm(1)};
@@ -127,6 +133,10 @@ function Hero({ children }) {
         box-shadow: 0 0 0 0.5em ${colors.peachy_plum},
           0 0.5em 0 0.5em ${colors.plummy_peach}, 0 1em 0 0.5em ${colors.peach};
         color: ${colors.blush};
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: ${typography.rhythm(1 / 2)};
+
         @supports (display: grid) {
           ${breakpoint("medium")} {
             box-shadow: 0 1em 0 1em ${colors.peachy_plum},

@@ -24,6 +24,7 @@ export default function Header() {
         extraCss={css`
           display: flex;
           align-items: center;
+          padding: 0;
         `}
       >
         <Logo />
