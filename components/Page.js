@@ -7,11 +7,13 @@ import { points } from "../utils/breakpoints";
 import { GlobalStyles, typography } from "../utils/typography";
 import Column from "./Column";
 
-export default function Page({ children }) {
+export default function Page({ children, title = "Gig City Elixir" }) {
   return (
     <div>
       <Head>
         <TypographyStyle typography={typography} />
+        <title>{title}</title>
+        <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <GlobalStyles />

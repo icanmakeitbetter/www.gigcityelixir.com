@@ -2,7 +2,7 @@ import React from "react";
 import Page from "../components/Page";
 
 const Contact = () => (
-  <Page>
+  <Page title="Contact Gig City Elixir">
     <h1>Contact</h1>
     <p>Get in touch with us.</p>
     <p>

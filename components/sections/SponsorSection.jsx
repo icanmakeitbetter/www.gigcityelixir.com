@@ -5,6 +5,7 @@ import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import { buttonCss } from "../Button";
 import { typography } from "../../utils/typography";
+import Link from "next/link";
 
 const platinumSponsors = css`
   text-align: center;
@@ -52,9 +53,11 @@ const SubscriptionSection = () => (
         </p>
       </Platinum>
       <h4>Still a few slots available at this level.</h4>
-      <a to="/contact/" css={buttonCss}>
-        Contact Us About Sponsoring
-      </a>
+      <Link href="/contact">
+        <a href="/contact" css={buttonCss}>
+          Contact Us About Sponsoring
+        </a>
+      </Link>
     </div>
   </SectionWrapper>
 );

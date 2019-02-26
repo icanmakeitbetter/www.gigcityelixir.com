@@ -10,7 +10,7 @@ const overlook = "/static/why-chattanooga-images/overlooking-downtown.jpg";
 const andrewsLink = "https://www.perfectedperspectives.com/";
 
 const WhyChattanooga = () => (
-  <Page>
+  <Page title="Why Chattanooga?">
     <h1>Why Chattanooga?</h1>
     <p>Let us count the ways.</p>
     <Picture

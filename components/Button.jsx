@@ -25,6 +25,13 @@ export const buttonCss = css`
   }
 `;
 
+export const reverseButtonCss = css`
+  ${buttonCss};
+  border: 3px solid currentColor;
+  color: currentColor;
+  background: transparent;
+`;
+
 const Button = ({ text }) => <button css={buttonCss}>{text}</button>;
 
 export default Button;
