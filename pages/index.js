@@ -12,10 +12,12 @@ import SponsorSection from "../components/sections/SponsorSection";
 import SpeakerSection from "../components/sections/SpeakerSection";
 import VenueSection from "../components/sections/VenueSection";
 import StartupWeekSection from "../components/sections/StartupWeekSection";
+import ScheduleSection from "../components/sections/ScheduleSection";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { GlobalStyles, typography } from "../utils/typography";
-import { buttonCss, reverseButtonCss } from "../components/Button";
+import { reverseButtonCss } from "../components/Button";
+import { SkipToNavLink } from "../components/SkipToNav";
 
 export default function Index() {
   return (
@@ -27,6 +29,7 @@ export default function Index() {
         margin: 0 auto;
       `}
     >
+      <SkipToNavLink />
       <div
         css={css`
           flex-grow: 1;
@@ -37,6 +40,8 @@ export default function Index() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Gig City Elixir</title>
           <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
+          <link rel="icon" href="/static/favicon-96x96-alt.png" sizes="96x96" />
+          <link rel="icon" href="/static/favicon-16x16-alt.png" sizes="16x16" />
         </Head>
         <GlobalStyles />
         <Hero>
@@ -131,9 +136,11 @@ export default function Index() {
             </div>
           </div>
         </Hero>
+        <SpeakerSection />
+        <Hr />
         <ProgramSection />
         <Hr />
-        <SpeakerSection />
+        <ScheduleSection />
         <Hr />
         <HotelSection />
         <Hr />
@@ -201,7 +208,6 @@ function NewsLetterSignup() {
         @supports (display: grid) {
           ${breakpoint("medium")} {
             padding: 0;
-            /* box-shadow: 0 0 0 ${typography.rhythm(1)} ${colors.plum}; */
             margin-bottom: ${typography.rhythm(3)};
             padding: 0 ${typography.rhythm(2)} ${typography.rhythm(2)};
           }
@@ -237,11 +243,9 @@ function NewsLetterSignup() {
           value="Subscribe"
           className="ff-odudomono-sb"
           css={css`
-            border: 2px solid white;
-            color: white;
-            background-color: transparent;
+            ${reverseButtonCss}
+            font-size: 1rem;
             padding: ${typography.rhythm(1 / 4)};
-            margin-bottom: 0;
           `}
         />
       </div>

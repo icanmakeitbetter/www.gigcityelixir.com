@@ -25,6 +25,9 @@ const SectionWrapper = ({ children, header, subhead, extraCss }) => (
       margin-right: ${rhythm(1)};
       margin-bottom: ${rhythm(2)};
       padding-top: ${rhythm(1)};
+      ${breakpoint("medium")} {
+        margin-bottom: ${rhythm(4)};
+      }
       ${extraCss}
     `}
   >

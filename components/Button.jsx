@@ -27,9 +27,26 @@ export const buttonCss = css`
 
 export const reverseButtonCss = css`
   ${buttonCss};
-  border: 3px solid currentColor;
+  border: 2px solid currentColor;
   color: currentColor;
   background: transparent;
+`;
+
+export const altButtonCss = css`
+  ${reverseButtonCss}
+  border-color: ${colors.plum};
+  color: ${colors.plum};
+  :hover,
+  :focus {
+    background-color: ${colors.peachy_plum};
+  border-color: ${colors.peachy_plum};
+    color: white;
+  }
+  :active {
+    background-color: ${colors.dusk};
+  border-color: ${colors.dusk};
+    color: white;
+  }
 `;
 
 const Button = ({ text }) => <button css={buttonCss}>{text}</button>;
