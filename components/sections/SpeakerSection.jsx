@@ -5,7 +5,7 @@ import { typography } from "../../utils/typography";
 import { colors } from "../../utils/constants";
 
 const SpeakerSection = () => (
-  <SectionWrapper header="Our Speakers" subhead="Coming soon!">
+  <SectionWrapper header="Our Speakers" subhead="Coming soon">
     <div
       css={css`
         display: flex;
@@ -13,10 +13,10 @@ const SpeakerSection = () => (
         margin-left: -${typography.rhythm(1)};
       `}
     >
-      <PlaceholderBio>?</PlaceholderBio>
-      <PlaceholderBio>?</PlaceholderBio>
-      <PlaceholderBio>?</PlaceholderBio>
-      <PlaceholderBio>?</PlaceholderBio>
+      <PlaceholderBio>...</PlaceholderBio>
+      <PlaceholderBio>...</PlaceholderBio>
+      <PlaceholderBio>...</PlaceholderBio>
+      <PlaceholderBio>...</PlaceholderBio>
     </div>
   </SectionWrapper>
 );

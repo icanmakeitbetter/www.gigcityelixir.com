@@ -14,6 +14,8 @@ export default function Page({ children, title = "Gig City Elixir" }) {
         <TypographyStyle typography={typography} />
         <title>{title}</title>
         <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
+        <link rel="icon" href="/static/favicon-96x96-alt.png" sizes="96x96" />
+        <link rel="icon" href="/static/favicon-16x16-alt.png" sizes="16x16" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <GlobalStyles />

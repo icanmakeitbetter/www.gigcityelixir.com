@@ -17,17 +17,14 @@ const WhyChattanooga = () => (
       imgSrc={downtown}
       altText="Photograph of 1100 block of downtown chattanooga"
       caption="This is downtown Chattanooga. Notice the blue squares in the
-      intersection. This is the heart of Chattanooga's Innovation District.
-      The conference venue is a few short short blocks from here towards the river."
+      intersection. This is the heart of Chattanooga's Innovation District."
       photographer="Andrew Rodgers"
       photographerLink={andrewsLink}
     />
     <Picture
       imgSrc={venue}
       altText="Photograph of Chattanooga aquarium and our venue"
-      caption="Featured center is the Chattanooga Aquarium which we highly recommend.
-      In the lower right hand corner of the image you get a peep of the conference venue.
-      It's the one with solar panels on top."
+      caption="Featured center is the Chattanooga Aquarium which we highly recommend."
       photographer="Andrew Rodgers"
       photographerLink={andrewsLink}
     />

@@ -5,6 +5,7 @@ import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import { buttonCss } from "../Button";
 import { typography } from "../../utils/typography";
+import { breakpoint } from "../../utils/breakpoints";
 import Link from "next/link";
 
 const platinumSponsors = css`
@@ -24,6 +25,19 @@ const platinumSponsors = css`
   }
 `;
 
+const flexGrid = css`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -${typography.rhythm(1)};
+`;
+
+const flexGridItem = css`
+  margin-left: ${typography.rhythm(1)};
+  ${breakpoint("large")} {
+    width: calc(50% - ${typography.rhythm(1)});
+  }
+`;
+
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Our Sponsors"
@@ -31,27 +45,29 @@ const SubscriptionSection = () => (
   >
     <div className={platinumSponsors}>
       <Heading>Platinum</Heading>
-      <Platinum
-        img="/static/sponsor-logos/tract-manager.png"
-        name="TractManager"
-        url="https://tractmanager.com"
-      >
-        <p>
-          TractManager is the healthcare industry’s leading provider of
-          Strategic Sourcing and Contract Lifecycle Management solutions which
-          support 3 out of 5 hospitals nationwide.
-        </p>
-      </Platinum>
-      <Platinum
-        img="/static/sponsor-logos/groxio.png"
-        name="groxio"
-        url="https://grox.io"
-      >
-        <p>
-          Groxio is a small company of educators, language geeks and authors who
-          want to change the way people teach and learn languages.
-        </p>
-      </Platinum>
+      <div css={flexGrid}>
+        <Platinum
+          img="/static/sponsor-logos/tract-manager.png"
+          name="TractManager"
+          url="https://tractmanager.com"
+        >
+          <p>
+            TractManager is the healthcare industry’s leading provider of
+            Strategic Sourcing and Contract Lifecycle Management solutions which
+            support 3 out of 5 hospitals nationwide.
+          </p>
+        </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/groxio.png"
+          name="groxio"
+          url="https://grox.io"
+        >
+          <p>
+            Groxio is a small company of educators, language geeks and authors
+            who want to change the way people teach and learn languages.
+          </p>
+        </Platinum>
+      </div>
       <h4>Still a few slots available at this level.</h4>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
@@ -71,10 +87,13 @@ function Platinum({ img, name, url, children }) {
     <a
       href={url}
       css={css`
+        ${flexGridItem}
         border: ${typography.rhythm(1 / 32)} solid ${colors.peachy_plum};
         margin-bottom: ${typography.rhythm(1)};
         padding: ${typography.rhythm(1 - 1 / 32)};
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-decoration: none;
 
         &:focus,

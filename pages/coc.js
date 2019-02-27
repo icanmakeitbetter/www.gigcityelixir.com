@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 import Page from "../components/Page";
+import { buttonCss } from "../components/Button";
 
 export default function Coc() {
   return (
@@ -129,7 +130,7 @@ export default function Coc() {
               />
             </label>
             <div data-netlify-recaptcha="true" />
-            <button className="button" type="submit">
+            <button css={buttonCss} type="submit">
               Send
             </button>
           </form>
