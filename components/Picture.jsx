@@ -1,4 +1,6 @@
 import { css } from "@emotion/core";
+import { typography } from "../utils/typography";
+import { colors, hues } from "../utils/constants";
 
 const Picture = ({
   imgSrc,
@@ -9,19 +11,25 @@ const Picture = ({
 }) => (
   <figure
     css={css`
-      border-bottom: 1px solid;
-      padding-bottom: 5px;
-      margin-bottom: 3rem;
+      border-radius: 3px;
+      margin-bottom: ${typography.rhythm(2)};
+      overflow: hidden;
+      box-shadow: 0 0 0 2px white, 0 0 0 3px ${colors.plum};
     `}
   >
     <img
       src={imgSrc}
       alt={altText + " by " + photographer}
       css={css`
+        display: block;
         margin-bottom: 0;
       `}
     />
-    <figcaption>
+    <figcaption
+      css={css`
+        padding: ${typography.rhythm(1 / 2)} ${typography.rhythm(1)};
+      `}
+    >
       {caption}
       <span
         css={css`
