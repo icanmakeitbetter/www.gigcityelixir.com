@@ -16,7 +16,7 @@ import ScheduleSection from "../components/sections/ScheduleSection";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { GlobalStyles, typography } from "../utils/typography";
-import { reverseButtonCss } from "../components/Button";
+import { reverseButtonCss, primaryButtonCss } from "../components/Button";
 import { SkipToNavLink } from "../components/SkipToNav";
 
 export default function Index() {
@@ -38,7 +38,7 @@ export default function Index() {
         <Head>
           <TypographyStyle typography={typography} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Gig City Elixir</title>
+          <title>Gig City Elixir - Foundation and Things</title>
           <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
           <link rel="icon" href="/static/favicon-96x96-alt.png" sizes="96x96" />
           <link rel="icon" href="/static/favicon-16x16-alt.png" sizes="16x16" />
@@ -168,14 +168,16 @@ function Hero({ children }) {
         flex-direction: column-reverse;
         padding-top: ${typography.rhythm(1 / 2)};
 
+        background-image: url("/static/topo.png");
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        background-size: contain;
         @supports (display: grid) {
           ${breakpoint("medium")} {
+            /* background-position: 50% 50%; */
+            background-size: cover;
             box-shadow: 0 1em 0 1em ${colors.peachy_plum},
               0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
-            background-image: url("/static/topo.png");
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
             margin-bottom: ${typography.rhythm(5)};
           }
         }
@@ -209,7 +211,8 @@ function NewsLetterSignup() {
           ${breakpoint("medium")} {
             padding: 0;
             margin-bottom: ${typography.rhythm(3)};
-            padding: 0 ${typography.rhythm(2)} ${typography.rhythm(2)};
+            padding: ${typography.rhythm(1)} ${typography.rhythm(2)}
+              ${typography.rhythm(2)};
           }
         }
       `}
@@ -261,11 +264,17 @@ function Registration() {
         padding: ${typography.rhythm(0)} ${typography.rhythm(2)}
           ${typography.rhythm(1)};
         background-color: ${colors.plum};
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            padding: ${typography.rhythm(0)} ${typography.rhythm(3)}
+              ${typography.rhythm(1)};
+          }
+        }
       `}
     >
       <a
         css={css`
-          ${reverseButtonCss}
+          ${primaryButtonCss}
           font-size: 1rem;
         `}
         href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjof"

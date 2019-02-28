@@ -10,7 +10,8 @@ export default function DateAndVenue({ extraCss }) {
       css={css`
         text-transform: uppercase;
         letter-spacing: 0.3333ch;
-        margin: ${typography.rhythm(1)};
+        margin: ${typography.rhythm(1 / 2)};
+        padding: ${typography.rhythm(1 / 2)};
         background-color: ${colors.plum};
         font-size: 0.75rem;
         ${breakpoint("medium")} {

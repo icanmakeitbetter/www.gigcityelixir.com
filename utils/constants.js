@@ -7,3 +7,13 @@ export const colors = {
   plum: "#772858",
   dusk: "#432D3A"
 };
+
+export const hues = {
+  ash: 216,
+  blush: 328,
+  peach: 6,
+  plummy_peach: 353,
+  peachy_plum: 336,
+  plum: 324,
+  dusk: 325
+};

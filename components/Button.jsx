@@ -1,5 +1,5 @@
 import React from "react";
-import { colors } from "../utils/constants";
+import { colors, hues } from "../utils/constants";
 import { css } from "@emotion/core";
 import { typography } from "../utils/typography";
 
@@ -46,6 +46,20 @@ export const altButtonCss = css`
     background-color: ${colors.dusk};
   border-color: ${colors.dusk};
     color: white;
+  }
+`;
+
+export const primaryButtonCss = css`
+  ${buttonCss}
+  ${"" /* box-shadow: 0 0.25em 1em hsl(${hues.peach}, 50%, 50%); */}
+  background-color: ${colors.peach};
+  :hover,
+  :focus {
+    background-color: ${colors.plummy_peach};
+    ${"" /* box-shadow: 0 0.25em 1em hsl(${hues.plummy_peach}, 50%, 30%); */}
+  }
+  :active {
+    background-color: ${colors.peachy_plum};
   }
 `;
 
