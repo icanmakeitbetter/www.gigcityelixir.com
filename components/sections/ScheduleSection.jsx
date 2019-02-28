@@ -6,7 +6,6 @@ const ScheduleSection = () => (
   <SectionWrapper header="Schedule Outline" subhead="Coming soon">
     <div
       css={css`
-        text-align: center;
         font-family: "OdudoMono-Regular";
         opacity: 0.5;
       `}

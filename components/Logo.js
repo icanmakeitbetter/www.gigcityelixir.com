@@ -17,12 +17,13 @@ export default function Logo({ extraCss }) {
           className="ff-odudomono-r"
           css={css`
             display: flex;
+            background: ${colors.plum};
             flex-direction: column;
             text-transform: uppercase;
             letter-spacing: 0.5ch;
             line-height: 0.95;
-            margin: 0;
-            padding: 0.5em 0.125em 0.5em ${typography.rhythm(1)};
+            margin: 0 0 0 ${typography.rhythm(1 / 2)};
+            padding: ${typography.rhythm(1 / 2)} ${typography.rhythm(1 / 2)};
             border-right: 0.1em solid ${colors.peach};
             font-size: 1.5rem;
             span {
