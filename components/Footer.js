@@ -10,6 +10,7 @@ export default function Footer({ extraCss }) {
     <footer css={extraCss}>
       <Hr />
       <nav
+        className="ff-odudomono-r"
         css={css`
           justify-self: end;
           text-align: center;
@@ -20,6 +21,19 @@ export default function Footer({ extraCss }) {
           justify-content: center;
           > a {
             padding: ${typography.rhythm(1 / 2)};
+            :link {
+              color: ${colors.plum};
+            }
+            :visited {
+              color: ${colors.peachy_plum};
+            }
+            :hover,
+            :focus {
+              color: ${colors.peach};
+            }
+            :active {
+              color: ${colors.ash};
+            }
           }
         `}
       >
