@@ -276,7 +276,7 @@ function Registration() {
         `}
         href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjof"
       >
-        Early bird tickets available Mar 1!
+        Early bird tickets available, register now!
       </a>
     </div>
   );

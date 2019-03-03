@@ -23,6 +23,7 @@ export const buttonCss = css`
   }
   :active {
     background-color: ${colors.dusk};
+    transform: translate(0, 1px);
   }
 
   &,
@@ -67,12 +68,13 @@ export const altButtonCss = css`
 
 export const primaryButtonCss = css`
   ${buttonCss}
-  ${"" /* box-shadow: 0 0.25em 1em hsl(${hues.peach}, 50%, 50%); */}
+  box-shadow: 0 0.25em 1em hsl(${hues.peach}, 50%, 50%);
   background-color: ${colors.peach};
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
   :hover,
   :focus {
     background-color: ${colors.plummy_peach};
-    ${"" /* box-shadow: 0 0.25em 1em hsl(${hues.plummy_peach}, 50%, 30%); */}
+    box-shadow: 0 0.25em 1em hsl(${hues.plummy_peach}, 50%, 30%);
   }
   :active {
     background-color: ${colors.peachy_plum};
