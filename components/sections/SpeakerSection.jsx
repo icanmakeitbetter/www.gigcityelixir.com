@@ -4,45 +4,88 @@ import { css } from "@emotion/core";
 import { typography } from "../../utils/typography";
 import { colors } from "../../utils/constants";
 
-const SpeakerSection = () => (
-  <SectionWrapper header="Our Speakers" subhead="Coming soon">
-    <div
-      css={css`
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -${typography.rhythm(1)};
-      `}
-    >
-      <PlaceholderBio>...</PlaceholderBio>
-      <PlaceholderBio>...</PlaceholderBio>
-      <PlaceholderBio>...</PlaceholderBio>
-      <PlaceholderBio>...</PlaceholderBio>
-    </div>
-  </SectionWrapper>
-);
+export default function SpeakerSection() {
+  return (
+    <SectionWrapper header="Our Speakers" subhead="There are more to come!">
+      <div
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -${typography.rhythm(1)};
+        `}
+      >
+        <Bio
+          imgSrc="justin.jpg"
+          name="Justin Schneck"
+          twitterHandle="mobileoverlord"
+        />
+        <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
+        <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
+        <Bio
+          imgSrc="chris.jpg"
+          name="Chris Keathley"
+          twitterHandle="ChrisKeathley"
+        />
+        <Bio
+          imgSrc="stu.jpg"
+          name="Stu Halloway"
+          twitterHandle="stuarthalloway"
+        />
+        <Bio
+          imgSrc="osa.jpg"
+          name="Osa Gaius-Obaseki"
+          twitterHandle="osagaius"
+        />
+        <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+      </div>
+    </SectionWrapper>
+  );
+}
 
-export default SpeakerSection;
-
-function PlaceholderBio({ children }) {
+function Bio({ imgSrc, name, twitterHandle }) {
   return (
     <div
       className="ff-odudomono-r"
       css={css`
-        height: 25vh;
-        border: 1px solid ${colors.peachy_plum};
         border-radius: 3px;
-        padding: 3px;
         margin-left: ${typography.rhythm(1)};
         margin-bottom: ${typography.rhythm(1)};
         width: calc(50% - ${typography.rhythm(1)});
+        overflow: hidden;
+        text-align: center;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        ${typography.scale(1.5)}
-        color: ${colors.blush};
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          display: block;
+          margin-bottom: 0;
+          background-color: ${colors.peachy_plum};
+        }
       `}
     >
-      {children}
+      <img src={`/static/speakers/${imgSrc}`} alt="" />
+      <div
+        css={css`
+          background-color: ${colors.plum};
+          color: white;
+          padding: ${typography.rhythm(1 / 3)};
+          flex-grow: 1;
+        `}
+      >
+        {name}
+      </div>
+      {twitterHandle && (
+        <div
+          css={css`
+            padding: ${typography.rhythm(1 / 4)};
+            border: 1px solid ${colors.plum};
+            bborder-radius: 0 0 3px 3px;
+          `}
+        >
+          <a href={`https://twitter.com/${twitterHandle}`}>@{twitterHandle}</a>
+        </div>
+      )}
     </div>
   );
 }
