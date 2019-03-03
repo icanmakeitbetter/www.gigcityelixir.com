@@ -17,6 +17,10 @@ export const buttonCss = css`
   text-decoration: none;
 
   color: white;
+  :link,
+  :visited {
+    color: white;
+  }
   :hover,
   :focus {
     background-color: ${colors.peachy_plum};
@@ -24,21 +28,6 @@ export const buttonCss = css`
   :active {
     background-color: ${colors.dusk};
     transform: translate(0, 1px);
-  }
-
-  &,
-  a {
-    color: white;
-    &:visited {
-      color: white;
-    }
-    :hover,
-    :focus {
-      background-color: ${colors.peachy_plum};
-    }
-    :active {
-      background-color: ${colors.dusk};
-    }
   }
 `;
 
