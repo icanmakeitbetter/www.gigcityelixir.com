@@ -13,75 +13,76 @@ import { points } from "./breakpoints";
 export const GlobalStyles = () => (
   <Global
     styles={css`
-  @font-face {
-    font-family: "OdudoMono-Light";
-    src: url(${oml}) format('woff'),
-         url(${oml2}) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+      @font-face {
+        font-family: "OdudoMono-Light";
+        src: url(${oml}) format("woff"), url(${oml2}) format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-  @font-face {
-    font-family: "OdudoMono-Regular";
-    src: url(${omr}) format('woff'),
-         url(${omr2}) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+      @font-face {
+        font-family: "OdudoMono-Regular";
+        src: url(${omr}) format("woff"), url(${omr2}) format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-  @font-face {
-    font-family: "OdudoMono-SemiBold";
-    src: url(${omsb}) format('woff'),
-         url(${omsb2}) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+      @font-face {
+        font-family: "OdudoMono-SemiBold";
+        src: url(${omsb}) format("woff"), url(${omsb2}) format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-  .ff-odudomono-l {
-    font-family: "OdudoMono-Light";
-  }
-  .ff-odudomono-r {
-    font-family: "OdudoMono-Regular";
-  }
-  .ff-odudomono-sb {
-    font-family: "OdudoMono-SemiBold";
-  }
+      .ff-odudomono-l {
+        font-family: "OdudoMono-Light";
+      }
+      .ff-odudomono-r {
+        font-family: "OdudoMono-Regular";
+      }
+      .ff-odudomono-sb {
+        font-family: "OdudoMono-SemiBold";
+      }
 
-  .c-peach { color: ${colors.peach}; }
+      .c-peach {
+        color: ${colors.peach};
+      }
 
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-    min-height: 100vh;
-  }
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+      }
 
-  input, input, textarea {
-    border-color: ${colors.plum};
-    border-radius: 3px;
-    margin-bottom: 14px;
-    width: 100%;
-  }
-  
+      input,
+      input,
+      textarea {
+        border-color: ${colors.plum};
+        border-radius: 3px;
+        margin-bottom: 14px;
+        width: 100%;
+      }
 
-  /* .button {
-    background-color: ${colors.plum};
-    border-radius: 3px;
-    border-style: solid;
-    border-color: ${colors.plum}
-    color: white;
-    cursor: pointer;
-    font-family: "OdudoMono-Regular", sans-serif;
-    font-size: 32px;
-    height: 78px;
-    width: 100%;
-  } */
+      a {
+        color: ${colors.plum};
+        &:visited {
+          color: ${colors.peachy_plum};
+        }
+        &:hover,
+        &:focus {
+          color: ${colors.peach};
+        }
+        &:active {
+          color: ${colors.ash};
+        }
+      }
 
-  .limit-width {
-    max-width: ${points.maxWidth};
-    margin: 0px auto;
-  }
-`}
+      .limit-width {
+        max-width: ${points.maxWidth};
+        margin: 0px auto;
+      }
+    `}
   />
 );
 

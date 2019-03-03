@@ -7,7 +7,6 @@ export const buttonCss = css`
   background-color: ${colors.plum};
   border: 0;
   border-radius: 3px;
-  color: white;
   cursor: pointer;
   font-family: "OdudoMono-Regular", sans-serif;
   font-size: ${typography.rhythm(1.25)};
@@ -16,12 +15,29 @@ export const buttonCss = css`
   display: block;
   text-align: center;
   text-decoration: none;
+
+  color: white;
   :hover,
   :focus {
     background-color: ${colors.peachy_plum};
   }
   :active {
     background-color: ${colors.dusk};
+  }
+
+  &,
+  a {
+    color: white;
+    &:visited {
+      color: white;
+    }
+    :hover,
+    :focus {
+      background-color: ${colors.peachy_plum};
+    }
+    :active {
+      background-color: ${colors.dusk};
+    }
   }
 `;
 

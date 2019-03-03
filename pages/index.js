@@ -12,7 +12,6 @@ import SponsorSection from "../components/sections/SponsorSection";
 import SpeakerSection from "../components/sections/SpeakerSection";
 import VenueSection from "../components/sections/VenueSection";
 import StartupWeekSection from "../components/sections/StartupWeekSection";
-import ScheduleSection from "../components/sections/ScheduleSection";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { GlobalStyles, typography } from "../utils/typography";
@@ -139,8 +138,6 @@ export default function Index() {
         <SpeakerSection />
         <Hr />
         <ProgramSection />
-        <Hr />
-        <ScheduleSection />
         <Hr />
         <HotelSection />
         <Hr />
