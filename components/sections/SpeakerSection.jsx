@@ -12,6 +12,7 @@ export default function SpeakerSection() {
           display: flex;
           flex-wrap: wrap;
           margin-left: -${typography.rhythm(1)};
+          margin-top: -${typography.rhythm(1)};
         `}
       >
         <Bio
@@ -49,7 +50,7 @@ function Bio({ imgSrc, name, twitterHandle }) {
       css={css`
         border-radius: 3px;
         margin-left: ${typography.rhythm(1)};
-        margin-bottom: ${typography.rhythm(1)};
+        margin-top: ${typography.rhythm(1)};
         width: calc(50% - ${typography.rhythm(1)});
         overflow: hidden;
         text-align: center;
