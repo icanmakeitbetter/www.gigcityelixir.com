@@ -9,9 +9,7 @@ const ScheduleSection = () => (
         font-family: "OdudoMono-Regular";
         opacity: 0.5;
       `}
-    >
-      The full schedule is be worked on, check back soon!
-    </div>
+    />
   </SectionWrapper>
 );
 
