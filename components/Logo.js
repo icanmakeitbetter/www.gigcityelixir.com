@@ -11,6 +11,13 @@ export default function Logo({ extraCss }) {
           text-decoration: none;
           color: white;
           cursor: pointer;
+          :link,
+          :visited,
+          :hover,
+          :focus,
+          :active {
+            color: white;
+          }
         `}
       >
         <h1
