@@ -6,7 +6,7 @@ import { colors } from "../../utils/constants";
 
 export default function SpeakerSection() {
   return (
-    <SectionWrapper header="Our Speakers" subhead="There are more to come!">
+    <SectionWrapper header="Our Speakers">
       <div
         css={css`
           display: flex;
@@ -38,6 +38,23 @@ export default function SpeakerSection() {
           twitterHandle="osagaius"
         />
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+        <div
+          css={css`
+            border-radius: 3px;
+            margin-left: ${typography.rhythm(1)};
+            margin-top: ${typography.rhythm(1)};
+            width: calc(50% - ${typography.rhythm(1)});
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 3px solid ${colors.blush};
+          `}
+        >
+          {" "}
+          And more to come!{" "}
+        </div>
       </div>
     </SectionWrapper>
   );
