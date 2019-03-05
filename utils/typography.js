@@ -18,6 +18,7 @@ export const GlobalStyles = () => (
         src: url(${oml}) format("woff"), url(${oml2}) format("woff2");
         font-weight: normal;
         font-style: normal;
+        font-display: fallback;
       }
 
       @font-face {
@@ -25,6 +26,7 @@ export const GlobalStyles = () => (
         src: url(${omr}) format("woff"), url(${omr2}) format("woff2");
         font-weight: normal;
         font-style: normal;
+        font-display: fallback;
       }
 
       @font-face {
@@ -32,16 +34,17 @@ export const GlobalStyles = () => (
         src: url(${omsb}) format("woff"), url(${omsb2}) format("woff2");
         font-weight: normal;
         font-style: normal;
+        font-display: fallback;
       }
 
       .ff-odudomono-l {
-        font-family: "OdudoMono-Light";
+        font-family: "OdudoMono-Light", "Menlo", sans-serif;
       }
       .ff-odudomono-r {
-        font-family: "OdudoMono-Regular";
+        font-family: "OdudoMono-Regular", "Menlo", sans-serif;
       }
       .ff-odudomono-sb {
-        font-family: "OdudoMono-SemiBold";
+        font-family: "OdudoMono-SemiBold", "Menlo", sans-serif;
       }
 
       .c-peach {

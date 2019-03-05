@@ -113,12 +113,7 @@ export default function Coc() {
             data-netlify="true"
           >
             <input type="hidden" name="form-name" value="coc-page" />
-            <label
-              css={css`
-                font-family: "OdudoMono-SemiBold", "Helvetica Neue",
-                  "Sans-Serif";
-              `}
-            >
+            <label className="ff-odudomono-sb">
               Message:
               <textarea
                 css={css`

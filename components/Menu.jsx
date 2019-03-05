@@ -12,9 +12,9 @@ const ListLink = props => (
     `}
   >
     <Link
+      className="ff-odudomono-r"
       css={`
         color: ${consts.purple};
-        font-family: "OdudoMono-Regular", sans-serif;
         text-decoration: none;
       `}
       to={props.to}

@@ -10,8 +10,8 @@ const TicketSection = () => (
     subhead="Join us at Gig City Elixir 2018!"
   >
     <p
+      className="ff-odudomono-r"
       css={`
-        font-family: "OdudoMono-Regular", sans-serif;
         color: ${purple};
         font-size: 30px;
         text-align: center;

@@ -8,8 +8,8 @@ const SubscriptionSection = () => (
     subhead="It features our infrequent announcements and info"
   >
     <p
+      className="ff-odudomono-r"
       css={`
-        font-family: "OdudoMono-Regular", sans-serif;
         color: ${orange};
         font-size: 20px;
       `}
