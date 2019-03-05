@@ -168,11 +168,10 @@ function Hero({ children }) {
         background-image: url("/static/topo.png");
         background-position: 50% 0%;
         background-repeat: no-repeat;
-        background-size: contain;
+        /* background-size: contain; */
         @supports (display: grid) {
           ${breakpoint("medium")} {
-            /* background-position: 50% 50%; */
-            background-size: cover;
+            /* background-size: cover; */
             box-shadow: 0 1em 0 1em ${colors.peachy_plum},
               0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
             margin-bottom: ${typography.rhythm(5)};
@@ -272,7 +271,7 @@ function Registration() {
       <a
         css={css`
           ${primaryButtonCss}
-          font-size: 1rem;
+          font-size: 1.15rem;
         `}
         href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjof"
       >
