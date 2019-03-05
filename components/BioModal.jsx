@@ -56,6 +56,7 @@ class BioModal extends React.Component {
     return (
       <div>
         <button
+          className="ff-odudomono--r"
           onClick={this.openModal}
           css={`
             background: #fdfdfd;
@@ -65,7 +66,6 @@ class BioModal extends React.Component {
             color: ${purple};
             cursor: pointer;
             display: block;
-            font-family: "OdudoMono-Regular", sans-serif;
             font-size: 15px;
             margin-bottom: 35px;
             padding-top: 3px;
@@ -117,6 +117,7 @@ class BioModal extends React.Component {
             <div>{this.props.bio}</div>
             <button
               onClick={this.closeModal}
+              className="ff-odudomono-r"
               css={`
                 float: right;
                 border-color: ${purple};
@@ -125,7 +126,6 @@ class BioModal extends React.Component {
                 border-style: solid;
                 color: white;
                 cursor: pointer;
-                font-family: "OdudoMono-Regular", sans-serif;
                 font-size: 24px;
                 height: 40px;
                 width: 100%;

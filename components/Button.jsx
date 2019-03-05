@@ -8,7 +8,7 @@ export const buttonCss = css`
   border: 0;
   border-radius: 3px;
   cursor: pointer;
-  font-family: "OdudoMono-Regular", sans-serif;
+  font-family: "OdudoMono-Regular", "Menlo", sans-serif;
   font-size: ${typography.rhythm(1.25)};
   padding: ${typography.rhythm(3 / 4)};
   width: 100%;

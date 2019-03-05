@@ -27,13 +27,13 @@ const Bio = ({
       alt={alt}
     />
     <p
+      className="ff-odudomono-r"
       css={`
         background-color: #772858;
         border-top: 2px #772858 solid;
         border-right: 2px #772858 solid;
         border-left: 2px #772858 solid;
         color: white;
-        font-family: "OdudoMono-Regular", sans-serif;
         font-size: 15px;
         letter-spacing: 1px;
         margin-top: -9px;

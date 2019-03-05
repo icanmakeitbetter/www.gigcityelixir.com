@@ -240,7 +240,7 @@ const Program = () => (
         thead th {
           color: #772858;
           font-size: 20px;
-          font-family: "OdudoMono-Regular", sans-serif;
+          font-family: "OdudoMono-Regular", "Menlo", sans-serif;
           border-bottom: 1px solid currentColor;
           text-align: center;
           padding-top: 1em;

@@ -5,8 +5,8 @@ import { css } from "@emotion/core";
 const ScheduleSection = () => (
   <SectionWrapper header="Schedule Outline" subhead="Coming soon">
     <div
+      className="ff-odudomono-r"
       css={css`
-        font-family: "OdudoMono-Regular";
         opacity: 0.5;
       `}
     />
