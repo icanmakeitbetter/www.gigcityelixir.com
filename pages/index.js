@@ -124,7 +124,6 @@ function Hero({ children }) {
   return (
     <div
       css={css`
-        background-color: ${colors.plum};
         margin-bottom: ${typography.rhythm(2)};
         box-shadow: 0 0 0 0.5em ${colors.peachy_plum},
           0 0.5em 0 0.5em ${colors.plummy_peach}, 0 1em 0 0.5em ${colors.peach};
@@ -133,13 +132,12 @@ function Hero({ children }) {
         flex-direction: column-reverse;
         padding-top: ${typography.rhythm(1 / 2)};
 
+        background-color: ${colors.plum};
         background-image: url("/static/topo.png");
         background-position: 50% 0%;
         background-repeat: no-repeat;
-        /* background-size: contain; */
         @supports (display: grid) {
           ${breakpoint("medium")} {
-            /* background-size: cover; */
             box-shadow: 0 1em 0 1em ${colors.peachy_plum},
               0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
             margin-bottom: ${typography.rhythm(5)};
