@@ -5,7 +5,7 @@ import { buttonCss } from "../components/Button";
 
 export default function Coc() {
   return (
-    <Page title="Code of Conduct - Gig City Elixir">
+    <Page title="Code of Conduct">
       <h1>Code of Conduct</h1>
       <p>Guidelines to follow.</p>
       <dl>

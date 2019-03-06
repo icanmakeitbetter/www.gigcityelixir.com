@@ -39,19 +39,19 @@ export default function Footer({ extraCss }) {
       >
         <SkipToNavContent />
         <Link href="/" prefetch>
-          <a href="/">Home</a>
+          <a>Home</a>
         </Link>
         <Link href="/coc" prefetch>
-          <a href="/coc">CoC</a>
+          <a>CoC</a>
         </Link>
         <Link href="/contact" prefetch>
-          <a href="/contact">Contact</a>
+          <a>Contact</a>
         </Link>
         <Link href="/why-chattanooga" prefetch>
-          <a href="/why-chattanooga">Why Chattanooga?</a>
+          <a>Why Chattanooga?</a>
         </Link>
         <Link href="https://2018.gigcityelixir.com/">
-          <a href="https://2018.gigcityelixir.com/">2018</a>
+          <a>2018</a>
         </Link>
       </nav>
     </footer>
