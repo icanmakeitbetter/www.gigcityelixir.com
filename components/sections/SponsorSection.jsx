@@ -70,9 +70,7 @@ const SubscriptionSection = () => (
       </div>
       <h4>Still a few slots available at this level.</h4>
       <Link href="/contact">
-        <a href="/contact" css={buttonCss}>
-          Contact Us About Sponsoring
-        </a>
+        <a css={buttonCss}>Contact Us About Sponsoring</a>
       </Link>
     </div>
   </SectionWrapper>

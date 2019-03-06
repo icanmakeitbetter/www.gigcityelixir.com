@@ -1,24 +1,15 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Head from "next/head";
-import { TypographyStyle } from "react-typography";
+import GCEHead from "./GCEHead";
 import { css } from "@emotion/core";
 import { points } from "../utils/breakpoints";
-import { GlobalStyles, typography } from "../utils/typography";
+import { typography } from "../utils/typography";
 import Column from "./Column";
 
-export default function Page({ children, title = "Gig City Elixir" }) {
+export default function Page({ children, title = "Gig City Elixir 2019" }) {
   return (
     <div>
-      <Head>
-        <TypographyStyle typography={typography} />
-        <title>{title}</title>
-        <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
-        <link rel="icon" href="/static/favicon-96x96-alt.png" sizes="96x96" />
-        <link rel="icon" href="/static/favicon-16x16-alt.png" sizes="16x16" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <GlobalStyles />
+      <GCEHead title={title} />
       <Header />
       <Column
         extraCss={css`

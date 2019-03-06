@@ -1,138 +1,80 @@
 import { css } from "@emotion/core";
-import Head from "next/head";
-import { TypographyStyle } from "react-typography";
+import { primaryButtonCss, reverseButtonCss } from "../components/Button";
 import DateAndVenue from "../components/DateAndVenue";
 import Footer from "../components/Footer";
-import Logo from "../components/Logo";
 import Hr from "../components/Hr";
+import Logo from "../components/Logo";
 import AboutUsSection from "../components/sections/AboutUsSection";
 import HotelSection from "../components/sections/HotelSection";
 import ProgramSection from "../components/sections/ProgramSection";
-import SponsorSection from "../components/sections/SponsorSection";
 import SpeakerSection from "../components/sections/SpeakerSection";
-import VenueSection from "../components/sections/VenueSection";
+import SponsorSection from "../components/sections/SponsorSection";
 import StartupWeekSection from "../components/sections/StartupWeekSection";
+import VenueSection from "../components/sections/VenueSection";
+import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
-import { GlobalStyles, typography } from "../utils/typography";
-import { reverseButtonCss, primaryButtonCss } from "../components/Button";
-import { SkipToNavLink } from "../components/SkipToNav";
+import { typography } from "../utils/typography";
+import GCEHead from "../components/GCEHead";
 
 export default function Index() {
   return (
-    <div
-      css={css`
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-      `}
-    >
+    <Wrapper>
+      <GCEHead />
       <SkipToNavLink />
-      <div
-        css={css`
-          flex-grow: 1;
-        `}
-      >
-        <Head>
-          <TypographyStyle typography={typography} />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Gig City Elixir - Foundation and Things</title>
-          <link rel="icon" href="/static/favicon-32x32-alt.png" sizes="32x32" />
-          <link rel="icon" href="/static/favicon-96x96-alt.png" sizes="96x96" />
-          <link rel="icon" href="/static/favicon-16x16-alt.png" sizes="16x16" />
-        </Head>
-        <GlobalStyles />
+      <Main>
         <Hero>
-          <div
-            className="limit-width"
-            css={css`
-              display: flex;
-              flex-wrap: wrap;
-              align-items: center;
-              @supports (display: grid) {
-                ${breakpoint("medium")} {
-                  display: grid;
-                  /* 3 rows, 3 cols */
-                  grid-template-columns: 1fr 1fr 1fr;
-                  grid-template-rows: auto auto auto;
-                  grid-column-gap: ${typography.rhythm(3)};
-                  max-width: ${points.maxWidth};
-                  margin: 0px auto;
-                  grid-template-areas:
-                    "left top top"
-                    "left mid mid"
-                    "left bot bot";
-                }
-              }
-            `}
-          >
-            <div
-              css={css`
-                @supports (display: grid) {
-                  ${breakpoint("medium")} {
-                    margin: 0;
-                    grid-area: left;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    max-height: 100vh;
-                  }
-                }
-              `}
-            >
-              <Logo
-                extraCss={css`
-                  @supports (display: grid) {
-                    ${breakpoint("medium")} {
-                      font-size: 3rem;
-                      background: ${colors.plum};
-                      padding: 0;
-                      box-shadow: 0 0 0 ${typography.rhythm(3 / 2)}
-                        ${colors.plum};
-                      border: 0;
-                    }
-                    ${breakpoint("large")} {
-                      padding-left: ${typography.rhythm(1)};
-                      font-size: 4rem;
-                    }
-                  }
-                `}
-              />
-            </div>
-            <DateAndVenue
+          <HeroLeft>
+            <Logo
               extraCss={css`
                 @supports (display: grid) {
                   ${breakpoint("medium")} {
-                    margin: ${typography.rhythm(3)} 0 0;
-                    grid-area: top;
-                    padding: ${typography.rhythm(2)} ${typography.rhythm(2)}
-                      ${typography.rhythm(1)};
+                    font-size: 3rem;
+                    background: ${colors.plum};
+                    padding: 0;
+                    box-shadow: 0 0 0 ${typography.rhythm(3 / 2)} ${colors.plum};
+                    border: 0;
+                  }
+                  ${breakpoint("large")} {
+                    padding-left: ${typography.rhythm(1)};
+                    font-size: 4rem;
                   }
                 }
               `}
             />
-            <div
-              css={css`
-                grid-area: mid;
-                background-color: ${colors.plum};
-              `}
-            >
-              <AboutUsSection />
-            </div>
-            <div
-              css={css`
-                @supports (display: grid) {
-                  ${breakpoint("medium")} {
-                    padding: 0;
-                    grid-area: bot;
-                  }
+          </HeroLeft>
+          <DateAndVenue
+            extraCss={css`
+              @supports (display: grid) {
+                ${breakpoint("medium")} {
+                  margin: ${typography.rhythm(3)} 0 0;
+                  grid-area: top;
+                  padding: ${typography.rhythm(2)} ${typography.rhythm(2)}
+                    ${typography.rhythm(1)};
                 }
-              `}
-            >
-              <Registration />
-              <NewsLetterSignup />
-            </div>
+              }
+            `}
+          />
+          <div
+            css={css`
+              grid-area: mid;
+              background-color: ${colors.plum};
+            `}
+          >
+            <AboutUsSection />
+          </div>
+          <div
+            css={css`
+              @supports (display: grid) {
+                ${breakpoint("medium")} {
+                  padding: 0;
+                  grid-area: bot;
+                }
+              }
+            `}
+          >
+            <Registration />
+            <NewsLetterSignup />
           </div>
         </Hero>
         <SpeakerSection />
@@ -146,8 +88,34 @@ export default function Index() {
         <StartupWeekSection />
         <Hr />
         <SponsorSection />
-      </div>
+      </Main>
       <Footer />
+    </Wrapper>
+  );
+}
+function Wrapper({ children }) {
+  return (
+    <div
+      css={css`
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      `}
+    >
+      {children}
+    </div>
+  );
+}
+
+function Main({ children }) {
+  return (
+    <div
+      css={css`
+        flex-grow: 1;
+      `}
+    >
+      {children}
     </div>
   );
 }
@@ -175,6 +143,51 @@ function Hero({ children }) {
             box-shadow: 0 1em 0 1em ${colors.peachy_plum},
               0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
             margin-bottom: ${typography.rhythm(5)};
+          }
+        }
+      `}
+    >
+      <div
+        className="limit-width"
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          @supports (display: grid) {
+            ${breakpoint("medium")} {
+              display: grid;
+              /* 3 rows, 3 cols */
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: auto auto auto;
+              grid-column-gap: ${typography.rhythm(3)};
+              max-width: ${points.maxWidth};
+              margin: 0px auto;
+              grid-template-areas:
+                "left top top"
+                "left mid mid"
+                "left bot bot";
+            }
+          }
+        `}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function HeroLeft({ children }) {
+  return (
+    <div
+      css={css`
+        @supports (display: grid) {
+          ${breakpoint("medium")} {
+            margin: 0;
+            grid-area: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            max-height: 100vh;
           }
         }
       `}
