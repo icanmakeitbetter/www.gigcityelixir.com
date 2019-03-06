@@ -56,6 +56,8 @@ export const GlobalStyles = () => (
         padding: 0;
         margin: 0;
         min-height: 100vh;
+        background-color: ${colors.plum};
+        color: white;
       }
 
       input,
