@@ -133,7 +133,7 @@ function Hero({ children }) {
         padding-top: ${typography.rhythm(1 / 2)};
 
         background-color: ${colors.plum};
-        background-image: url("/static/topo.png");
+        background-image: url("/static/topo.svg");
         background-position: 50% 0%;
         background-repeat: no-repeat;
         @supports (display: grid) {

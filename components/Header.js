@@ -13,10 +13,9 @@ export default function Header() {
         background-color: ${colors.plum};
         padding: ${typography.rhythm(1)} 0;
         color: ${colors.blush};
-        background-image: url("/static/topo.png");
+        background-image: url("/static/topo.svg");
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-size: cover;
       `}
     >
       <Column
