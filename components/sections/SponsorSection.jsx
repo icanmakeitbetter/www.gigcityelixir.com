@@ -29,6 +29,7 @@ const flexGrid = css`
   display: flex;
   flex-wrap: wrap;
   margin-left: -${typography.rhythm(1)};
+  margin-bottom: ${typography.rhythm(1)};
 `;
 
 const flexGridItem = css`
@@ -38,13 +39,31 @@ const flexGridItem = css`
   }
 `;
 
+const flexGridItemChampion = css`
+  margin-left: ${typography.rhythm(1)};
+  width: calc(25% - ${typography.rhythm(1)});
+`;
+
+const sponsorLink = css`
+  border: ${typography.rhythm(1 / 32)} solid ${colors.peachy_plum};
+  padding: ${typography.rhythm(1 - 1 / 32)};
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    border-width: ${typography.rhythm(1 / 8)};
+    padding: ${typography.rhythm(1 - 1 / 8)};
+    border-color: ${colors.plum};
+  }
+`;
+
 const SubscriptionSection = () => (
   <SectionWrapper
     header="Our Sponsors"
     subhead="This conference brought to you in part by these fine folks"
   >
     <div className={platinumSponsors}>
-      <Heading>Platinum</Heading>
+      <h3>Platinum</h3>
       <div css={flexGrid}>
         <Platinum
           img="/static/sponsor-logos/tract-manager.png"
@@ -68,7 +87,14 @@ const SubscriptionSection = () => (
           </p>
         </Platinum>
       </div>
-      <h4>Still a few slots available at this level.</h4>
+      <h3>Elixir Champion</h3>
+      <div css={flexGrid}>
+        <Champion
+          img="/static/sponsor-logos/tito.svg"
+          name="Tito"
+          url="https://ti.to/"
+        />
+      </div>
       <Link href="/contact">
         <a css={buttonCss}>Contact Us About Sponsoring</a>
       </Link>
@@ -78,28 +104,17 @@ const SubscriptionSection = () => (
 
 export default SubscriptionSection;
 
-const Heading = styled.h3``;
-
 function Platinum({ img, name, url, children }) {
   return (
     <a
       href={url}
       css={css`
         ${flexGridItem}
-        border: ${typography.rhythm(1 / 32)} solid ${colors.peachy_plum};
+        ${sponsorLink}
         margin-bottom: ${typography.rhythm(1)};
-        padding: ${typography.rhythm(1 - 1 / 32)};
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        text-decoration: none;
-
-        &:focus,
-        &:hover {
-          border-width: ${typography.rhythm(1 / 8)};
-          padding: ${typography.rhythm(1 - 1 / 8)};
-          border-color: ${colors.plum};
-        }
 
         p:last-child {
           margin-bottom: ${typography.rhythm(1 / 4)};
@@ -116,6 +131,29 @@ function Platinum({ img, name, url, children }) {
     >
       <img src={img} alt={name} />
       {children}
+    </a>
+  );
+}
+
+function Champion({ img, name, url }) {
+  return (
+    <a
+      href={url}
+      css={css`
+        ${flexGridItemChampion}
+        ${sponsorLink}
+        border-color: ${colors.blush};
+        margin-bottom: ${typography.rhythm(1)};
+      `}
+    >
+      <img
+        src={img}
+        alt={name}
+        css={css`
+          display: block;
+          margin-bottom: 0;
+        `}
+      />
     </a>
   );
 }
