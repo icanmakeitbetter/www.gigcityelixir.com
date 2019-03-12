@@ -12,6 +12,15 @@ if (process.env.NODE_ENV === `production`) {
 
 module.exports = class HTML extends React.Component {
   render() {
+
+    if (window && window.navigator && window.navigator.serviceWorker) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+    
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
