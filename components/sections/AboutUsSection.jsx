@@ -37,7 +37,7 @@ const AboutUsSection = () => (
       that will open more learning channels than ever before.
     </p>
     <p>
-      One of the best speaker lineups at any 2018 programming conference will
+      One of the best speaker lineups at any 2019 programming conference will
       teach you the foundational techniques you'll need to succeed in today's
       programming industry. You'll learn to use functional programming concepts
       that will make you a better programmer, regardless of the languages and
