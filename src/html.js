@@ -1,34 +1,28 @@
-import React from "react"
+import React from "react";
 
-let stylesStr
+let stylesStr;
 let nEnv = process.env.NODE_ENV;
 if (process.env.NODE_ENV === `production`) {
   try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
+    stylesStr = require(`!raw-loader!../public/styles.css`);
   } catch (e) {
-    console.log(e)
+    console.log(e);
   }
 }
 
 module.exports = class HTML extends React.Component {
   render() {
-    navigator.serviceWorker.getRegistrations().then(function(registrations) {
-      for (let registration of registrations) {
-        registration.unregister();
-      }
-    });
-
-    let css
+    let css;
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
-      )
+      );
     }
-    
-    let titoDevMode
+
+    let titoDevMode;
     if (process.env.NODE_ENV === `development`) {
       titoDevMode = (
         <script
@@ -38,7 +32,7 @@ module.exports = class HTML extends React.Component {
             `
           }}
         />
-      )
+      );
     }
     return (
       <html {...this.props.htmlAttributes}>
@@ -63,6 +57,6 @@ module.exports = class HTML extends React.Component {
           {this.props.postBodyComponents}
         </body>
       </html>
-    )
+    );
   }
-}
+};

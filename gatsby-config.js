@@ -111,17 +111,17 @@ module.exports = {
         plugins: [
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-smartypants`,
-          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-copy-linked-files`
         ]
       }
     },
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
+        pathToConfigModule: "src/utils/typography"
+      }
     },
-    "gatsby-plugin-offline",
+    "gatsby-plugin-remove-serviceworker",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-json`,
