@@ -19,21 +19,6 @@ import { typography } from "../utils/typography";
 import GCEHead from "../components/GCEHead";
 
 export default function Index() {
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/sw.js", { scope: "/" })
-        .then(function(reg) {
-          // registration worked
-          console.log("Registration succeeded. Scope is " + reg.scope);
-        })
-        .catch(function(error) {
-          // registration failed
-          console.log("Registration failed with " + error);
-        });
-    }
-  }, []);
-
   return (
     <Wrapper>
       <GCEHead />
@@ -300,7 +285,7 @@ function Registration() {
           ${primaryButtonCss}
           font-size: 1.15rem;
         `}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjof"
+        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjo"
       >
         Early bird tickets available, register now!
       </a>
