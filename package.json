@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o public",
+    "build": "next build && next export -o public && cp public/static/sw.js static/sw.js",
     "start": "next start"
   }
 }

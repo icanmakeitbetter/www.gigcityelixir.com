@@ -22,7 +22,7 @@ export default function Index() {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
-        .register("/static/sw.js", { scope: "/static/" })
+        .register("/sw.js", { scope: "/" })
         .then(function(reg) {
           // registration worked
           console.log("Registration succeeded. Scope is " + reg.scope);
