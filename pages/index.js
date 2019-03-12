@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { css } from "@emotion/core";
 import { primaryButtonCss, reverseButtonCss } from "../components/Button";
 import DateAndVenue from "../components/DateAndVenue";
@@ -18,6 +19,14 @@ import { typography } from "../utils/typography";
 import GCEHead from "../components/GCEHead";
 
 export default function Index() {
+  useEffect(() => {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }, []);
+
   return (
     <Wrapper>
       <GCEHead />
