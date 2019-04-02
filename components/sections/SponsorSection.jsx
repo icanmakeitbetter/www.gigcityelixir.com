@@ -87,6 +87,24 @@ const SubscriptionSection = () => (
           </p>
         </Platinum>
       </div>
+      <h3>Lanyard</h3>
+      <div css={flexGrid}>
+        <Lanyard
+          img="/static/sponsor-logos/c5.png"
+          width={622}
+          height={600}
+          name="Carbon Five"
+          url="https://www.carbonfive.com/"
+        >
+          <div>
+            <p>
+              Carbon Five is a strategic digital product development firm. We
+              partner with clients to create exceptional products and grow
+              effective teams.
+            </p>
+          </div>
+        </Lanyard>
+      </div>
       <h3>Elixir Champion</h3>
       <div css={flexGrid}>
         <Champion
@@ -130,6 +148,54 @@ function Platinum({ img, name, url, children }) {
       `}
     >
       <img src={img} alt={name} />
+      {children}
+    </a>
+  );
+}
+
+function Lanyard({ img, name, url, children, width, height }) {
+  return (
+    <a
+      href={url}
+      css={css`
+        margin-left: ${typography.rhythm(1)};
+        ${sponsorLink}
+        margin-bottom: ${typography.rhythm(1)};
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        figure {
+          width: calc(50% - ${typography.rhythm(1 / 2)});
+          margin: 0;
+        }
+
+        img {
+          /* width: 100%; */
+          height: 10em;
+          margin: 0;
+        }
+
+        div {
+          width: calc(50% - ${typography.rhythm(1 / 2)});
+        }
+
+        p:last-child {
+          margin-bottom: ${typography.rhythm(1 / 4)};
+        }
+        p {
+          padding-left: ${typography.rhythm(1 / 4)};
+          padding-right: ${typography.rhythm(1 / 4)};
+        }
+
+        font-size: ${typography.rhythm(5 / 8)};
+        color: ${colors.plum};
+        text-align: center;
+      `}
+    >
+      <figure>
+        <img src={img} alt={name} />
+      </figure>
       {children}
     </a>
   );
