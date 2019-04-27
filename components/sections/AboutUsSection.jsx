@@ -3,6 +3,8 @@ import { SectionHeader, SectionSubHeader } from "../SectionWrapper";
 import { css } from "@emotion/core";
 import { typography } from "../../utils/typography";
 import { breakpoint } from "../../utils/breakpoints";
+import Link from "next/link";
+import { colors } from "../../utils/constants";
 
 const AboutUsSection = () => (
   <section
@@ -43,6 +45,25 @@ const AboutUsSection = () => (
       that will make you a better programmer, regardless of the languages and
       tools you use at work today.
     </p>
+    <Link href="/about" prefetch>
+      <a
+        css={css`
+          color: ${colors.peach};
+          text-decoration: underline;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            color: ${colors.blush};
+          }
+          &:active {
+            color: white;
+          }
+        `}
+      >
+        Read more about the conference
+      </a>
+    </Link>
   </section>
 );
 
