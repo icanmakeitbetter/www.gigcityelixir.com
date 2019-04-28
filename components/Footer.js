@@ -54,6 +54,10 @@ export default function Footer({ extraCss }) {
           <a>2018</a>
         </Link>
       </nav>
+      <script
+        crossorigin="anonymous"
+        src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign"
+      />
     </footer>
   );
 }

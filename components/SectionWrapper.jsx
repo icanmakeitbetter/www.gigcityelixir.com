@@ -5,6 +5,9 @@ import { breakpoint, points } from "../utils/breakpoints";
 const { rhythm } = typography;
 
 export const grid = css`
+  max-width: ${points.maxWidth};
+  margin: 0px auto;
+  display: flex;
   @supports (display: grid) {
     ${breakpoint("medium")} {
       display: grid;
@@ -12,8 +15,6 @@ export const grid = css`
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       grid-column-gap: ${rhythm(3)};
-      max-width: ${points.maxWidth};
-      margin: 0px auto;
     }
   }
 `;
@@ -34,7 +35,12 @@ const SectionWrapper = ({ children, header, subhead, extraCss }) => (
     <div css={grid}>
       <div
         css={css`
+          width: calc(100% / 3 - ${rhythm(3)});
+          margin-right: ${rhythm(3)};
+          text-align: right;
           @supports (display: grid) {
+            margin-right: 0;
+            width: auto;
             ${breakpoint("medium")} {
               grid-area: title;
               text-align: right;
@@ -47,8 +53,10 @@ const SectionWrapper = ({ children, header, subhead, extraCss }) => (
       </div>
       <div
         css={css`
-          grid-area: content;
+          width: calc(100% / 3 * 2);
           @supports (display: grid) {
+            grid-area: content;
+            width: auto;
             ${breakpoint("medium")} {
               padding: 0 ${rhythm(2)};
             }

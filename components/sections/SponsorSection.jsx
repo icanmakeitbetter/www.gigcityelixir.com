@@ -145,6 +145,10 @@ function Platinum({ img, name, url, children }) {
         font-size: ${typography.rhythm(5 / 8)};
         color: ${colors.plum};
         text-align: center;
+
+        img {
+          flex-shrink: 0;
+        }
       `}
     >
       <img src={img} alt={name} />
