@@ -60,13 +60,19 @@ export default function Index() {
             css={css`
               grid-area: mid;
               background-color: ${colors.plum};
+              width: calc(100% / 3 * 2);
+              @supports (display: grid) {
+                width: auto;
+              }
             `}
           >
             <AboutUsSection />
           </div>
           <div
             css={css`
+              width: calc(100% / 3 * 2);
               @supports (display: grid) {
+                width: auto;
                 ${breakpoint("medium")} {
                   padding: 0;
                   grid-area: bot;
@@ -129,7 +135,6 @@ function Hero({ children }) {
         box-shadow: 0 0 0 0.5em ${colors.peachy_plum},
           0 0.5em 0 0.5em ${colors.plummy_peach}, 0 1em 0 0.5em ${colors.peach};
         color: ${colors.blush};
-        display: flex;
         flex-direction: column-reverse;
         padding-top: ${typography.rhythm(1 / 2)};
 
@@ -151,16 +156,16 @@ function Hero({ children }) {
         css={css`
           display: flex;
           flex-wrap: wrap;
+          justify-content: end;
           align-items: center;
           @supports (display: grid) {
+            justify-content: normal;
             ${breakpoint("medium")} {
               display: grid;
               /* 3 rows, 3 cols */
               grid-template-columns: 1fr 1fr 1fr;
               grid-template-rows: auto auto auto;
               grid-column-gap: ${typography.rhythm(3)};
-              max-width: ${points.maxWidth};
-              margin: 0px auto;
               grid-template-areas:
                 "left top top"
                 "left mid mid"

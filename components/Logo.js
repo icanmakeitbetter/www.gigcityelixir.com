@@ -7,6 +7,7 @@ export default function Logo({ extraCss }) {
   return (
     <Link href="/">
       <a
+        href="/"
         css={css`
           text-decoration: none;
           color: white;
