@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { css } from "@emotion/core";
 import { primaryButtonCss, reverseButtonCss } from "../components/Button";
 import DateAndVenue from "../components/DateAndVenue";
