@@ -87,20 +87,36 @@ const SubscriptionSection = () => (
           </p>
         </Platinum>
       </div>
-      <h3>Lanyard</h3>
+      <h3>Community</h3>
       <div css={flexGrid}>
-        <Lanyard
-          img="/static/sponsor-logos/c5.png"
-          width={622}
-          height={600}
-          name="Carbon Five"
-          url="https://www.carbonfive.com/"
-        >
+        <Lanyard url="https://www.carbonfive.com/">
           <div>
             <p>
               Carbon Five is a strategic digital product development firm. We
               partner with clients to create exceptional products and grow
               effective teams.
+            </p>
+          </div>
+          <figure>
+            <img src="/static/sponsor-logos/c5.png" alt="Carbon Five" />
+          </figure>
+        </Lanyard>
+      </div>
+      <h3>Lanyard</h3>
+      <div css={flexGrid}>
+        <Lanyard url="https://bleacherreport.com/">
+          <figure>
+            <img
+              src="/static/sponsor-logos/bleacher.svg"
+              alt="Bleacher Report"
+            />
+          </figure>
+          <div>
+            <p>
+              There’s an ever-present energy that surrounds the world of sports.
+              Through creative expression, B/R adds fuel to the fire. We capture
+              and unleash the untapped power to deliver visceral, authentic
+              moments at the intersection of sports and culture.
             </p>
           </div>
         </Lanyard>
@@ -157,7 +173,7 @@ function Platinum({ img, name, url, children }) {
   );
 }
 
-function Lanyard({ img, name, url, children, width, height }) {
+function Lanyard({ img, name, url, children }) {
   return (
     <a
       href={url}
@@ -197,9 +213,6 @@ function Lanyard({ img, name, url, children, width, height }) {
         text-align: center;
       `}
     >
-      <figure>
-        <img src={img} alt={name} />
-      </figure>
       {children}
     </a>
   );
