@@ -38,6 +38,7 @@ export default function SpeakerSection() {
           twitterHandle="osagaius"
         />
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="bltroutwine" />
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
@@ -48,8 +49,8 @@ export default function SpeakerSection() {
             border-radius: 3px;
             margin-left: ${typography.rhythm(1)};
             margin-top: ${typography.rhythm(1)};
-            /* width: calc(50% - ${typography.rhythm(1)}); */
-            width: 100%;
+            width: calc(50% - ${typography.rhythm(1)});
+            /* width: 100%; */
             overflow: hidden;
             text-align: center;
             display: flex;
@@ -59,8 +60,7 @@ export default function SpeakerSection() {
             min-height: 150px;
           `}
         >
-          {" "}
-          And more to come!{" "}
+          And more to come!
         </div>
       </div>
     </SectionWrapper>
