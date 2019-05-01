@@ -130,7 +130,9 @@ const SubscriptionSection = () => (
         />
       </div>
       <Link href="/contact">
-        <a css={buttonCss}>Contact Us About Sponsoring</a>
+        <a href="/contact" css={buttonCss}>
+          Contact Us About Sponsoring
+        </a>
       </Link>
     </div>
   </SectionWrapper>

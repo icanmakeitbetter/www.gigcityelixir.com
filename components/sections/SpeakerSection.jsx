@@ -38,18 +38,25 @@ export default function SpeakerSection() {
           twitterHandle="osagaius"
         />
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+        <Bio
+          imgSrc="brian.jpg"
+          name="Brian Troutwine"
+          twitterHandle="bltroutwine"
+        />
         <div
           css={css`
             border-radius: 3px;
             margin-left: ${typography.rhythm(1)};
             margin-top: ${typography.rhythm(1)};
-            width: calc(50% - ${typography.rhythm(1)});
+            /* width: calc(50% - ${typography.rhythm(1)}); */
+            width: 100%;
             overflow: hidden;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             border: 3px solid ${colors.blush};
+            min-height: 150px;
           `}
         >
           {" "}
