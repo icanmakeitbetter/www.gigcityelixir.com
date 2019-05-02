@@ -44,6 +44,8 @@ export default function SpeakerSection() {
           name="Brian Troutwine"
           twitterHandle="bltroutwine"
         />
+        <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
+        <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
         <div
           css={css`
             border-radius: 3px;

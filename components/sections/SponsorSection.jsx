@@ -66,17 +66,6 @@ const SubscriptionSection = () => (
       <h3>Platinum</h3>
       <div css={flexGrid}>
         <Platinum
-          img="/static/sponsor-logos/tract-manager.png"
-          name="TractManager"
-          url="https://tractmanager.com"
-        >
-          <p>
-            TractManager is the healthcare industry’s leading provider of
-            Strategic Sourcing and Contract Lifecycle Management solutions which
-            support 3 out of 5 hospitals nationwide.
-          </p>
-        </Platinum>
-        <Platinum
           img="/static/sponsor-logos/groxio.png"
           name="groxio"
           url="https://grox.io"
@@ -151,6 +140,11 @@ function Platinum({ img, name, url, children }) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        /* Override wide when we have a single platinum sponsor */
+        ${breakpoint("large")} {
+          width: 100%;
+        }
 
         p:last-child {
           margin-bottom: ${typography.rhythm(1 / 4)};
