@@ -19,30 +19,60 @@ export default function SpeakerSection() {
           imgSrc="justin.jpg"
           name="Justin Schneck"
           twitterHandle="mobileoverlord"
+          href="/speakers/justin-schneck"
         />
-        <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
-        <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
+        <Bio
+          imgSrc="amos.jpg"
+          name="Amos King"
+          twitterHandle="Adkron"
+          href="/speakers/amos-king"
+        />
+        <Bio
+          imgSrc="anna.jpg"
+          name="Anna Neyzburg"
+          twitterHandle="ANeyzb"
+          href="/speakers/anna-neyzburg"
+        />
         <Bio
           imgSrc="chris.jpg"
           name="Chris Keathley"
           twitterHandle="ChrisKeathley"
+          href="/speakers/chris-keathley"
         />
         <Bio
           imgSrc="stu.jpg"
           name="Stu Halloway"
           twitterHandle="stuarthalloway"
+          href="/speakers/stu-halloway"
         />
         <Bio
           imgSrc="osa.jpg"
           name="Osa Gaius-Obaseki"
           twitterHandle="osagaius"
+          href="/speakers/osa-gaius-obaseki"
         />
+        <Bio
+          imgSrc="bruce.jpg"
+          name="Bruce Tate"
+          twitterHandle="redrapids"
+          href="/speakers/bruce-tate"
+        />
+        <Bio
+          imgSrc="dave.jpg"
+          name="Dave Thomas"
+          twitterHandle="bltroutwine"
+          href="/speakers/dave-thomas"
+        />
+<<<<<<< HEAD
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
         <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
+=======
+>>>>>>> Add individual speaker pages
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
           twitterHandle="bltroutwine"
+          href="/speakers/brian-troutwine"
         />
         <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
         <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
@@ -60,7 +90,7 @@ export default function SpeakerSection() {
   );
 }
 
-function Bio({ imgSrc, name, twitterHandle }) {
+function Bio({ href, imgSrc, name, twitterHandle }) {
   return (
     <div
       className="ff-odudomono-r"
@@ -82,17 +112,19 @@ function Bio({ imgSrc, name, twitterHandle }) {
         }
       `}
     >
-      <img src={`/static/speakers/${imgSrc}`} alt="" />
-      <div
-        css={css`
-          background-color: ${colors.plum};
-          color: white;
-          padding: ${typography.rhythm(1 / 3)};
-          flex-grow: 1;
-        `}
-      >
-        {name}
-      </div>
+      <a href={href}>
+        <img src={`/static/speakers/${imgSrc}`} alt="" />
+        <div
+          css={css`
+            background-color: ${colors.plum};
+            color: white;
+            padding: ${typography.rhythm(1 / 3)};
+            flex-grow: 1;
+          `}
+        >
+          {name}
+        </div>
+      </a>
       {twitterHandle && (
         <div
           css={css`
