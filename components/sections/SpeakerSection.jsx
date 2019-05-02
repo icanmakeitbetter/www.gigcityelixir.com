@@ -38,7 +38,7 @@ export default function SpeakerSection() {
           twitterHandle="osagaius"
         />
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
-        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="bltroutwine" />
+        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
