@@ -18,6 +18,7 @@ export default function() {
       <ExternalLink href="https://twitter.com/redrapids">
         @redrapids
       </ExternalLink>
+      <ExternalLink href="https://grox.io/">grox.io</ExternalLink>
     </BioPage>
   );
 }

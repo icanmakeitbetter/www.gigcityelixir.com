@@ -187,6 +187,7 @@ export function ExternalLink({ children, href }) {
         &:active {
           background: hsla(${hues.plum}, 80%, 20%, 0.9);
         }
+        margin: ${typography.rhythm(1 / 2)};
       `}
       href={href}
     >
