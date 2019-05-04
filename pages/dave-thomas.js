@@ -1,11 +1,12 @@
-import { BioPage, ExternalLink } from "../../components/BioPage";
+import { BioPage, ExternalLink } from "../components/BioPage";
 
 export default function() {
   return (
     <BioPage
       src="dave.jpg"
       name="Dave Thomas"
-      subtitle="Programmer turned publisher (but mostly programmer)"
+      subtitle="Programmer turned publisher
+(but mostly programmer)"
     >
       <p>
         Dave Thomas has written code just about every day in the last 45 years.

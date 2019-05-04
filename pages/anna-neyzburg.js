@@ -1,4 +1,4 @@
-import { BioPage, ExternalLink } from "../../components/BioPage";
+import { BioPage, ExternalLink } from "../components/BioPage";
 
 export default function Anna() {
   return (

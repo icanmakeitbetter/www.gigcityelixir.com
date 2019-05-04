@@ -21,8 +21,9 @@ export const grid = css`
   }
 `;
 
-const SectionWrapper = ({ children, header, subhead, extraCss }) => (
+const SectionWrapper = ({ children, header, subhead, extraCss, id }) => (
   <section
+    id={id}
     css={css`
       margin-left: ${rhythm(1)};
       margin-right: ${rhythm(1)};

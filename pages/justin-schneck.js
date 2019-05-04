@@ -1,8 +1,12 @@
-import { BioPage, ExternalLink } from "../../components/BioPage";
+import { BioPage, ExternalLink } from "../components/BioPage";
 
-export default function Amos() {
+export default function Justin() {
   return (
-    <BioPage name="Amos King" src="amos.jpg" subtitle="Elixir Outlaw">
+    <BioPage
+      name="Justin Schneck"
+      src="justin.jpg"
+      subtitle="Co-Author of Nerves Project"
+    >
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         mattis nulla metus, consectetur fringilla mi imperdiet blandit. Praesent
@@ -13,7 +17,9 @@ export default function Amos() {
         efficitur nec. Morbi et nunc iaculis, elementum nulla sed, aliquet
         lorem. Morbi libero lorem, laoreet a massa quis, vehicula ornare eros.
       </p>
-      <ExternalLink href="https://twitter.com/Adkron">@Adkron</ExternalLink>
+      <ExternalLink href="https://twitter.com/mobileoverlord">
+        @mobileoverlord
+      </ExternalLink>
     </BioPage>
   );
 }

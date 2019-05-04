@@ -6,7 +6,7 @@ import { colors } from "../../utils/constants";
 
 export default function SpeakerSection() {
   return (
-    <SectionWrapper header="Our Speakers">
+    <SectionWrapper header="Our Speakers" id="speakers">
       <div
         css={css`
           display: flex;
@@ -19,60 +19,67 @@ export default function SpeakerSection() {
           imgSrc="justin.jpg"
           name="Justin Schneck"
           twitterHandle="mobileoverlord"
-          href="/speakers/justin-schneck"
+          href="/justin-schneck"
         />
         <Bio
           imgSrc="amos.jpg"
           name="Amos King"
           twitterHandle="Adkron"
-          href="/speakers/amos-king"
+          href="/amos-king"
         />
         <Bio
           imgSrc="anna.jpg"
           name="Anna Neyzburg"
           twitterHandle="ANeyzb"
-          href="/speakers/anna-neyzburg"
+          href="/anna-neyzburg"
         />
         <Bio
           imgSrc="chris.jpg"
           name="Chris Keathley"
           twitterHandle="ChrisKeathley"
-          href="/speakers/chris-keathley"
+          href="/chris-keathley"
         />
         <Bio
           imgSrc="stu.jpg"
           name="Stu Halloway"
           twitterHandle="stuarthalloway"
-          href="/speakers/stu-halloway"
+          href="/stu-halloway"
         />
         <Bio
           imgSrc="osa.jpg"
           name="Osa Gaius-Obaseki"
           twitterHandle="osagaius"
-          href="/speakers/osa-gaius-obaseki"
+          href="/osa-gaius-obaseki"
         />
         <Bio
           imgSrc="bruce.jpg"
           name="Bruce Tate"
           twitterHandle="redrapids"
-          href="/speakers/bruce-tate"
+          href="/bruce-tate"
         />
         <Bio
           imgSrc="dave.jpg"
           name="Dave Thomas"
-          twitterHandle="bltroutwine"
-          href="/speakers/dave-thomas"
+          twitterHandle="pragdave"
+          href="/dave-thomas"
         />
-<<<<<<< HEAD
-        <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
-        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
-=======
->>>>>>> Add individual speaker pages
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
           twitterHandle="bltroutwine"
-          href="/speakers/brian-troutwine"
+          href="/brian-troutwine"
+        />
+        <Bio
+          imgSrc="emily.jpg"
+          name="Emily Maxie"
+          twitterHandle="emilymaxie"
+          href="/emily-maxie"
+        />
+        <Bio
+          imgSrc="todd.jpg"
+          name="Todd Resudek"
+          href="/todd-resudek"
+          twitterHandle="sprsmpl"
         />
         <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
         <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />

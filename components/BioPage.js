@@ -43,8 +43,8 @@ export function BioPage({ name, children, src, subtitle }) {
         <div
           className="ff-odudomono-sb"
           css={css`
-            color: hsla(${hues.blush}, 100%, 50%, 0.07);
-            font-size: 25vw;
+            color: hsla(${hues.blush}, 100%, 50%, 0.05);
+            font-size: 29vw;
             text-transform: uppercase;
             letter-spacing: 0.5ch;
             line-height: 0.95;
@@ -82,13 +82,14 @@ export function BioPage({ name, children, src, subtitle }) {
             />
             {subtitle && (
               <figcaption
-                className="ff-odudomono-r"
+                className="ff-odudomono-l"
                 css={css`
                   font-size: ${typography.rhythm(2 / 3)};
                   text-transform: uppercase;
-                  letter-spacing: 1px;
+                  letter-spacing: 2px;
                   color: ${colors.peach};
                   margin-bottom: -${typography.rhythm(1)};
+                  white-space: pre-wrap;
                   /* text-align: left; */
                 `}
               >
@@ -120,7 +121,7 @@ export function BioPage({ name, children, src, subtitle }) {
             {children}
           </div>
 
-          <Link href="/speakers">
+          <Link href="/#speakers">
             <a
               className="ff-odudomono-r"
               css={css`
@@ -147,7 +148,7 @@ export function BioPage({ name, children, src, subtitle }) {
                   color: white;
                 }
               `}
-              href="/speakers"
+              href="/#speakers"
             >
               Speakers
             </a>
@@ -173,7 +174,8 @@ export function ExternalLink({ children, href }) {
       css={css`
         display: inline-block;
         color: ${colors.blush};
-        padding: ${typography.rhythm(1 / 2)};
+        padding: ${typography.rhythm(1 / 3)} ${typography.rhythm(1 / 2)}
+          ${typography.rhythm(1 / 2)};
         letter-spacing: 1px;
         background: hsla(${hues.plum}, 80%, 20%, 0.6);
         &:hover,
