@@ -118,6 +118,24 @@ const SubscriptionSection = () => (
           url="https://ti.to/"
         />
       </div>
+      <h3>Diversity Advocates</h3>
+      <p>Be the first to sponsor a scholarship recipient!</p>
+      <h3>Swag and Award Donors</h3>
+      <ul
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -${typography.rhythm(1)};
+          > li {
+            width: calc(50% - ${typography.rhythm(1)});
+            margin-left: ${typography.rhythm(1)};
+          }
+        `}
+      >
+        <li>
+          <a href="https://www.manning.com/">Manning Publications</a>
+        </li>
+      </ul>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
           Contact Us About Sponsoring
