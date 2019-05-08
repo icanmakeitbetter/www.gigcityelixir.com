@@ -46,13 +46,20 @@ export default function SpeakerSection() {
         />
         <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
         <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
+        <Bio
+          imgSrc="ricardo.jpg"
+          name="Ricardo Echavarría"
+          twitterHandle="r_icarus"
+        />
         <div
           css={css`
             border-radius: 3px;
             margin-left: ${typography.rhythm(1)};
             margin-top: ${typography.rhythm(1)};
-            width: calc(50% - ${typography.rhythm(1)});
-            /* width: 100%; */
+            /* odd child */
+            /* width: calc(50% - ${typography.rhythm(1)}); */
+            /* even child */
+            width: 100%;
             overflow: hidden;
             text-align: center;
             display: flex;
