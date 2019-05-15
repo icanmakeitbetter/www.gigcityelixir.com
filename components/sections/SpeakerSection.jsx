@@ -81,14 +81,18 @@ export default function SpeakerSection() {
           href="/todd-resudek"
           twitterHandle="sprsmpl"
         />
-        <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
-        <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
         <Bio
           imgSrc="ricardo.jpg"
           name="Ricardo Echavarría"
+          href="/ricardo-echavarria"
           twitterHandle="r_icarus"
         />
-        <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
+        <Bio
+          imgSrc="greg.jpg"
+          name="Greg Mefford"
+          href="/greg-mefford"
+          twitterHandle="ferggo"
+        />
         <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
         <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
         <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" />
