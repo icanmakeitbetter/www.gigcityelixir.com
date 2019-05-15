@@ -2,7 +2,6 @@ import React from "react";
 import SectionWrapper from "../SectionWrapper";
 import { colors } from "../../utils/constants";
 import { css } from "@emotion/core";
-import styled from "@emotion/styled";
 import { buttonCss } from "../Button";
 import { typography } from "../../utils/typography";
 import { breakpoint } from "../../utils/breakpoints";

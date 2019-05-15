@@ -7,7 +7,9 @@ const { rhythm } = typography;
 export const grid = css`
   max-width: ${points.maxWidth};
   margin: 0px auto;
-  display: flex;
+  ${breakpoint("medium")} {
+    display: flex;
+  }
   @supports (display: grid) {
     ${breakpoint("medium")} {
       display: grid;
@@ -37,13 +39,15 @@ const SectionWrapper = ({ children, header, subhead, extraCss }) => (
         css={css`
           width: calc(100% / 3 - ${rhythm(3)});
           margin-right: ${rhythm(3)};
-          text-align: right;
+
+          ${breakpoint("medium")} {
+            text-align: right;
+          }
           @supports (display: grid) {
             margin-right: 0;
             width: auto;
             ${breakpoint("medium")} {
               grid-area: title;
-              text-align: right;
             }
           }
         `}
