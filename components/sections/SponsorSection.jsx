@@ -42,6 +42,9 @@ const flexGridItem = css`
 const flexGridItemChampion = css`
   margin-left: ${typography.rhythm(1)};
   width: calc(25% - ${typography.rhythm(1)});
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const sponsorLink = css`
@@ -116,6 +119,20 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/tito.svg"
           name="Tito"
           url="https://ti.to/"
+        />
+        <Champion
+          img="/static/sponsor-logos/codescience.jpg"
+          name="CodeScience"
+          url="https://www.codescience.com/"
+          linkcss={css`
+            padding-left: 2px;
+            padding-right: 2px;
+            &:focus,
+            &:hover {
+              padding-left: 0px;
+              padding-right: 0px;
+            }
+          `}
         />
       </div>
       <h3>Diversity Advocates</h3>
@@ -232,7 +249,7 @@ function Lanyard({ img, name, url, children }) {
   );
 }
 
-function Champion({ img, name, url }) {
+function Champion({ img, name, url, linkcss = "" }) {
   return (
     <a
       href={url}
@@ -241,6 +258,7 @@ function Champion({ img, name, url }) {
         ${sponsorLink}
         border-color: ${colors.blush};
         margin-bottom: ${typography.rhythm(1)};
+        ${linkcss}
       `}
     >
       <img
