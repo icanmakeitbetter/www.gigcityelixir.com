@@ -52,6 +52,7 @@ export default function SpeakerSection() {
           twitterHandle="r_icarus"
         />
         <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
+        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
         <div
           css={css`
             border-radius: 3px;
