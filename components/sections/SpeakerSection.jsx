@@ -58,10 +58,10 @@ export default function SpeakerSection() {
             border-radius: 3px;
             margin-left: ${typography.rhythm(1)};
             margin-top: ${typography.rhythm(1)};
-            /* odd child */
-            width: calc(50% - ${typography.rhythm(1)});
-            /* even child */
-            /* width: 100%; */
+
+            flex-grow: 1;
+            width: auto;
+
             overflow: hidden;
             text-align: center;
             display: flex;
