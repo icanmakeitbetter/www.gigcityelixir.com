@@ -78,6 +78,20 @@ const SubscriptionSection = () => (
           </p>
         </Platinum>
       </div>
+      <h3>Gold</h3>
+      <div css={flexGrid}>
+        <Platinum
+          img="/static/sponsor-logos/binary-noggin.png"
+          name="Binary Noggin"
+          url="http://binarynoggin.com/"
+        >
+          <p>
+            Agile Practitioners Helping to Build Great Products Through
+            Communication and Trust
+          </p>
+        </Platinum>
+      </div>
+
       <h3>Community</h3>
       <div css={flexGrid}>
         <Lanyard url="https://www.carbonfive.com/">
