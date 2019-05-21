@@ -135,7 +135,20 @@ const SubscriptionSection = () => (
         />
       </div>
       <h3>Diversity Advocates</h3>
-      <p>Be the first to sponsor a scholarship recipient!</p>
+      <ul
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -${typography.rhythm(1)};
+          > li {
+            width: calc(50% - ${typography.rhythm(1)});
+            margin-left: ${typography.rhythm(1)};
+          }
+        `}
+      >
+        <li>Doyle Turner</li>
+      </ul>
+
       <h3>Swag and Award Donors</h3>
       <ul
         css={css`
