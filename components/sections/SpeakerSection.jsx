@@ -93,9 +93,19 @@ export default function SpeakerSection() {
           href="/greg-mefford"
           twitterHandle="ferggo"
         />
-        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
-        <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
-        <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" />
+        <Bio
+          imgSrc="miki.jpg"
+          name="Miki Rezentes"
+          twitterHandle="mikirez"
+          href="/miki-rezentes"
+        />
+        <Bio
+          imgSrc="ben.jpg"
+          name="Ben Marx"
+          twitterHandle="bgmarx"
+          href="/ben-marx"
+        />
+        <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" href="/jeff-grunewald" />
       </div>
     </SectionWrapper>
   );
@@ -123,7 +133,14 @@ function Bio({ href, imgSrc, name, twitterHandle }) {
         }
       `}
     >
-      <a href={href}>
+      <a
+        href={href}
+        css={css`
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+        `}
+      >
         <img src={`/static/speakers/${imgSrc}`} alt="" />
         <div
           css={css`
