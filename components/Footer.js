@@ -58,7 +58,7 @@ export default function Footer({ extraCss }) {
         </Link>
       </nav>
       <script
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
         src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign"
       />
     </footer>
