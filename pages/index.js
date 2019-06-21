@@ -10,6 +10,7 @@ import ProgramSection from "../components/sections/ProgramSection";
 import SpeakerSection from "../components/sections/SpeakerSection";
 import SponsorSection from "../components/sections/SponsorSection";
 import StartupWeekSection from "../components/sections/StartupWeekSection";
+import NervesTrainingSection from "../components/sections/NervesTrainingSection";
 import VenueSection from "../components/sections/VenueSection";
 import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint, points } from "../utils/breakpoints";
@@ -86,6 +87,8 @@ export default function Index() {
         <SpeakerSection />
         <Hr />
         <ProgramSection />
+        <Hr />
+        <NervesTrainingSection />
         <Hr />
         <HotelSection />
         <Hr />
