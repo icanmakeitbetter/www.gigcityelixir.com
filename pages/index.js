@@ -24,6 +24,21 @@ export default function Index() {
       <GCEHead />
       <SkipToNavLink />
       <Main>
+        <Teaser>
+          Nerves Training tickets are now available!{" "}
+          <a
+            href="#nerves-training"
+            css={css`
+              &,
+              &:link,
+              &:visited {
+                color: white;
+              }
+            `}
+          >
+            Find out more.
+          </a>
+        </Teaser>
         <Hero>
           <HeroLeft>
             <Logo
@@ -297,5 +312,21 @@ function Registration() {
         Early bird tickets available, register now!
       </a>
     </div>
+  );
+}
+
+function Teaser({ children }) {
+  return (
+    <p
+      css={css`
+        background: ${colors.peachy_plum};
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0;
+      `}
+    >
+      {children}
+    </p>
   );
 }
