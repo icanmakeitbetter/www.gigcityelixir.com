@@ -35,15 +35,12 @@ export default function VenueSection() {
         buying the hardware afterwards and recommendations on equipment that is
         useful for embedded development.
       </p>
-      {/* <a
+      <a
         css={buttonCss}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjo"
+        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/g6bitkh3nvu"
       >
         Reserve your training spot
-      </a> */}
-      <div style={{ fontWeight: "bold" }}>
-        Tickets will be available Saturday, June 22!
-      </div>
+      </a>
     </SectionWrapper>
   );
 }

@@ -33,6 +33,10 @@ const SectionWrapper = ({ children, header, subhead, extraCss }) => (
       }
       ${extraCss}
     `}
+    id={header
+      .split(/\s+/)
+      .map(s => s.toLowerCase())
+      .join("-")}
   >
     <div css={grid}>
       <div
