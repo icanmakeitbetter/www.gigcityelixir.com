@@ -4,7 +4,12 @@ import { buttonCss } from "../Button";
 export default function VenueSection() {
   return (
     <SectionWrapper
-      subhead="Device to the Cloud with Nerves and NervesHub"
+      subhead={
+        <div>
+          <div className="ff-odudomono-sb">October 17, 2019</div>
+          Device to the Cloud with Nerves and NervesHub
+        </div>
+      }
       header="Nerves Training"
     >
       <p>
