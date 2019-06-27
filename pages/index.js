@@ -307,9 +307,9 @@ function Registration() {
           ${primaryButtonCss}
           font-size: 1.15rem;
         `}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjo"
+        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019"
       >
-        Early bird tickets available, register now!
+        Register here for Tickets and Training
       </a>
     </div>
   );

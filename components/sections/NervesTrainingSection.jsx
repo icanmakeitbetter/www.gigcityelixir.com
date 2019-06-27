@@ -37,7 +37,7 @@ export default function VenueSection() {
       </p>
       <a
         css={buttonCss}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/ewepw4oabjo"
+        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019/with/g6bitkh3nvu"
       >
         Reserve your training spot
       </a>
