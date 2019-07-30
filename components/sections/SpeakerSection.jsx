@@ -54,26 +54,7 @@ export default function SpeakerSection() {
         <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
         <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
         <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
-        <div
-          css={css`
-            border-radius: 3px;
-            margin-left: ${typography.rhythm(1)};
-            margin-top: ${typography.rhythm(1)};
-
-            flex-grow: 1;
-            width: auto;
-
-            overflow: hidden;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 3px solid ${colors.blush};
-            min-height: 150px;
-          `}
-        >
-          And more to come!
-        </div>
+        <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" />
       </div>
     </SectionWrapper>
   );
