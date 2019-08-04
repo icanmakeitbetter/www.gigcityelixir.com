@@ -77,6 +77,17 @@ const SubscriptionSection = () => (
             who want to change the way people teach and learn languages.
           </p>
         </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/pillar.png"
+          name="Pillar"
+          url="https://pillartechnology.com/"
+        >
+          <p>
+            Pillar Technology is a technology consulting company with over 20
+            years of uncovering and executing industry-disrupting opportunities
+            at lightning speed.
+          </p>
+        </Platinum>
       </div>
       <h3>Gold</h3>
       <div css={flexGrid}>
