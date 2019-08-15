@@ -88,6 +88,17 @@ const SubscriptionSection = () => (
             at lightning speed.
           </p>
         </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/very.svg"
+          name="Very"
+          url="https://www.verypossible.com/"
+        >
+          <p>
+            Remarkable people building connected solutions. Work with software
+            development and design experts to bring your ideas to life using IoT
+            and machine learning.
+          </p>
+        </Platinum>
       </div>
       <h3>Gold</h3>
       <div css={flexGrid}>
