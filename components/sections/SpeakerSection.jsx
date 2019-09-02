@@ -20,11 +20,6 @@ export default function SpeakerSection() {
           name="Justin Schneck"
           twitterHandle="mobileoverlord"
         />
-        <Bio
-          imgSrc="chris-mccord.jpg"
-          name="Chris McCord"
-          twitterHandle="chris_mccord"
-        />
         <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
         <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
         <Bio
