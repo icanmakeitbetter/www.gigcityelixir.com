@@ -20,6 +20,13 @@ export default function SpeakerSection() {
           name="Justin Schneck"
           twitterHandle="mobileoverlord"
         />
+        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
+        <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+        <Bio
+          imgSrc="osa.jpg"
+          name="Osa Gaius-Obaseki"
+          twitterHandle="osagaius"
+        />
         <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
         <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
         <Bio
@@ -32,13 +39,6 @@ export default function SpeakerSection() {
           name="Stu Halloway"
           twitterHandle="stuarthalloway"
         />
-        <Bio
-          imgSrc="osa.jpg"
-          name="Osa Gaius-Obaseki"
-          twitterHandle="osagaius"
-        />
-        <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
-        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
