@@ -59,6 +59,7 @@ export default function SpeakerSection() {
           name="Jeff Grunewald"
           githubUser="jeffgrunewald"
         />
+        <Bio imgSrc="martin.jpg" name="Martin Gausby" twitterHandle="gausby" />
       </div>
     </SectionWrapper>
   );
