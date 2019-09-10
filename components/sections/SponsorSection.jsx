@@ -183,6 +183,7 @@ const SubscriptionSection = () => (
         `}
       >
         <li>Doyle Turner</li>
+        <li>Amos King</li>
       </ul>
 
       <h3>Swag and Award Donors</h3>
