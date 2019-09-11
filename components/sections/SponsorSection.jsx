@@ -169,6 +169,11 @@ const SubscriptionSection = () => (
             }
           `}
         />
+        <Champion
+          img="/static/sponsor-logos/aspire.png"
+          name="Aspire"
+          url="http://aspirehealthcare.com/"
+        />
       </div>
       <h3>Diversity Advocates</h3>
       <ul
@@ -200,6 +205,9 @@ const SubscriptionSection = () => (
       >
         <li>
           <a href="https://www.manning.com/">Manning Publications</a>
+        </li>
+        <li>
+          <a href="https://pragprog.com">Pragmatic Bookshelf</a>
         </li>
       </ul>
       <Link href="/contact">
