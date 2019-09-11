@@ -206,6 +206,9 @@ const SubscriptionSection = () => (
         <li>
           <a href="https://www.manning.com/">Manning Publications</a>
         </li>
+        <li>
+          <a href="https://pragprog.com">Pragmatic Bookshelf</a>
+        </li>
       </ul>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
