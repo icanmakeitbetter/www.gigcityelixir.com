@@ -169,6 +169,11 @@ const SubscriptionSection = () => (
             }
           `}
         />
+        <Champion
+          img="/static/sponsor-logos/aspire.png"
+          name="Aspire"
+          url="http://aspirehealthcare.com/"
+        />
       </div>
       <h3>Diversity Advocates</h3>
       <ul
