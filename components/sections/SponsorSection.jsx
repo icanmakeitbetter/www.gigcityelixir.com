@@ -68,16 +68,6 @@ const SubscriptionSection = () => (
       <h3>Platinum</h3>
       <div css={flexGrid}>
         <Platinum
-          img="/static/sponsor-logos/groxio.png"
-          name="groxio"
-          url="https://grox.io"
-        >
-          <p>
-            Groxio is a small company of educators, language geeks and authors
-            who want to change the way people teach and learn languages.
-          </p>
-        </Platinum>
-        <Platinum
           img="/static/sponsor-logos/pillar.png"
           name="Pillar"
           url="https://pillartechnology.com/"
@@ -99,9 +89,33 @@ const SubscriptionSection = () => (
             and machine learning.
           </p>
         </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/bridge-connector.png"
+          name="Bridge Connector"
+          url="https://bridgeconnector.co/"
+          customCss="img {margin-top: 4rem; margin-bottom: 4rem;}"
+        >
+          <p>
+            Bridge Connector is a data-driven, workflow engine that is changing
+            the way health care communicates. With our “no-code,”
+            integration-platform-as-a-service (iPaaS) core product and other
+            solutions, we connect disparate data systems in health care IT more
+            quickly and cost-efficiently.
+          </p>
+        </Platinum>
       </div>
       <h3>Gold</h3>
       <div css={flexGrid}>
+        <Platinum
+          img="/static/sponsor-logos/groxio.png"
+          name="groxio"
+          url="https://grox.io"
+        >
+          <p>
+            Groxio is a small company of educators, language geeks and authors
+            who want to change the way people teach and learn languages.
+          </p>
+        </Platinum>
         <Platinum
           img="/static/sponsor-logos/binary-noggin.png"
           name="Binary Noggin"
@@ -221,7 +235,7 @@ const SubscriptionSection = () => (
 
 export default SubscriptionSection;
 
-function Platinum({ img, name, url, children }) {
+function Platinum({ img, name, url, children, customCss }) {
   return (
     <a
       href={url}
@@ -253,6 +267,7 @@ function Platinum({ img, name, url, children }) {
         img {
           flex-shrink: 0;
         }
+        ${customCss}
       `}
     >
       <img src={img} alt={name} />
