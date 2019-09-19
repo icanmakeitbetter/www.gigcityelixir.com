@@ -107,16 +107,6 @@ const SubscriptionSection = () => (
       <h3>Gold</h3>
       <div css={flexGrid}>
         <Platinum
-          img="/static/sponsor-logos/groxio.png"
-          name="groxio"
-          url="https://grox.io"
-        >
-          <p>
-            Groxio is a small company of educators, language geeks and authors
-            who want to change the way people teach and learn languages.
-          </p>
-        </Platinum>
-        <Platinum
           img="/static/sponsor-logos/binary-noggin.png"
           name="Binary Noggin"
           url="http://binarynoggin.com/"
@@ -124,6 +114,16 @@ const SubscriptionSection = () => (
           <p>
             Agile Practitioners Helping to Build Great Products Through
             Communication and Trust
+          </p>
+        </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/groxio.png"
+          name="groxio"
+          url="https://grox.io"
+        >
+          <p>
+            Groxio is a small company of educators, language geeks and authors
+            who want to change the way people teach and learn languages.
           </p>
         </Platinum>
       </div>
