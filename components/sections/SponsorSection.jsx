@@ -131,11 +131,15 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/zillion.svg"
           name="Zillion"
           url="https://www.myzillion.com/"
-          customCss="img {margin-top: 8rem; margin-bottom: 8rem;}"
+          customCss="img {margin-top: 6rem; margin-bottom: 6rem;}"
         >
           <p>
-            Groxio is a small company of educators, language geeks and authors
-            who want to change the way people teach and learn languages.
+            Zillion's mission is to make it super easy for you to protect the
+            things you love. We’re an experienced insurance and technology team
+            who take pride in solving problems and delivering a first-class
+            experience for our customers. Our jewelry insurance customers are
+            backed by AXA, the world's largest insurance company and rated A+
+            Excellent by A.M.
           </p>
         </Platinum>
       </div>
