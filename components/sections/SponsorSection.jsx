@@ -110,6 +110,7 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/binary-noggin.png"
           name="Binary Noggin"
           url="http://binarynoggin.com/"
+          customCss="img {margin-top: 4rem; margin-bottom: 4rem;}"
         >
           <p>
             Agile Practitioners Helping to Build Great Products Through
@@ -120,6 +121,17 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/groxio.png"
           name="groxio"
           url="https://grox.io"
+        >
+          <p>
+            Groxio is a small company of educators, language geeks and authors
+            who want to change the way people teach and learn languages.
+          </p>
+        </Platinum>
+        <Platinum
+          img="/static/sponsor-logos/zillion.svg"
+          name="Zillion"
+          url="https://www.myzillion.com/"
+          customCss="img {margin-top: 8rem; margin-bottom: 8rem;}"
         >
           <p>
             Groxio is a small company of educators, language geeks and authors
@@ -187,6 +199,20 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/aspire.png"
           name="Aspire"
           url="http://aspirehealthcare.com/"
+        />
+        <Champion
+          img="/static/sponsor-logos/dockyard.png"
+          name="Dockyard"
+          url="https://dockyard.com/"
+          linkcss={css`
+            padding-left: 8px;
+            padding-right: 8px;
+            &:focus,
+            &:hover {
+              padding-left: 6px;
+              padding-right: 6px;
+            }
+          `}
         />
       </div>
       <h3>Diversity Advocates</h3>
