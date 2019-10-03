@@ -12,6 +12,7 @@ import SponsorSection from "../components/sections/SponsorSection";
 import StartupWeekSection from "../components/sections/StartupWeekSection";
 import NervesTrainingSection from "../components/sections/NervesTrainingSection";
 import VenueSection from "../components/sections/VenueSection";
+import ScheduleSection from "../components/sections/ScheduleSection";
 import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint, points } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
@@ -100,6 +101,8 @@ export default function Index() {
           </div>
         </Hero>
         <SpeakerSection />
+        <Hr />
+        <ScheduleSection />
         <Hr />
         <ProgramSection />
         <Hr />
