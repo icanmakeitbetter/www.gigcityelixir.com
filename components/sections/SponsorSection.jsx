@@ -134,12 +134,11 @@ const SubscriptionSection = () => (
           customCss="img {margin-top: 6rem; margin-bottom: 6rem;}"
         >
           <p>
-            Zillion's mission is to make it super easy for you to protect the
-            things you love. We’re an experienced insurance and technology team
-            who take pride in solving problems and delivering a first-class
-            experience for our customers. Our jewelry insurance customers are
-            backed by AXA, the world's largest insurance company and rated A+
-            Excellent by A.M.
+            Zillion is an insurtech providing 1-click jewelry insurance at point
+            of sale, “making it super easy to protect the things you love”. By
+            leveraging the expansion of reliable data and partnerships, Zillion
+            provides insurance the way it should be, with Better Coverage,
+            Transparency, & Ease.
           </p>
         </Platinum>
       </div>
