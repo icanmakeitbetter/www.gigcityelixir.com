@@ -101,14 +101,16 @@ export default function Schedule() {
             <td>Break</td>
           </tr>
           <tr>
-            <th>04:10 - 05:00</th>
+            <th>04:10 - 04:40</th>
             <td>
-              <strong>Dave Thomas</strong>
+              <strong>Anna Neyzburg</strong>
             </td>
           </tr>
           <tr>
-            <th>05:00 - 05:15</th>
-            <td>Directions about Dinner</td>
+            <th>04:45 - 05:30</th>
+            <td>
+              <strong>Dave Thomas</strong>
+            </td>
           </tr>
           <tr>
             <th>06:00 - 09:00</th>
@@ -121,7 +123,7 @@ export default function Schedule() {
             </td>
           </tr>
           <tr>
-            <th>09:00 -</th>
+            <th>09:00</th>
             <td>
               <a href="https://www.google.com/maps/place/Moxy+Chattanooga+Downtown/@35.040047,-85.306636,17z/data=!3m1!4b1!4m8!3m7!1s0x88605fe8761cce13:0xca45ed9b3732da0b!5m2!4m1!1i2!8m2!3d35.040047!4d-85.306636">
                 Day One After Party - The Moxy Bar
