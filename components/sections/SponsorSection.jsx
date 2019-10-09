@@ -121,6 +121,7 @@ const SubscriptionSection = () => (
           img="/static/sponsor-logos/groxio.png"
           name="groxio"
           url="https://grox.io"
+          customCss="img {max-width: 60%; margin: 4rem auto;}"
         >
           <p>
             Groxio is a small company of educators, language geeks and authors
