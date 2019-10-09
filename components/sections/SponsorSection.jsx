@@ -219,6 +219,20 @@ const SubscriptionSection = () => (
           `}
         />
       </div>
+      <h3>Dinner Sponsor</h3>
+      <ul
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -${typography.rhythm(1)};
+          > li {
+            width: calc(50% - ${typography.rhythm(1)});
+            margin-left: ${typography.rhythm(1)};
+          }
+        `}
+      >
+        <li>Jay Dalke</li>
+      </ul>
       <h3>Diversity Advocates</h3>
       <ul
         css={css`
