@@ -27,6 +27,7 @@ const platinumSponsors = css`
 const flexGrid = css`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -${typography.rhythm(1)};
   margin-bottom: ${typography.rhythm(1)};
 `;
@@ -217,6 +218,11 @@ const SubscriptionSection = () => (
               padding-right: 6px;
             }
           `}
+        />
+        <Champion
+          img="/static/sponsor-logos/gigalixir.png"
+          name="Gigalixir"
+          url="http://gigalixir.com/"
         />
       </div>
       <h3>Dinner Sponsor</h3>
