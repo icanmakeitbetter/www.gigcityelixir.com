@@ -11,6 +11,7 @@ import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { typography } from "../utils/typography";
+import Hr from "../components/Hr";
 
 export default function Index() {
   return (
@@ -78,7 +79,7 @@ export default function Index() {
           </div>
         </Hero>
         <HotelSection />
-        <hr />
+        <Hr />
         <TalksSection />
       </Main>
       <Footer />
