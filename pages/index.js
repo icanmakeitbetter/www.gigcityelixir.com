@@ -75,6 +75,7 @@ export default function Index() {
               }
             `}
           >
+            <Registration />
             <NewsLetterSignup />
           </div>
         </Hero>
@@ -276,7 +277,7 @@ function Registration() {
           ${primaryButtonCss}
           font-size: 1.15rem;
         `}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019"
+        href="https://ti.to/groxio-llc/gig-city-elixir-2020"
       >
         Register here for Tickets and Training
       </a>
