@@ -26,6 +26,22 @@ export default function Index() {
       <SkipToNavLink />
       <Main>
         <Teaser>
+          This is an archive of the 2019 conference. Looking for the latest
+          site?{" "}
+          <a
+            css={css`
+              &,
+              &:link,
+              &:visited {
+                color: white;
+              }
+            `}
+            href="https://www.gigcityelixir.com"
+          >
+            Go to gigcityelixir.com
+          </a>
+        </Teaser>
+        <Teaser>
           Nerves Training tickets are now available!{" "}
           <a
             href="#nerves-training"
