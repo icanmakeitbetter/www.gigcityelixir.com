@@ -19,20 +19,38 @@ export default function SpeakerSection() {
           imgSrc="justin.jpg"
           name="Justin Schneck"
           twitterHandle="mobileoverlord"
+          talkUrl="https://www.youtube.com/watch?v=6wQufierLQw"
         />
-        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
+        <Bio
+          imgSrc="dave.jpg"
+          name="Dave Thomas"
+          twitterHandle="pragdave"
+          talkUrl="https://www.youtube.com/watch?v=ZHx_1yWkSiA"
+        />
         <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
         <Bio
           imgSrc="osa.jpg"
           name="Osa Gaius-Obaseki"
           twitterHandle="osagaius"
+          talkUrl="https://www.youtube.com/watch?v=5sM8AF1m0YA"
         />
-        <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
-        <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
+        <Bio
+          imgSrc="amos.jpg"
+          name="Amos King"
+          twitterHandle="Adkron"
+          talkUrl="https://www.youtube.com/watch?v=ehFKzIKjr3I"
+        />
+        <Bio
+          imgSrc="anna.jpg"
+          name="Anna Neyzburg"
+          twitterHandle="ANeyzb"
+          talkUrl="https://www.youtube.com/watch?v=UAlkWtJO8AM"
+        />
         <Bio
           imgSrc="chris.jpg"
           name="Chris Keathley"
           twitterHandle="ChrisKeathley"
+          talkUrl="https://www.youtube.com/watch?v=J_dnXZUZc4w"
         />
         <Bio
           imgSrc="stu.jpg"
@@ -43,29 +61,52 @@ export default function SpeakerSection() {
           imgSrc="brian.jpg"
           name="Brian Troutwine"
           twitterHandle="bltroutwine"
+          talkUrl="https://www.youtube.com/watch?v=0R6sQEjdzQY"
         />
         <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
-        <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
+        <Bio
+          imgSrc="todd.jpg"
+          name="Todd Resudek"
+          twitterHandle="sprsmpl"
+          talkUrl="https://www.youtube.com/watch?v=X0Ap_bMqiaU"
+        />
         <Bio
           imgSrc="ricardo.jpg"
           name="Ricardo Echavarría"
           twitterHandle="r_icarus"
+          talkUrl="https://www.youtube.com/watch?v=DwwJQj59aPo"
         />
         <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
-        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
-        <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
+        <Bio
+          imgSrc="miki.jpg"
+          name="Miki Rezentes"
+          twitterHandle="mikirez"
+          talkUrl="https://www.youtube.com/watch?v=hBpbEsAG4es"
+        />
+        <Bio
+          imgSrc="ben.jpg"
+          name="Ben Marx"
+          twitterHandle="bgmarx"
+          talkUrl="https://www.youtube.com/watch?v=efCKA-Ug8w4"
+        />
         <Bio
           imgSrc="jeff.jpg"
           name="Jeff Grunewald"
           githubUser="jeffgrunewald"
+          talkUrl="https://www.youtube.com/watch?v=qVXN9r6NPXA"
         />
-        <Bio imgSrc="martin.jpg" name="Martin Gausby" twitterHandle="gausby" />
+        <Bio
+          imgSrc="martin.jpg"
+          name="Martin Gausby"
+          twitterHandle="gausby"
+          talkUrl="https://www.youtube.com/watch?v=3OP7kSE6bg8"
+        />
       </div>
     </SectionWrapper>
   );
 }
 
-function Bio({ imgSrc, name, twitterHandle, githubUser }) {
+function Bio({ imgSrc, name, twitterHandle, githubUser, talkUrl }) {
   return (
     <div
       className="ff-odudomono-r"
@@ -107,6 +148,17 @@ function Bio({ imgSrc, name, twitterHandle, githubUser }) {
           `}
         >
           <a href={`https://twitter.com/${twitterHandle}`}>@{twitterHandle}</a>
+        </div>
+      )}
+      {talkUrl && (
+        <div
+          css={css`
+            padding: ${typography.rhythm(1 / 4)};
+            border: 1px solid ${colors.plum};
+            bborder-radius: 0 0 3px 3px;
+          `}
+        >
+          <a href={talkUrl}>Watch the Talk</a>
         </div>
       )}
       {!twitterHandle && githubUser && (
