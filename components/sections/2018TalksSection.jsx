@@ -4,7 +4,7 @@ import { buttonCss } from "../Button";
 
 const TalksSection = () => (
   <SectionWrapper
-    header="2018 Talks"
+    header="2019 Talks"
     subhead="See the talks from last year's amazing speakers!"
   >
     <a

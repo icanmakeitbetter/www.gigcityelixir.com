@@ -20,7 +20,7 @@ export default function DateAndVenue({ extraCss }) {
         ${extraCss}
       `}
     >
-      <span className="c-peach">Conference</span> Oct 23-24
+      <span className="c-peach">Conference</span> Oct 23-24, 2020
       <br />
       <span
         css={css`
