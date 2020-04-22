@@ -7,6 +7,7 @@ import Logo from "../components/Logo";
 import TalksSection from "../components/sections/2018TalksSection";
 import AboutUsSection from "../components/sections/AboutUsSection";
 import HotelSection from "../components/sections/HotelSection";
+import SponsorSection from "../components/sections/SponsorSection";
 import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
@@ -82,6 +83,8 @@ export default function Index() {
         <HotelSection />
         <Hr />
         <TalksSection />
+        <Hr />
+        <SponsorSection />
       </Main>
       <Footer />
     </Wrapper>

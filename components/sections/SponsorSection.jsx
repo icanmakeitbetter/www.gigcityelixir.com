@@ -66,215 +66,27 @@ const SubscriptionSection = () => (
     subhead="This conference brought to you in part by these fine folks"
   >
     <div className={platinumSponsors}>
-      <h3>Platinum</h3>
-      <div css={flexGrid}>
-        <Platinum
-          img="/static/sponsor-logos/pillar.png"
-          name="Pillar"
-          url="https://pillartechnology.com/"
-        >
-          <p>
-            Pillar Technology is a technology consulting company with over 20
-            years of uncovering and executing industry-disrupting opportunities
-            at lightning speed.
-          </p>
-        </Platinum>
-        <Platinum
-          img="/static/sponsor-logos/very.svg"
-          name="Very"
-          url="https://www.verypossible.com/"
-        >
-          <p>
-            Remarkable people building connected solutions. Work with software
-            development and design experts to bring your ideas to life using IoT
-            and machine learning.
-          </p>
-        </Platinum>
-        <Platinum
-          img="/static/sponsor-logos/bridge-connector.png"
-          name="Bridge Connector"
-          url="https://bridgeconnector.co/"
-          customCss="img {margin-top: 4rem; margin-bottom: 4rem;}"
-        >
-          <p>
-            Bridge Connector is a data-driven, workflow engine that is changing
-            the way health care communicates. With our “no-code,”
-            integration-platform-as-a-service (iPaaS) core product and other
-            solutions, we connect disparate data systems in health care IT more
-            quickly and cost-efficiently.
-          </p>
-        </Platinum>
-      </div>
-      <h3>Gold</h3>
-      <div css={flexGrid}>
-        <Platinum
-          img="/static/sponsor-logos/binary-noggin.png"
-          name="Binary Noggin"
-          url="http://binarynoggin.com/"
-          customCss="img {margin-top: 4rem; margin-bottom: 4rem;}"
-        >
-          <p>
-            Agile Practitioners Helping to Build Great Products Through
-            Communication and Trust
-          </p>
-        </Platinum>
-        <Platinum
-          img="/static/sponsor-logos/groxio.png"
-          name="groxio"
-          url="https://grox.io"
-          customCss="img {max-width: 60%; margin: 4rem auto;}"
-        >
-          <p>
-            Groxio is a small company of educators, language geeks and authors
-            who want to change the way people teach and learn languages.
-          </p>
-        </Platinum>
-        <Platinum
-          img="/static/sponsor-logos/zillion.svg"
-          name="Zillion"
-          url="https://www.myzillion.com/"
-          customCss="img {margin-top: 6rem; margin-bottom: 6rem;}"
-        >
-          <p>
-            Zillion is an insurtech providing 1-click jewelry insurance at point
-            of sale, “making it super easy to protect the things you love”. By
-            leveraging the expansion of reliable data and partnerships, Zillion
-            provides insurance the way it should be, with Better Coverage,
-            Transparency, & Ease.
-          </p>
-        </Platinum>
-      </div>
-
-      <h3>Community</h3>
-      <div css={flexGrid}>
-        <Lanyard url="https://www.carbonfive.com/">
-          <div>
-            <p>
-              Carbon Five is a strategic digital product development firm. We
-              partner with clients to create exceptional products and grow
-              effective teams.
-            </p>
-          </div>
-          <figure>
-            <img src="/static/sponsor-logos/c5.png" alt="Carbon Five" />
-          </figure>
-        </Lanyard>
-      </div>
       <h3>Lanyard</h3>
       <div css={flexGrid}>
-        <Lanyard url="https://bleacherreport.com/">
+        <Platinum url="https://www.getthru.io/">
           <figure>
-            <img
-              src="/static/sponsor-logos/bleacher.svg"
-              alt="Bleacher Report"
-            />
+            <img src="/static/sponsor-logos/get-thru.png" alt="Get Thru" />
           </figure>
           <div>
             <p>
-              There’s an ever-present energy that surrounds the world of sports.
-              Through creative expression, B/R adds fuel to the fire. We capture
-              and unleash the untapped power to deliver visceral, authentic
-              moments at the intersection of sports and culture.
+              GetThru empowers organizations to connect authentically with their
+              audiences at scale, while building a sustainable company committed
+              to progressive social change. Our tools have been used by more
+              than 2,000 organizations to send over 250 million text messages
+              (ThruText) and make more than 100 million phone calls (ThruTalk)
+              for event recruitment, voter and volunteer engagement,
+              fundraising, polling, and more. And while our roots are in
+              progressive politics, we love partnering with organizations of all
+              kinds that share our passion for creating a better world.
             </p>
           </div>
-        </Lanyard>
+        </Platinum>
       </div>
-      <h3>Elixir Champion</h3>
-      <div css={flexGrid}>
-        <Champion
-          img="/static/sponsor-logos/tito.svg"
-          name="Tito"
-          url="https://ti.to/"
-        />
-        <Champion
-          img="/static/sponsor-logos/codescience.jpg"
-          name="CodeScience"
-          url="https://www.codescience.com/"
-          linkcss={css`
-            padding-left: 2px;
-            padding-right: 2px;
-            &:focus,
-            &:hover {
-              padding-left: 0px;
-              padding-right: 0px;
-            }
-          `}
-        />
-        <Champion
-          img="/static/sponsor-logos/aspire.png"
-          name="Aspire"
-          url="http://aspirehealthcare.com/"
-        />
-        <Champion
-          img="/static/sponsor-logos/dockyard.png"
-          name="Dockyard"
-          url="https://dockyard.com/"
-          linkcss={css`
-            padding-left: 8px;
-            padding-right: 8px;
-            &:focus,
-            &:hover {
-              padding-left: 6px;
-              padding-right: 6px;
-            }
-          `}
-        />
-        <Champion
-          img="/static/sponsor-logos/gigalixir.png"
-          name="Gigalixir"
-          url="http://gigalixir.com/"
-        />
-      </div>
-      <h3>Dinner Sponsor</h3>
-      <ul
-        css={css`
-          display: flex;
-          flex-wrap: wrap;
-          margin-left: -${typography.rhythm(1)};
-          > li {
-            width: calc(50% - ${typography.rhythm(1)});
-            margin-left: ${typography.rhythm(1)};
-          }
-        `}
-      >
-        <li>Jay Dalke</li>
-      </ul>
-      <h3>Diversity Advocates</h3>
-      <ul
-        css={css`
-          display: flex;
-          flex-wrap: wrap;
-          margin-left: -${typography.rhythm(1)};
-          > li {
-            width: calc(50% - ${typography.rhythm(1)});
-            margin-left: ${typography.rhythm(1)};
-          }
-        `}
-      >
-        <li>Doyle Turner</li>
-        <li>Amos King</li>
-        <li>Stuart Halloway</li>
-      </ul>
-
-      <h3>Swag and Award Donors</h3>
-      <ul
-        css={css`
-          display: flex;
-          flex-wrap: wrap;
-          margin-left: -${typography.rhythm(1)};
-          > li {
-            width: calc(50% - ${typography.rhythm(1)});
-            margin-left: ${typography.rhythm(1)};
-          }
-        `}
-      >
-        <li>
-          <a href="https://www.manning.com/">Manning Publications</a>
-        </li>
-        <li>
-          <a href="https://pragprog.com">Pragmatic Bookshelf</a>
-        </li>
-      </ul>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
           Contact Us About Sponsoring

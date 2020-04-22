@@ -56,6 +56,9 @@ export default function Footer({ extraCss }) {
         <Link href="https://2018.gigcityelixir.com/">
           <a>2018</a>
         </Link>
+        <Link href="https://2019.gigcityelixir.com/">
+          <a>2019</a>
+        </Link>
       </nav>
       <script
         crossOrigin="anonymous"
