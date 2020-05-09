@@ -27,7 +27,7 @@ const platinumSponsors = css`
 const flexGrid = css`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: -${typography.rhythm(1)};
   margin-bottom: ${typography.rhythm(1)};
 `;
@@ -66,6 +66,30 @@ const SubscriptionSection = () => (
     subhead="This conference brought to you in part by these fine folks"
   >
     <div className={platinumSponsors}>
+      <h3>Platinum</h3>
+      <div css={flexGrid}>
+        <Platinum url="https://binarynoggin.com/">
+          <figure>
+            <img
+              src="/static/sponsor-logos/binary-noggin.png"
+              alt="Binary Noggin"
+              css={css`
+                padding: 3rem 2rem;
+              `}
+            />
+          </figure>
+          <div>
+            <p>
+              Binary Noggin is an agile software development and consulting firm
+              offering web and embedded development, team augmentation, and
+              coaching. Our number one principle is trust through communication
+              and openness. We utilize Elixir and Erlang to help us meet our
+              technical goals of availability, scalability, and maintainability.
+              Let us help build the right solution for you.
+            </p>
+          </div>
+        </Platinum>
+      </div>
       <h3>Lanyard</h3>
       <div css={flexGrid}>
         <Platinum url="https://www.getthru.io/">
@@ -86,6 +110,23 @@ const SubscriptionSection = () => (
             </p>
           </div>
         </Platinum>
+      </div>
+      <h3>Elixir Champion</h3>
+      <div css={flexGrid}>
+        <Champion
+          img="/static/sponsor-logos/dockyard.png"
+          name="Dockyard"
+          url="https://dockyard.com/"
+          linkcss={css`
+            padding-left: 8px;
+            padding-right: 8px;
+            &:focus,
+            &:hover {
+              padding-left: 6px;
+              padding-right: 6px;
+            }
+          `}
+        />
       </div>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
