@@ -30,10 +30,8 @@ export default function DateAndVenue({ extraCss }) {
           }
         `}
       >
-        The Edney Innovation Center
+        Online (details soon!)
       </span>
-      <br />
-      Chattanooga, TN
     </div>
   );
 }

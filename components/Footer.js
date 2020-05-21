@@ -50,9 +50,6 @@ export default function Footer({ extraCss }) {
         <Link href="/contact" prefetch>
           <a>Contact</a>
         </Link>
-        <Link href="/why-chattanooga" prefetch>
-          <a>Why Chattanooga?</a>
-        </Link>
         <Link href="https://2018.gigcityelixir.com/">
           <a>2018</a>
         </Link>

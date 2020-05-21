@@ -33,17 +33,16 @@ const AboutUsSection = () => (
       A message from conference organizer Bruce Tate
     </SectionSubHeader>
     <p>
-      Gig City Elixir is a different kind of programming conference in beautiful
-      Chattanooga, Tennessee. We will focus on sessions that are different from
-      what you're used to seeing, with a variety of talk lengths and formats
-      that will open more learning channels than ever before.
+      We've made the decision to hold the Gig City Elixir 2020 Conference online
+      this October. While we wish we could be together in person, we are excited
+      for the opportunities to broaden the community by going virtual. We will
+      have folks from around the world join us and our theme this year will be
+      "Conversations."
     </p>
     <p>
-      One of the best speaker lineups at any 2019 programming conference will
-      teach you the foundational techniques you'll need to succeed in today's
-      programming industry. You'll learn to use functional programming concepts
-      that will make you a better programmer, regardless of the languages and
-      tools you use at work today.
+      We don't want to move an in person event online,{" "}
+      <em>we want Gig City Elixir 2020 to be its own thing</em>. We look forward
+      to working with sponsors and attendees in new and innovative ways!
     </p>
     <Link href="/about" prefetch>
       <a

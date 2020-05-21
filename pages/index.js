@@ -80,8 +80,6 @@ export default function Index() {
             <NewsLetterSignup />
           </div>
         </Hero>
-        <HotelSection />
-        <Hr />
         <TalksSection />
         <Hr />
         <SponsorSection />
