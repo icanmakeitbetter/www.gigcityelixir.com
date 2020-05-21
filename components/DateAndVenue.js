@@ -20,18 +20,7 @@ export default function DateAndVenue({ extraCss }) {
         ${extraCss}
       `}
     >
-      <span className="c-peach">Conference</span> Oct 23-24, 2020
-      <br />
-      <span
-        css={css`
-          letter-spacing: 0;
-          ${breakpoint("medium")} {
-            letter-spacing: inherit;
-          }
-        `}
-      >
-        Online (details soon!)
-      </span>
+      <span className="c-peach">Virtual Conference</span> Oct 22-24, 2020
     </div>
   );
 }
