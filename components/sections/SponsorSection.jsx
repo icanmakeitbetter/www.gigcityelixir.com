@@ -27,7 +27,6 @@ const platinumSponsors = css`
 const flexGrid = css`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-left: -${typography.rhythm(1)};
   margin-bottom: ${typography.rhythm(1)};
 `;
@@ -41,7 +40,7 @@ const flexGridItem = css`
 
 const flexGridItemChampion = css`
   margin-left: ${typography.rhythm(1)};
-  width: calc(25% - ${typography.rhythm(1)});
+  width: calc(33.333% - ${typography.rhythm(1)});
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +73,7 @@ const SubscriptionSection = () => (
               src="/static/sponsor-logos/binary-noggin.png"
               alt="Binary Noggin"
               css={css`
-                padding: 3rem 2rem;
+                padding: 5rem 2rem 2rem;
               `}
             />
           </figure>
@@ -89,8 +88,44 @@ const SubscriptionSection = () => (
             </p>
           </div>
         </Platinum>
+        <Platinum url="https://grox.io/">
+          <figure>
+            <img
+              src="/static/sponsor-logos/groxio.png"
+              alt="Groxio"
+              css={css`
+                img {
+                  max-width: 60%;
+                  margin: 4rem auto;
+                }
+              `}
+            />
+            <div>
+              <p>
+                Groxio is a small company of educators, language geeks and
+                authors who want to change the way people teach and learn
+                languages.
+              </p>
+            </div>
+          </figure>
+        </Platinum>
+        <Platinum url="https://www.verypossible.com/">
+          <img
+            src="/static/sponsor-logos/very.svg"
+            alt="Very"
+            css={css`
+              max-width: 20rem;
+              margin: 2rem auto;
+            `}
+          />
+          <p>
+            Remarkable people building connected solutions. Work with software
+            development and design experts to bring your ideas to life using IoT
+            and machine learning.
+          </p>
+        </Platinum>
       </div>
-      <h3>Lanyard</h3>
+      <h3>Community</h3>
       <div css={flexGrid}>
         <Platinum url="https://www.getthru.io/">
           <figure>
@@ -127,6 +162,24 @@ const SubscriptionSection = () => (
             }
           `}
         />
+        <Champion
+          name="Erlang Solutions"
+          img="/static/sponsor-logos/erlang-solutions.png"
+          url="https://www.erlang-solutions.com/"
+        />
+      </div>
+      <h3>Supporting Partners</h3>
+      <div css={flexGrid}>
+        <Champion
+          name="Code Sync"
+          img="/static/sponsor-logos/code-sync.svg"
+          url="https://www.codesync.global/"
+        />
+        <Champion
+          name="ElixirConf EU"
+          img="/static/sponsor-logos/elixirconf-eu.svg"
+          url="https://www.elixirconf.eu/"
+        />
       </div>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
@@ -139,7 +192,7 @@ const SubscriptionSection = () => (
 
 export default SubscriptionSection;
 
-function Platinum({ img, name, url, children, customCss }) {
+function Platinum({ url, children, customCss }) {
   return (
     <a
       href={url}
@@ -174,7 +227,6 @@ function Platinum({ img, name, url, children, customCss }) {
         ${customCss}
       `}
     >
-      <img src={img} alt={name} />
       {children}
     </a>
   );
