@@ -1,6 +1,6 @@
 import { BioPage, ExternalLink } from "../components/BioPage";
 
-export default function() {
+export default function () {
   return (
     <BioPage
       src="brian.jpg"

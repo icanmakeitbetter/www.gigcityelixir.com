@@ -1,6 +1,6 @@
 import { BioPage, ExternalLink } from "../components/BioPage";
 
-export default function() {
+export default function () {
   return (
     <BioPage
       src="bruce.jpg"
@@ -8,12 +8,12 @@ export default function() {
       subtitle="Author, Educator, Grox.io Founder"
     >
       <p>
-        Bruce is a mountain biker, climber, and father of two from Chattanooga.
-        He is the author of more than ten books, including Seven Languages in
-        Seven Weeks, Programming Phoenix, and Adopting Elixir. As the Chief
-        Technology Officer of icanmakeitbetter.com, he is responsible for
-        developing the icanmakeitbetter market research community platform using
-        Elixir and Ruby using small, productive teams.
+        Bruce Tate is a kayaker, climber, programmer and father of two from
+        Chattanooga, Tennessee. A serial entrepreneur, he has helped start three
+        companies, and most recently served as CTO for icanmakeitbetter. The
+        author of more than a dozen books is active in the Elixir community as a
+        speaker, author, editor and conference organizer. His love for teaching
+        and computer languages led him to found Groxio in 2018.
       </p>
       <ExternalLink href="https://twitter.com/redrapids">
         @redrapids

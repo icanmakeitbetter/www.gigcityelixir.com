@@ -18,7 +18,7 @@ export function BioPage({ name, children, src, subtitle }) {
           padding: ${typography.rhythm(1)} 0 ${typography.rhythm(4)};
           color: ${colors.blush};
           background-image: url("/static/topo.svg");
-          background-position: 50% -600px;
+          background-position: 50% -700px;
           background-repeat: no-repeat;
           background-size: 1400px;
           text-align: center;

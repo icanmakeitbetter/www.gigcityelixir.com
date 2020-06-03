@@ -47,9 +47,6 @@ export default function Footer({ extraCss }) {
         <Link href="/coc" prefetch>
           <a href="/coc">CoC</a>
         </Link>
-        <Link href="/speakers" prefetch>
-          <a href="/speakers">Speakers</a>
-        </Link>
         <Link href="/contact" prefetch>
           <a href="/contact">Contact</a>
         </Link>

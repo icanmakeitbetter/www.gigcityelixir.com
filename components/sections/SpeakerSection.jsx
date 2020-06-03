@@ -16,52 +16,26 @@ export default function SpeakerSection() {
         `}
       >
         <Bio
-          imgSrc="justin.jpg"
-          name="Justin Schneck"
-          twitterHandle="mobileoverlord"
-          href="/justin-schneck"
-        />
+          imgSrc="annie.jpg"
+          name="Annie Kiley"
+          href="/annie-kiley"
+          externalUrl=""
+        >
+          <div
+            css={css`
+              padding: ${typography.rhythm(1 / 4)};
+              border: 1px solid ${colors.plum};
+              bborder-radius: 0 0 3px 3px;
+            `}
+          >
+            <a href={"https://www.viget.com/about/team/akiley/"}>Viget</a>
+          </div>
+        </Bio>
         <Bio
-          imgSrc="amos.jpg"
-          name="Amos King"
-          twitterHandle="Adkron"
-          href="/amos-king"
-        />
-        <Bio
-          imgSrc="anna.jpg"
-          name="Anna Neyzburg"
-          twitterHandle="ANeyzb"
-          href="/anna-neyzburg"
-        />
-        <Bio
-          imgSrc="chris.jpg"
-          name="Chris Keathley"
-          twitterHandle="ChrisKeathley"
-          href="/chris-keathley"
-        />
-        <Bio
-          imgSrc="stu.jpg"
-          name="Stu Halloway"
-          twitterHandle="stuarthalloway"
-          href="/stu-halloway"
-        />
-        <Bio
-          imgSrc="osa.jpg"
-          name="Osa Gaius-Obaseki"
-          twitterHandle="osagaius"
-          href="/osa-gaius-obaseki"
-        />
-        <Bio
-          imgSrc="bruce.jpg"
-          name="Bruce Tate"
-          twitterHandle="redrapids"
-          href="/bruce-tate"
-        />
-        <Bio
-          imgSrc="dave.jpg"
-          name="Dave Thomas"
-          twitterHandle="pragdave"
-          href="/dave-thomas"
+          imgSrc="avdi.jpg"
+          name="Avdi Grimm"
+          href="/avdi-grimm"
+          twitterHandle="avdi"
         />
         <Bio
           imgSrc="brian.jpg"
@@ -70,57 +44,41 @@ export default function SpeakerSection() {
           href="/brian-troutwine"
         />
         <Bio
-          imgSrc="emily.jpg"
-          name="Emily Maxie"
-          twitterHandle="emilymaxie"
-          href="/emily-maxie"
+          imgSrc="brooklyn.jpg"
+          name="Brooklyn Zelenka"
+          href="/brooklyn-zelenka"
+          twitterHandle="expede"
         />
         <Bio
-          imgSrc="todd.jpg"
-          name="Todd Resudek"
-          href="/todd-resudek"
-          twitterHandle="sprsmpl"
+          imgSrc="bruce.jpg"
+          name="Bruce Tate"
+          twitterHandle="redrapids"
+          href="/bruce-tate"
         />
         <Bio
-          imgSrc="ricardo.jpg"
-          name="Ricardo Echavarría"
-          href="/ricardo-echavarria"
-          twitterHandle="r_icarus"
+          imgSrc="dylan.jpg"
+          name="Dylan Lederle-Ensign"
+          href="/dylan-lederle-ensign"
+          twitterHandle="dlederle"
         />
         <Bio
-          imgSrc="greg.jpg"
-          name="Greg Mefford"
-          href="/greg-mefford"
-          twitterHandle="ferggo"
+          imgSrc="frank.jpg"
+          name="Frank Hunleth"
+          href="/frank-hunleth"
+          twitterHandle="fhunleth"
         />
         <Bio
-          imgSrc="miki.jpg"
-          name="Miki Rezentes"
-          twitterHandle="mikirez"
-          href="/miki-rezentes"
+          imgSrc="jessica.jpg"
+          name="Jessica Kerr"
+          href="/jessica-kerr"
+          twitterHandle="jessitron"
         />
-        <Bio
-          imgSrc="ben.jpg"
-          name="Ben Marx"
-          twitterHandle="bgmarx"
-          href="/ben-marx"
-        />
-        <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" href="/jeff-grunewald" />
-        <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
-        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
-        <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
-        <Bio
-          imgSrc="jeff.jpg"
-          name="Jeff Grunewald"
-          githubUser="jeffgrunewald"
-        />
-        <Bio imgSrc="martin.jpg" name="Martin Gausby" twitterHandle="gausby" />
       </div>
     </SectionWrapper>
   );
 }
 
-function Bio({ href, imgSrc, name, twitterHandle, githubUser }) {
+function Bio({ children, href, imgSrc, name, twitterHandle, githubUser }) {
   return (
     <div
       className="ff-odudomono-r"
@@ -162,6 +120,7 @@ function Bio({ href, imgSrc, name, twitterHandle, githubUser }) {
           {name}
         </div>
       </a>
+      {children}
       {twitterHandle && (
         <div
           css={css`
