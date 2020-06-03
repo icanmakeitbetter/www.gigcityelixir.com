@@ -51,17 +51,6 @@ export default function About() {
         multilinguist. See how they use their tool sets to express beautiful
         code and learn to do more of the same yourself.
       </p>
-      <h3>Why Chattanooga?</h3>
-      <p>
-        Too often, conferences don't do a great job of emphasizing the great
-        things about their location. We have a great sense of place. GCE was
-        downtown on the river last year; this year we'll be in the heart of the
-        historic Southside district, a stone’s throw from the famous Chattanooga
-        Choo Choo. We are kicking off StartUp Week Chattanooga this year,
-        speakers and attendees may want to extend their stay a few days to take
-        part in the celebration of entrepreneurship in Chattanooga. We love this
-        city and can’t wait to show it off!
-      </p>
       <h3>Want to be a part of it?</h3>
       <p>
         There are many ways to partner with us! Come to the conference! We need

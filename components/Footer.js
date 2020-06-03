@@ -53,11 +53,11 @@ export default function Footer({ extraCss }) {
         <Link href="/contact" prefetch>
           <a href="/contact">Contact</a>
         </Link>
-        <Link href="/why-chattanooga" prefetch>
-          <a href="/why-chattanooga">Why Chattanooga?</a>
-        </Link>
         <Link href="https://2018.gigcityelixir.com/">
           <a href="https://2018.gigcityelixir.com/">2018</a>
+        </Link>
+        <Link href="https://2019.gigcityelixir.com/">
+          <a>2019</a>
         </Link>
       </nav>
       <script

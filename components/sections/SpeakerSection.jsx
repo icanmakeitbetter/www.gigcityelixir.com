@@ -106,12 +106,21 @@ export default function SpeakerSection() {
           href="/ben-marx"
         />
         <Bio imgSrc="jeff.jpg" name="Jeff Grunewald" href="/jeff-grunewald" />
+        <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
+        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
+        <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
+        <Bio
+          imgSrc="jeff.jpg"
+          name="Jeff Grunewald"
+          githubUser="jeffgrunewald"
+        />
+        <Bio imgSrc="martin.jpg" name="Martin Gausby" twitterHandle="gausby" />
       </div>
     </SectionWrapper>
   );
 }
 
-function Bio({ href, imgSrc, name, twitterHandle }) {
+function Bio({ href, imgSrc, name, twitterHandle, githubUser }) {
   return (
     <div
       className="ff-odudomono-r"
@@ -162,6 +171,17 @@ function Bio({ href, imgSrc, name, twitterHandle }) {
           `}
         >
           <a href={`https://twitter.com/${twitterHandle}`}>@{twitterHandle}</a>
+        </div>
+      )}
+      {!twitterHandle && githubUser && (
+        <div
+          css={css`
+            padding: ${typography.rhythm(1 / 4)};
+            border: 1px solid ${colors.plum};
+            bborder-radius: 0 0 3px 3px;
+          `}
+        >
+          <a href={`https://github.com/${githubUser}`}>{githubUser}</a>
         </div>
       )}
     </div>

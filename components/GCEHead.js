@@ -2,7 +2,7 @@ import Head from "next/head";
 import { TypographyStyle } from "react-typography";
 import { GlobalStyles, typography } from "../utils/typography";
 
-export default function GCEHead({ title = "Gig City Elixir 2019" }) {
+export default function GCEHead({ title = "Gig City Elixir 2020" }) {
   return (
     <Head>
       <TypographyStyle typography={typography} />

@@ -2,21 +2,17 @@ import { css } from "@emotion/core";
 import { primaryButtonCss, reverseButtonCss } from "../components/Button";
 import DateAndVenue from "../components/DateAndVenue";
 import Footer from "../components/Footer";
-import Hr from "../components/Hr";
+import GCEHead from "../components/GCEHead";
 import Logo from "../components/Logo";
+import TalksSection from "../components/sections/2018TalksSection";
 import AboutUsSection from "../components/sections/AboutUsSection";
 import HotelSection from "../components/sections/HotelSection";
-import ProgramSection from "../components/sections/ProgramSection";
-import SpeakerSection from "../components/sections/SpeakerSection";
 import SponsorSection from "../components/sections/SponsorSection";
-import StartupWeekSection from "../components/sections/StartupWeekSection";
-import NervesTrainingSection from "../components/sections/NervesTrainingSection";
-import VenueSection from "../components/sections/VenueSection";
 import { SkipToNavLink } from "../components/SkipToNav";
-import { breakpoint, points } from "../utils/breakpoints";
+import { breakpoint } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { typography } from "../utils/typography";
-import GCEHead from "../components/GCEHead";
+import Hr from "../components/Hr";
 
 export default function Index() {
   return (
@@ -24,21 +20,6 @@ export default function Index() {
       <GCEHead />
       <SkipToNavLink />
       <Main>
-        <Teaser>
-          Nerves Training tickets are now available!{" "}
-          <a
-            href="#nerves-training"
-            css={css`
-              &,
-              &:link,
-              &:visited {
-                color: white;
-              }
-            `}
-          >
-            Find out more.
-          </a>
-        </Teaser>
         <Hero>
           <HeroLeft>
             <Logo
@@ -99,17 +80,7 @@ export default function Index() {
             <NewsLetterSignup />
           </div>
         </Hero>
-        <SpeakerSection />
-        <Hr />
-        <ProgramSection />
-        <Hr />
-        <NervesTrainingSection />
-        <Hr />
-        <HotelSection />
-        <Hr />
-        <VenueSection />
-        <Hr />
-        <StartupWeekSection />
+        <TalksSection />
         <Hr />
         <SponsorSection />
       </Main>
@@ -307,26 +278,10 @@ function Registration() {
           ${primaryButtonCss}
           font-size: 1.15rem;
         `}
-        href="https://ti.to/gig-city-elixir/gig-city-elixir-2019"
+        href="https://ti.to/groxio-llc/gig-city-elixir-2020"
       >
         Register here for Tickets and Training
       </a>
     </div>
-  );
-}
-
-function Teaser({ children }) {
-  return (
-    <p
-      css={css`
-        background: ${colors.peachy_plum};
-        color: white;
-        text-align: center;
-        padding: 0.5rem;
-        margin: 0;
-      `}
-    >
-      {children}
-    </p>
   );
 }

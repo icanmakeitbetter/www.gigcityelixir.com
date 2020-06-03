@@ -18,7 +18,7 @@ const HotelSection = () => (
       live music, and more.
     </p>
     <a
-      href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1550506438607&key=GRP&app=resvlink"
+      href="https://www.marriott.com/events/start.mi?id=1579722626142&key=GRP"
       css={buttonCss}
     >
       Book a Room at the Moxy
