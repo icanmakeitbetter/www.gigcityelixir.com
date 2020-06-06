@@ -6,7 +6,7 @@ import { colors } from "../../utils/constants";
 
 export default function SpeakerSection() {
   return (
-    <SectionWrapper header="Our Speakers">
+    <SectionWrapper header="Our Speakers" id="speakers">
       <div
         css={css`
           display: flex;
@@ -16,56 +16,69 @@ export default function SpeakerSection() {
         `}
       >
         <Bio
-          imgSrc="justin.jpg"
-          name="Justin Schneck"
-          twitterHandle="mobileoverlord"
-        />
-        <Bio imgSrc="dave.jpg" name="Dave Thomas" twitterHandle="pragdave" />
-        <Bio imgSrc="bruce.jpg" name="Bruce Tate" twitterHandle="redrapids" />
+          imgSrc="annie.jpg"
+          name="Annie Kiley"
+          href="/annie-kiley"
+          externalUrl=""
+        >
+          <div
+            css={css`
+              padding: ${typography.rhythm(1 / 4)};
+              border: 1px solid ${colors.plum};
+              bborder-radius: 0 0 3px 3px;
+            `}
+          >
+            <a href={"https://www.viget.com/about/team/akiley/"}>Viget</a>
+          </div>
+        </Bio>
         <Bio
-          imgSrc="osa.jpg"
-          name="Osa Gaius-Obaseki"
-          twitterHandle="osagaius"
-        />
-        <Bio imgSrc="amos.jpg" name="Amos King" twitterHandle="Adkron" />
-        <Bio imgSrc="anna.jpg" name="Anna Neyzburg" twitterHandle="ANeyzb" />
-        <Bio
-          imgSrc="chris.jpg"
-          name="Chris Keathley"
-          twitterHandle="ChrisKeathley"
-        />
-        <Bio
-          imgSrc="stu.jpg"
-          name="Stu Halloway"
-          twitterHandle="stuarthalloway"
+          imgSrc="avdi.jpg"
+          name="Avdi Grimm"
+          href="/avdi-grimm"
+          twitterHandle="avdi"
         />
         <Bio
           imgSrc="brian.jpg"
           name="Brian Troutwine"
           twitterHandle="bltroutwine"
+          href="/brian-troutwine"
         />
-        <Bio imgSrc="emily.jpg" name="Emily Maxie" twitterHandle="emilymaxie" />
-        <Bio imgSrc="todd.jpg" name="Todd Resudek" twitterHandle="sprsmpl" />
         <Bio
-          imgSrc="ricardo.jpg"
-          name="Ricardo Echavarría"
-          twitterHandle="r_icarus"
+          imgSrc="brooklyn.jpg"
+          name="Brooklyn Zelenka"
+          href="/brooklyn-zelenka"
+          twitterHandle="expede"
         />
-        <Bio imgSrc="greg.jpg" name="Greg Mefford" twitterHandle="ferggo" />
-        <Bio imgSrc="miki.jpg" name="Miki Rezentes" twitterHandle="mikirez" />
-        <Bio imgSrc="ben.jpg" name="Ben Marx" twitterHandle="bgmarx" />
         <Bio
-          imgSrc="jeff.jpg"
-          name="Jeff Grunewald"
-          githubUser="jeffgrunewald"
+          imgSrc="bruce.jpg"
+          name="Bruce Tate"
+          twitterHandle="redrapids"
+          href="/bruce-tate"
         />
-        <Bio imgSrc="martin.jpg" name="Martin Gausby" twitterHandle="gausby" />
+        <Bio
+          imgSrc="dylan.jpg"
+          name="Dylan Lederle-Ensign"
+          href="/dylan-lederle-ensign"
+          twitterHandle="dlederle"
+        />
+        <Bio
+          imgSrc="frank.jpg"
+          name="Frank Hunleth"
+          href="/frank-hunleth"
+          twitterHandle="fhunleth"
+        />
+        <Bio
+          imgSrc="jessica.jpg"
+          name="Jessica Kerr"
+          href="/jessica-kerr"
+          twitterHandle="jessitron"
+        />
       </div>
     </SectionWrapper>
   );
 }
 
-function Bio({ imgSrc, name, twitterHandle, githubUser }) {
+function Bio({ children, href, imgSrc, name, twitterHandle, githubUser }) {
   return (
     <div
       className="ff-odudomono-r"
@@ -87,17 +100,27 @@ function Bio({ imgSrc, name, twitterHandle, githubUser }) {
         }
       `}
     >
-      <img src={`/static/speakers/${imgSrc}`} alt="" />
-      <div
+      <a
+        href={href}
         css={css`
-          background-color: ${colors.plum};
-          color: white;
-          padding: ${typography.rhythm(1 / 3)};
+          display: flex;
+          flex-direction: column;
           flex-grow: 1;
         `}
       >
-        {name}
-      </div>
+        <img src={`/static/speakers/${imgSrc}`} alt="" />
+        <div
+          css={css`
+            background-color: ${colors.plum};
+            color: white;
+            padding: ${typography.rhythm(1 / 3)};
+            flex-grow: 1;
+          `}
+        >
+          {name}
+        </div>
+      </a>
+      {children}
       {twitterHandle && (
         <div
           css={css`

@@ -6,7 +6,7 @@ import GCEHead from "../components/GCEHead";
 import Logo from "../components/Logo";
 import TalksSection from "../components/sections/2018TalksSection";
 import AboutUsSection from "../components/sections/AboutUsSection";
-import HotelSection from "../components/sections/HotelSection";
+import SpeakerSection from "../components/sections/SpeakerSection";
 import SponsorSection from "../components/sections/SponsorSection";
 import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint } from "../utils/breakpoints";
@@ -80,6 +80,8 @@ export default function Index() {
             <NewsLetterSignup />
           </div>
         </Hero>
+        <SpeakerSection />
+        <Hr />
         <TalksSection />
         <Hr />
         <SponsorSection />

@@ -181,6 +181,15 @@ const SubscriptionSection = () => (
           url="https://www.elixirconf.eu/"
         />
       </div>
+      <h3>Scholarship Donors</h3>
+      <ul
+        css={css`
+          ${flexGrid}
+          list-style: none;
+        `}
+      >
+        <ScholarshipDonor>Duncan Sparrell</ScholarshipDonor>
+      </ul>
       <Link href="/contact">
         <a href="/contact" css={buttonCss}>
           Contact Us About Sponsoring
@@ -274,6 +283,22 @@ function Lanyard({ img, name, url, children }) {
     >
       {children}
     </a>
+  );
+}
+
+function ScholarshipDonor({ children }) {
+  return (
+    <li
+      css={css`
+        ${flexGridItemChampion}
+        border: ${typography.rhythm(1 / 32)} solid ${colors.peachy_plum};
+        padding: ${typography.rhythm(1 - 1 / 32)};
+        border-color: ${colors.blush};
+        margin-bottom: ${typography.rhythm(1)};
+    `}
+    >
+      {children}
+    </li>
   );
 }
 

@@ -5,7 +5,8 @@ export const colors = {
   plummy_peach: "#BB5763",
   peachy_plum: "#943E60",
   plum: "#772858",
-  dusk: "#432D3A"
+  dusk: "#432D3A",
+  taffy: "#E9ABD1"
 };
 
 export const hues = {
