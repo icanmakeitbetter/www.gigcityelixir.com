@@ -1,18 +1,12 @@
 import { css } from "@emotion/core";
-import { primaryButtonCss, reverseButtonCss } from "../components/Button";
-import DateAndVenue from "../components/DateAndVenue";
 import Footer from "../components/Footer";
 import GCEHead from "../components/GCEHead";
 import Logo from "../components/Logo";
-import TalksSection from "../components/sections/2018TalksSection";
-import AboutUsSection from "../components/sections/AboutUsSection";
-import SpeakerSection from "../components/sections/SpeakerSection";
-import SponsorSection from "../components/sections/SponsorSection";
+import CancellationNote from "../components/sections/CancellationNote";
 import { SkipToNavLink } from "../components/SkipToNav";
 import { breakpoint } from "../utils/breakpoints";
 import { colors } from "../utils/constants";
 import { typography } from "../utils/typography";
-import Hr from "../components/Hr";
 
 export default function Index() {
   return (
@@ -40,18 +34,6 @@ export default function Index() {
               `}
             />
           </HeroLeft>
-          <DateAndVenue
-            extraCss={css`
-              @supports (display: grid) {
-                ${breakpoint("medium")} {
-                  margin: ${typography.rhythm(3)} 0 0;
-                  grid-area: top;
-                  padding: ${typography.rhythm(2)} ${typography.rhythm(2)}
-                    ${typography.rhythm(1)};
-                }
-              }
-            `}
-          />
           <div
             css={css`
               grid-area: mid;
@@ -62,34 +44,15 @@ export default function Index() {
               }
             `}
           >
-            <AboutUsSection />
-          </div>
-          <div
-            css={css`
-              width: calc(100% / 3 * 2);
-              @supports (display: grid) {
-                width: auto;
-                ${breakpoint("medium")} {
-                  padding: 0;
-                  grid-area: bot;
-                }
-              }
-            `}
-          >
-            <Registration />
-            <NewsLetterSignup />
+            <CancellationNote />
           </div>
         </Hero>
-        <SpeakerSection />
-        <Hr />
-        <TalksSection />
-        <Hr />
-        <SponsorSection />
       </Main>
       <Footer />
     </Wrapper>
   );
 }
+
 function Wrapper({ children }) {
   return (
     <div
@@ -121,24 +84,15 @@ function Hero({ children }) {
   return (
     <div
       css={css`
-        margin-bottom: ${typography.rhythm(2)};
-        box-shadow: 0 0 0 0.5em ${colors.peachy_plum},
-          0 0.5em 0 0.5em ${colors.plummy_peach}, 0 1em 0 0.5em ${colors.peach};
         color: ${colors.blush};
         flex-direction: column-reverse;
-        padding-top: ${typography.rhythm(1 / 2)};
+        padding-top: ${typography.rhythm(2)};
+        padding-bottom: ${typography.rhythm(2)};
 
         background-color: ${colors.plum};
         background-image: url("/static/topo.svg");
         background-position: 50% 0%;
         background-repeat: no-repeat;
-        @supports (display: grid) {
-          ${breakpoint("medium")} {
-            box-shadow: 0 1em 0 1em ${colors.peachy_plum},
-              0 2em 0 2em ${colors.plummy_peach}, 0 3em 0 3em ${colors.peach};
-            margin-bottom: ${typography.rhythm(5)};
-          }
-        }
       `}
     >
       <div
@@ -187,103 +141,6 @@ function HeroLeft({ children }) {
       `}
     >
       {children}
-    </div>
-  );
-}
-
-function NewsLetterSignup() {
-  return (
-    <form
-      action="https://tinyletter.com/gigcityelixir"
-      method="post"
-      target="popupwindow"
-      onSubmit={() => {
-        window.open(
-          "https://tinyletter.com/gigcityelixir",
-          "popupwindow",
-          "scrollbars=yes,width=800,height=600"
-        );
-        return true;
-      }}
-      css={css`
-        margin: 0;
-        padding: ${typography.rhythm(1)};
-        background-color: ${colors.plum};
-
-        @supports (display: grid) {
-          ${breakpoint("medium")} {
-            padding: 0;
-            margin-bottom: ${typography.rhythm(3)};
-            padding: ${typography.rhythm(1)} ${typography.rhythm(2)}
-              ${typography.rhythm(2)};
-          }
-        }
-      `}
-    >
-      <label htmlFor="tlemail">
-        Sign up for our newsletter and be notified of ticketing information and
-        more.
-      </label>
-      <div
-        css={css`
-          margin-top: ${typography.rhythm(1 / 2)};
-          display: flex;
-          flex-direction: column;
-        `}
-      >
-        <input
-          type="email"
-          name="email"
-          id="tlemail"
-          placeholder="attendee@company.com"
-          css={css`
-            padding: ${typography.rhythm(1 / 4)};
-            background-color: ${colors.peachy_plum};
-            border: 1px solid ${colors.plummy_peach};
-            color: ${colors.blush};
-            margin-right: ${typography.rhythm(1 / 2)};
-          `}
-        />
-        <input
-          type="submit"
-          value="Subscribe"
-          className="ff-odudomono-sb"
-          css={css`
-            ${reverseButtonCss}
-            font-size: 1rem;
-            padding: ${typography.rhythm(1 / 4)};
-          `}
-        />
-      </div>
-      <input type="hidden" value="1" name="embed" />
-    </form>
-  );
-}
-
-function Registration() {
-  return (
-    <div
-      css={css`
-        padding: ${typography.rhythm(0)} ${typography.rhythm(2)}
-          ${typography.rhythm(1)};
-        background-color: ${colors.plum};
-        @supports (display: grid) {
-          ${breakpoint("medium")} {
-            padding: ${typography.rhythm(0)} ${typography.rhythm(3)}
-              ${typography.rhythm(1)};
-          }
-        }
-      `}
-    >
-      <a
-        css={css`
-          ${primaryButtonCss}
-          font-size: 1.15rem;
-        `}
-        href="https://ti.to/groxio-llc/gig-city-elixir-2020"
-      >
-        Register here for Tickets and Training
-      </a>
     </div>
   );
 }
