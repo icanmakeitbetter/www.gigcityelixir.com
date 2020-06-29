@@ -2,13 +2,11 @@ import { css } from "@emotion/core";
 import Link from "next/link";
 import { colors } from "../utils/constants";
 import { typography } from "../utils/typography";
-import Hr from "./Hr";
 import { SkipToNavContent } from "../components/SkipToNav";
 
 export default function Footer({ extraCss }) {
   return (
     <footer css={extraCss}>
-      <Hr />
       <nav
         className="ff-odudomono-r"
         css={css`
